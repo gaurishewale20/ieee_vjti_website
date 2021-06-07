@@ -4,6 +4,23 @@ import IEEE_logo from '../../assets/images/ieee_logo.png';
 
 const Navbar =()=>{
 
+  
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      function myFunction() {
+        if (
+          document.body.scrollTop > 50 ||
+          document.documentElement.scrollTop > 50
+        ) {
+          document.getElementById("navbar").className = "navbar-shadow";
+        } else {
+          document.getElementById("navbar").className = "navbar";
+        }
+      }
+    
+
     return (
         <div className="navbar" id="navbar">
       <div className="flex">
