@@ -2,9 +2,9 @@
     position: relative;
     padding-top: 3em;
     z-index: 3;
-  }
-  
-  .showcase h1 span {
+}
+
+.showcase h1 span {
     position: relative;
     font-weight: 300;
     line-height: 1.5em;
@@ -12,14 +12,14 @@
     font-size: 5em;
     padding: 10px auto;
     margin-left: 100px;
-  }
-  
-  .showcase .grid {
+}
+
+.showcase .grid {
     overflow: visible;
     gap: 20px;
-  }
-  
-  .showcase::after {
+}
+
+.showcase::after {
     content: "";
     position: absolute;
     height: 115px;
@@ -31,68 +31,70 @@
     -webkit-transform: skewY(-3deg);
     -moz-transform: skewY(-3deg);
     -ms-transform: skewY(-3deg);
-    z-index: 4;
-  }
-  
-  /* ABOUT */
-  
-  .about {
+    z-index: 0;
+}
+
+
+/* ABOUT */
+
+.about {
     background: var(--secondary-bg-color);
     z-index: -1;
-  }
-  
-  .about .container {
+}
+
+.about .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .about h1 {
+}
+
+.about h1 {
     margin-top: 2.5em;
     font-size: 3em;
     color: var(--primary-color);
-  }
-  
-  .about .img_icon {
+}
+
+.about .img_icon {
     margin-top: 3em;
     width: 50px;
     height: 50px;
     margin-top: 10px;
     border-radius: 10px;
-  }
-  
-  .about p {
+}
+
+.about p {
     margin: 2em auto;
     margin-bottom: 3em;
     text-align: justify;
     line-height: 1.5em;
-  }
-  
-  /* EVENTS */
-  
-  .events .container {
+}
+
+
+/* EVENTS */
+
+.events .container {
     position: relative;
-  }
-  
-  .events .grid {
+}
+
+.events .grid {
     gap: 30px;
     z-index: 1;
-  }
-  
-  .events h1 {
+}
+
+.events h1 {
     font-size: 3em;
     color: var(--primary-color);
-  }
-  
-  .events svg {
+}
+
+.events svg {
     position: relative;
     z-index: -5;
     /* top: -105px; */
     bottom: 340px;
     -webkit-box-reflect: below -2px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
-  }
-  
-  .events .images-anim {
+}
+
+.events .images-anim {
     position: relative;
     width: 390px;
     height: 390px;
@@ -111,221 +113,207 @@
     background-size: cover;
     background-position: center;
     border: 10px var(--primary-bg-color) solid;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-      rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     transition: transform 0.2s ease-in;
-  }
-  
-  .events .images-anim:hover {
+}
+
+.events .images-anim:hover {
     transform: translateY(-5px);
-  }
-  
-  /* IEEE HELP */
-  
-  .ieee_help {
+}
+
+
+/* IEEE HELP */
+
+.ieee_help {
     position: relative;
     bottom: 260px;
-  }
-  
-  .ieee_help h1 {
+}
+
+.ieee_help h1 {
     font-size: 2em;
-  }
-  
-  .ieee_help p {
+}
+
+.ieee_help p {
     text-align: justify;
     margin-top: 1em;
-  }
-  
-  .ieee_help .grid {
+}
+
+.ieee_help .grid {
     align-items: start;
     gap: 3em;
-  }
-  
-  /* DOMAINS */
-  
-  .tech_heading .cyan {
+}
+
+
+/* DOMAINS */
+
+.tech_heading .cyan {
     border-top: 5px solid var(--cyan);
-  }
-  .tech_heading .blue {
+}
+
+.tech_heading .blue {
     border-top: 5px solid var(--blue);
-  }
-  .tech_heading .red {
+}
+
+.tech_heading .red {
     border-top: 5px solid var(--red);
-  }
-  .tech_heading .yellow {
+}
+
+.tech_heading .yellow {
     border-top: 5px solid var(--orange);
-  }
-  
-  .tech_heading h1 {
+}
+
+.tech_heading h1 {
     margin-top: -150px;
     font-size: 3em;
     color: var(--primary-color);
-  }
-  
-  .tech_heading .subheading {
+}
+
+.tech_heading .subheading {
     margin-bottom: 15px;
-  }
-  
-  .tech_heading .box p {
+}
+
+.tech_heading .box p {
     color: var(--grayishBlue);
-  }
-  
-  .tech_heading .box {
+}
+
+.tech_heading .box {
     position: relative;
     border-radius: 5px;
     box-shadow: 0px 30px 40px -20px var(--grayishBlue);
     padding: 30px;
     margin: 20px;
-  }
-  .tech_heading .box:hover {
+}
+
+.tech_heading .box:hover {
     box-shadow: 0px 30px 40px -30px var(--grayishBlue);
     transform: scale(1.01);
     transition: all ease 0.1s;
-  }
-  
-  .tech_heading img {
+}
+
+.tech_heading img {
     float: right;
-  }
-  
-  .tech_heading .electric_vehicles,
-  .tech_heading .biotech,
-  .tech_heading .os {
+}
+
+.tech_heading .electric_vehicles,
+.tech_heading .biotech,
+.tech_heading .os {
     margin-bottom: 100px;
-  }
-  
-  /* Horizontal Rule Line */
-  
-  hr.style1 {
+}
+
+
+/* Horizontal Rule Line */
+
+hr.style1 {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.75),
-      rgba(0, 0, 0, 0)
-    );
-  }
-  
-  /* IEEE WEEKLIES */
-  
-  .ieee_weeklies {
+    background-image: linear-gradient( to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+/* IEEE WEEKLIES */
+
+.ieee_weeklies {
     background: var(--primary-color);
     padding: 2em;
-  }
-  .ieee_weeklies .container {
+}
+
+.ieee_weeklies .container {
     overflow: hidden;
     padding-bottom: 2em;
-  }
-  
-  .ieee_weeklies h1 {
+}
+
+.ieee_weeklies h1 {
     font-size: 3em;
     font-family: "Dancing Script", cursive;
     color: var(--primary-bg-color);
-  }
-  
-  .ieee_weeklies p {
+}
+
+.ieee_weeklies p {
     margin-bottom: 2em;
     color: var(--grayishBlue);
-  }
-  
-  .ieee_weeklies a {
+}
+
+.ieee_weeklies a {
     color: #eee;
     font-style: bold;
     font-weight: 400;
     padding-bottom: 0.5em;
-  }
-  
-  .ieee_weeklies p a:hover {
+}
+
+.ieee_weeklies p a:hover {
     border-bottom: lightblue 2px solid;
-  }
-  
-  .ieee_weeklies .weekly1 .card {
-    background: #a8ff78; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #78ffd6,
-      #a8ff78
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #78ffd6,
-      #a8ff78
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
-  
-  .ieee_weeklies .weekly2 .card {
-    background: #3a1c71; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #ffaf7b,
-      #d76d77,
-      #3a1c71
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #ffaf7b,
-      #d76d77,
-      #3a1c71
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
-  
-  .ieee_weeklies .weekly3 .card {
-    background: #ffafbd; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #ffc3a0,
-      #ffafbd
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #ffc3a0,
-      #ffafbd
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
-  
-  .ieee_weeklies .card {
+}
+
+.ieee_weeklies .weekly1 .card {
+    background: #a8ff78;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient( to right, #78ffd6, #a8ff78);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient( to right, #78ffd6, #a8ff78);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.ieee_weeklies .weekly2 .card {
+    background: #3a1c71;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient( to right, #ffaf7b, #d76d77, #3a1c71);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient( to right, #ffaf7b, #d76d77, #3a1c71);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.ieee_weeklies .weekly3 .card {
+    background: #ffafbd;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient( to right, #ffc3a0, #ffafbd);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient( to right, #ffc3a0, #ffafbd);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.ieee_weeklies .card {
     transition: transform 0.2s ease-in;
-  }
-  
-  .ieee_weeklies .card:hover {
+}
+
+.ieee_weeklies .card:hover {
     /* transform: translateY(-5px); */
     transform: scale(1.01);
-  }
-  
-  /* VIDEO */
-  
-  .video {
+}
+
+
+/* VIDEO */
+
+.video {
     background: var(--secondary-bg-color);
     padding: 3em;
-  }
-  
-  .video .grid {
+}
+
+.video .grid {
     align-items: center;
     gap: 20px;
-  }
-  
-  .video .canva_anim {
-    margin-right: 0;
-  }
+}
 
-  /* Animations for Images */
+.video .canva_anim {
+    margin-right: 0;
+}
+
+
+/* Animations for Images */
 
 @keyframes bganimation {
     0% {
-      background-image: url("https://github.com/Meera-W/IEEE-VJTI-SITE/blob/master/images/ieee_400.png?raw=true");
+        background-image: url("https://github.com/Meera-W/IEEE-VJTI-SITE/blob/master/images/ieee_400.png?raw=true");
     }
     25% {
-      background-image: url("https://github.com/Meera-W/IEEE-VJTI-SITE/blob/master/images/events/1.png?raw=true");
+        background-image: url("https://github.com/Meera-W/IEEE-VJTI-SITE/blob/master/images/events/1.png?raw=true");
     }
     50% {
-      background-image: url("https://github.com/Meera-W/IEEE-VJTI-SITE/blob/master/images/events/2.png?raw=true");
+        background-image: url("https://github.com/Meera-W/IEEE-VJTI-SITE/blob/master/images/events/2.png?raw=true");
     }
     75% {
-      background-image: url("https://github.com/Meera-W/IEEE-VJTI-SITE/blob/master/images/events/3.png?raw=true");
+        background-image: url("https://github.com/Meera-W/IEEE-VJTI-SITE/blob/master/images/events/3.png?raw=true");
     }
     100% {
-      background-image: url("https://github.com/Meera-W/IEEE-VJTI-SITE/blob/master/images/events/5.png?raw=true");
+        background-image: url("https://github.com/Meera-W/IEEE-VJTI-SITE/blob/master/images/events/5.png?raw=true");
     }
-  }
-  
-  
+}
