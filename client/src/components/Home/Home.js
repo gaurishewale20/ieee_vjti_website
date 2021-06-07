@@ -308,18 +308,18 @@ const Home = () => {
                 <div className="weekly1">
                     <div className="card">
 
-                        <a href="https://www.instagram.com/p/CPTK-GsMiJD/"><img src={ieee_weekly1} alt='ieee_weekly1' loading="lazy" /></a>
+                        <a href="https://www.instagram.com/p/CPTK-GsMiJD/" target="_blank"><img src={ieee_weekly1} alt='ieee_weekly1' loading="lazy" /></a>
                     </div>
                 </div>
                 <div className="weekly2">
                     <div className="card">
-                        <a href="https://www.instagram.com/p/COlPqwiswfz/">
+                        <a href="https://www.instagram.com/p/COlPqwiswfz/" target="_blank">
                             <img src={ieee_weekly2} alt='ieee_weekly2' loading="lazy" /></a>
 
                     </div>
                 </div>
                 <div className="weekly3">
-                    <div className="card"><a href="https://www.instagram.com/p/CPa5pHOM_nN/"> <img src={ieee_weekly3} alt='ieee_weekly3' loading="lazy" /></a>
+                    <div className="card"><a href="https://www.instagram.com/p/CPa5pHOM_nN/" target="_blank"> <img src={ieee_weekly3} alt='ieee_weekly3' loading="lazy" /></a>
 
                     </div>
                 </div>
