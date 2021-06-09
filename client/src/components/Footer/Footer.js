@@ -22,7 +22,7 @@ const Footer = () => {
                     </div>
                     <div className="social">
 
-                        <h3 >Connect With Us</h3>
+                        <h3>Connect With Us</h3>
                       <a href="https://www.linkedin.com/company/ieee-vjti" target="_blank"><i className="fab fa-linkedin-in fa-2x"></i></a>
                         <a href="https://www.instagram.com/ieeevjti/" target="_blank"><i className="fab fa-instagram fa-2x"></i></a>
                         <a href="ieeevjtiofficial@gmail.com" target="_blank"><i className="fas fa-envelope-square fa-2x"></i></a>
