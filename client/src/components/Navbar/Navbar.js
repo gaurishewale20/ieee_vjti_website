@@ -25,8 +25,9 @@ const Navbar =()=>{
         <div className="navbar" id="navbar">
       <div className="flex">
         <img src={IEEE_logo} loading="lazy"  alt='ieee_logo' className="m-1" />
+        
         <nav>
-          <ul>
+       <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/">Events</a></li>
             <li><a href="/">R&D</a></li>

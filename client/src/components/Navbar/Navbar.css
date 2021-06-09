@@ -9,9 +9,9 @@
     position: fixed;
     margin: 0 auto;
     overflow: auto;
-  }
-  
-  .navbar-shadow {
+}
+
+.navbar-shadow {
     background-color: var(--primary-bg-color);
     color: var(--dark-grey);
     height: 70px;
@@ -21,33 +21,50 @@
     margin: 0 auto;
     overflow: auto;
     box-shadow: 0px 0px 5px 5px #e1e1e1;
-  }
-  
-  .navbar img,
-  .navbar-shadow img {
+}
+
+.navbar img,
+.navbar-shadow img {
     width: 100px;
     height: 50px;
-  }
-  
-  .navbar ul,
-  .navbar-shadow ul {
+}
+
+.navbar ul,
+.navbar-shadow ul {
     display: flex;
-  }
-  
-  .navbar a,
-  .navbar-shadow a {
+    overflow: hidden;
+}
+
+.navbar a,
+.navbar-shadow a {
     color: var(--dark-grey);
     padding: 10px;
     margin: 0 5px;
-  }
-  
-  .navbar a:hover,
-  .navbar-shadow a:hover {
+}
+
+.navbar a:hover,
+.navbar-shadow a:hover {
     border-bottom: 2px var(--dark-grey) solid;
-  }
-  
-  .navbar .flex,
-  .navbar-shadow .flex {
+}
+
+.navbar .flex,
+.navbar-shadow .flex {
     justify-content: space-between;
-  }
-  
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        height: 110px;
+        width: 100%;
+        overflow: visible;
+    }
+    .navbar .flex {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar ul {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
