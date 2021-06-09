@@ -25,7 +25,7 @@ const Footer = () => {
                         <h3>Connect With Us</h3>
                       <a href="https://www.linkedin.com/company/ieee-vjti" target="_blank"><i className="fab fa-linkedin-in fa-2x"></i></a>
                         <a href="https://www.instagram.com/ieeevjti/" target="_blank"><i className="fab fa-instagram fa-2x"></i></a>
-                        <a href="ieeevjtiofficial@gmail.com" target="_blank"><i className="fas fa-envelope-square fa-2x"></i></a>
+                      <a href={`mailto:ieeevjtiofficial@gmail.com?Subject=Message%20for%20IEEE%20VJTI`}><i className="fas fa-envelope-square fa-2x"></i></a>
                         <a href="https://www.youtube.com/channel/UCXkEZSsh_RWiBfrJIPY27vg" target="_blank"><i className="fab fa-youtube fa-2x"></i></a>
                       
                         <p><a href="https://issuu.com/ieeevjti" target="_blank">Issuu</a>
