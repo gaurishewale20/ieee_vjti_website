@@ -34,16 +34,21 @@
     overflow: hidden;
 }
 
-.custom-navbar a,
+#custom-navbar a,
 .custom-navbar-shadow a {
     color: var(--dark-grey);
     padding: 10px;
     margin: 0 5px;
 }
+.nav-item a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
 
-.custom-navbar a:hover,
-.custom-navbar-shadow a:hover {
-    border-bottom: 2px var(--dark-grey) solid;
+.nav-item a:hover{
+    color:var(--ieee_blue);
+    font-weight: bold;
+    border-bottom: 2px var(--ieee_blue) solid;
 }
 
 .custom-navbar .flex,

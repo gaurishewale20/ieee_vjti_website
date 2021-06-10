@@ -42,7 +42,7 @@ const Navbar = () => {
 
   // );
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light position-fixed" id='custom-navbar' >
+    <nav className="navbar navbar-expand-lg" >
       <div className="container-fluid">
         <a className="navbar-brand" href="#"><img src={IEEE_logo} loading="lazy"  alt='ieee_logo' className="m-1 custom-ieee-logo" /></a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
