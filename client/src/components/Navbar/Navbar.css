@@ -23,7 +23,7 @@
     box-shadow: 0px 0px 5px 5px #e1e1e1;
 }
 
-.custom-ieee-logo{
+.custom-ieee-logo {
     width: 100px;
     height: 50px;
 }
@@ -56,7 +56,8 @@
     justify-content: space-between;
 }
 
-@media (max-width: 500px) {
+
+/* @media (max-width: 500px) {
     .custom-navbar {
         height: 110px;
         width: 100%;
@@ -71,4 +72,4 @@
         padding: 10px;
         background-color: rgba(0, 0, 0, 0.1);
     }
-}
+} */
