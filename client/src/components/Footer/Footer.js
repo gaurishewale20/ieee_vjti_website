@@ -7,7 +7,7 @@ const Footer = () => {
         <>
             <section className="footer_section bg-footer">
             <footer className="footer">
-                <div className="container grid grid-3 ">
+                <div className="container grid grid-3">
                     <div>
                         <h1>IEEE VJTI</h1>
                         <div className="line1">
