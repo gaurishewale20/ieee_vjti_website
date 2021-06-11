@@ -14,7 +14,7 @@ const Navbar = () => {
   //     document.body.scrollTop > 50 ||
   //     document.documentElement.scrollTop > 50
   //   ) {
-  //     // document.getElementById("custom-navbar").className = "custom-navbar-shadow";
+  //     // document.getElementById("custom-navbar").classNameName = "custom-navbar-shadow";
   //   } else {
   //     // document.getElementById("custom-navbar").className = "custom-navbar";
   //   }
@@ -42,14 +42,15 @@ const Navbar = () => {
 
   // );
   return (
+    <header>
     <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
       <div className="container-fluid">
 
-        <div>
+        
           <a className="navbar-brand" href="#"><img src={IEEE_logo} loading="lazy" alt='ieee_logo' className="m-1 custom-ieee-logo" /></a>
-        </div>
-        <div>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        
+    <div className="together"></div>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
 
@@ -80,10 +81,13 @@ const Navbar = () => {
 
             </ul>
           </div>
-        </div>
+       
       </div>
     </nav>
+   </header>
   );
+
+  
 }
 
 export default Navbar;
