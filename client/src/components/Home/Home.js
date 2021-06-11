@@ -41,7 +41,7 @@ const Home = () => {
           data-aos-duration="1500"
         >
           <h1>About Us</h1>
-          <h5>Here's some information about what we do!</h5>
+          <h5 className="text-center">Here's some information about what we do!</h5>
           <p>
             IEEE VJTI is a committee of enthusiastic electrical and electronics
             engineering students under the world's largest technical
@@ -66,14 +66,14 @@ const Home = () => {
 
       {/* Events Pics and Info */}
       <section className="events">
-        <div className="grid py-2 container">
+        <div className="grid py-5 px-2 container">
           <div
             className="images-anim box"
             data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="2000"
           ></div>
-          <div className="events_text">
+          <div className="events_text container">
             <h1>IEEE Events</h1>
             <h5>
               Our Student Committee arranges all sorts of fun, interactive &
@@ -136,11 +136,11 @@ const Home = () => {
 
       <section className="ieee_help">
         <div className="container">
-          <h1 className=" text-center my-1">
+          <h1 className=" text-center my-1 mt-3 py-5 px-2"  >
             How can IEEE help you?
           </h1>
 
-          <div className="grid grid-4 text-center my-4">
+          <div className="grid grid-4 text-center my-3">
             <div>
               <i className="far fa-newspaper fa-3x"></i>
               <h3>Newsletters</h3>
@@ -185,8 +185,8 @@ const Home = () => {
       </section>
 
       {/* TECHNOLOGIES/DOMAINS  */}
-      <section className="tech_heading py-3">
-        <div className="tech_heading container">
+      <section className="tech_heading py-3 mt-4">
+        <div className="tech_heading">
           <h1
             className="text-center heading"
             data-aos="fade-up"
@@ -202,7 +202,7 @@ const Home = () => {
             These are some of the domains that we are passionate about!
           </p>
         </div>
-        <div className="grid grid-3">
+        <div className="grid grid-3 container">
           <div
             className="box cyan ai"
             data-aos="fade-up"
@@ -304,7 +304,7 @@ const Home = () => {
       {/* IEEE Weeklies  */}
       <section className="ieee_weeklies">
         <div
-          className="heading text-center"
+          className="heading text-center px-2"
           data-aos="fade-up"
           data-aos-duration="1500"
         >
@@ -324,7 +324,7 @@ const Home = () => {
           data-aos-duration="1600"
         >
           <div className="weekly1">
-            <div className="card ">
+            <div className="custom-card ">
               <a
                 href="https://www.instagram.com/p/CPTK-GsMiJD/"
                 target="_blank"
@@ -334,7 +334,7 @@ const Home = () => {
             </div>
           </div>
           <div className="weekly2">
-            <div className="card ">
+            <div className="custom-card ">
               <a
                 href="https://www.instagram.com/p/COlPqwiswfz/"
                 target="_blank"
@@ -344,7 +344,7 @@ const Home = () => {
             </div>
           </div>
           <div className="weekly3">
-            <div className="card ">
+            <div className="custom-card ">
               <a
                 href="https://www.instagram.com/p/CPa5pHOM_nN/"
                 target="_blank"
@@ -356,7 +356,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <hr className="style1" />
+      {/* <hr className="style1" /> */}
 
       {/* VIDEO  */}
       <section className="video">
