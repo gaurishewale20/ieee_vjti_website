@@ -67,12 +67,16 @@ const Home = () => {
       {/* Events Pics and Info */}
       <section className="events">
         <div className="grid py-5 px-2 container">
-          <div
+        <div className="images-outer">
+        <div
             className="images-anim box"
             data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="2000"
           ></div>
+        </div>
+
+         
           <div className="events_text container">
             <h1>IEEE Events</h1>
             <h5>
@@ -92,44 +96,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* <div className="waves">
-       
-          <svg
-            height="100%"
-            width="100%"
-            id="svg"
-            viewBox="0 0 1440 400"
-            xmlns="http://www.w3.org/2000/svg"
-            className="transition duration-300 ease-in-out delay-150"
-          >
-            <defs>
-              <linearGradient id="gradient">
-                <stop offset="5%" stop-color="#9900ef88"></stop>
-                <stop offset="95%" stop-color="#32ded488"></stop>
-              </linearGradient>
-            </defs>
-            <path
-              d="M 0,400 C 0,400 0,133 0,133 C 98.28571428571428,108.28571428571428 196.57142857142856,83.57142857142857 330,89 C 463.42857142857144,94.42857142857143 631.9999999999999,130 746,150 C 860.0000000000001,170 919.4285714285716,174.42857142857144 1026,169 C 1132.5714285714284,163.57142857142856 1286.2857142857142,148.28571428571428 1440,133 C 1440,133 1440,400 1440,400 Z"
-              stroke="none"
-              stroke-width="0"
-              fill="url(#gradient)"
-              className="transition-all duration-300 ease-in-out delay-150"
-            ></path>
-            <defs>
-              <linearGradient id="gradient">
-                <stop offset="5%" stop-color="#9900efff"></stop>
-                <stop offset="95%" stop-color="#32ded4ff"></stop>
-              </linearGradient>
-            </defs>
-            <path
-              d="M 0,400 C 0,400 0,266 0,266 C 100.57142857142858,284.2857142857143 201.14285714285717,302.57142857142856 317,312 C 432.85714285714283,321.42857142857144 563.9999999999999,322.00000000000006 691,312 C 818.0000000000001,301.99999999999994 940.8571428571429,281.4285714285714 1065,272 C 1189.142857142857,262.5714285714286 1314.5714285714284,264.28571428571433 1440,266 C 1440,266 1440,400 1440,400 Z"
-              stroke="none"
-              stroke-width="0"
-              fill="url(#gradient)"
-              className="transition-all duration-300 ease-in-out delay-150"
-            ></path>
-          </svg>
-        </div> */}
+      
       </section>
 
       {/*  IEEE HELP  */}
@@ -144,7 +111,7 @@ const Home = () => {
             <div>
               <i className="far fa-newspaper fa-3x"></i>
               <h3>Newsletters</h3>
-              <p className="text-secondary">
+              <p >
                 Join IEEE VJTI today and start connecting to breakthrough
                 technical information in your technology field. As a member of
                 IEEE VJTI you'll receive access to select content which will
@@ -155,7 +122,7 @@ const Home = () => {
             <div>
               <i className="fab fa-searchengin fa-3x"></i>
               <h3>Mentorship & Research</h3>
-              <p className="text-secondary">
+              <p>
                 You come to us with an idea for research and projects and we
                 will get you started in the right direction with proper guidance
                 and support.
@@ -164,7 +131,7 @@ const Home = () => {
             <div>
               <i className="fas fa-bullhorn fa-3x"></i>
               <h3>Seminars</h3>
-              <p className="text-secondary">
+              <p>
                 Seminars comprising of brief talk with on the spot
                 demonstrations on new and exciting subjects which will give you,
                 the future of research, a glimpse into upcoming technological
@@ -175,7 +142,7 @@ const Home = () => {
             <div>
               <i className="fab fa-medapps fa-3x"></i>
               <h3>Workshops</h3>
-              <p className="text-secondary">
+              <p>
                 Workshops regarding short but amazing electronics or coding
                 projects with full guidance.
               </p>
