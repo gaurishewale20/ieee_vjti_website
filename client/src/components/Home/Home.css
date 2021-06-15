@@ -130,18 +130,35 @@
 .events .images-anim:hover {
   transform: translateY(-5px);
 }
+.events {
+  position: relative;
+}
+.events img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -100;
+}
 /* IEEE HELP */
 
 .ieee_help {
   position: relative;
   padding-bottom: 3em;
-  background-image: url("../../assets/images/purple_wave.png");
+  /* background-image: url("../../assets/images/purple_wave.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  /* background-position: center center; */
+  background-position: center center; */
 }
 
+.ieee_help img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -100;
+}
 .ieee_help h1 {
   font-size: 2em;
 }

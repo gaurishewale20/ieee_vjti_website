@@ -1,5 +1,7 @@
 import React from "react";
 import "./Home.css";
+import purplewave from '../../assets/images/purple_wave.png';
+import bluewave from '../../assets/images/svg_wave.png';
 import Showcase_Image from "../../assets/images/gadgets.webp";
 import AI from "../../assets/images/ieee_tech/ai.png";
 import ML from "../../assets/images/ieee_tech/ml.png";
@@ -96,12 +98,13 @@ const Home = () => {
             </div>
           </div>
         </div>
-      
+        <img src={bluewave}/>
       </section>
 
       {/*  IEEE HELP  */}
 
       <section className="ieee_help">
+        <img src={purplewave} />  
         <div className="container">
           <h1 className=" text-center my-1 mt-3 py-5 px-2"  >
             How can IEEE help you?
