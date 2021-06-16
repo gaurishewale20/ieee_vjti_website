@@ -46,13 +46,16 @@ const Event = ({ event, setCurrentId }) => {
 //        window.alert("Post deleted successfully!");
 //      }
 //   }
+const photoURL = (event.photo)? event.photo:'https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png';
+      
 
   return (
-    <Card className="card" raised elevation={6}>
-      <CardMedia image={event.photo || 'https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png'}/>
-      <Typography variant='h3'>{event.title}</Typography>
-      <Typography variant='h3'>{event.date}</Typography>
-    </Card>
+    <div className="custom-card">
+      <img src={photoURL} className="card-img-top" />
+      <h3>{event.title}</h3>
+      <h4>{event.date}</h4>
+    </div>
+    
   );
 };
 
