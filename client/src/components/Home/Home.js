@@ -93,7 +93,7 @@ const Home = () => {
             </p>
             <div>
               <div className="btn btn-primary my-2">
-                <a href="#">Learn More</a>
+                <a href="/events">Learn More</a>
               </div>
             </div>
           </div>
