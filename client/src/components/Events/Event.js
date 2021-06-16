@@ -7,13 +7,13 @@ import { Card, CardActions, CardContent, CardMedia, Button, Typography } from '@
 //import DeleteIcon from '@material-ui/icons/Delete';
 //import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 //import ThumbUpAltOutlined from '@material-ui/icons/ThumbUpAltOutlined';
-//import { useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 //import moment from 'moment';
 //import FavoriteIcon from '@material-ui/icons/Favorite';
 //import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import {useLocation} from 'react-router-dom';
 //import { likePost, deletePost } from '../../../actions/posts';
-//import useStyles from './styles';
+// import useStyles from './styles';
 
 
 /*const handleChange = () => (
@@ -22,7 +22,7 @@ import {useLocation} from 'react-router-dom';
 
 const Event = ({ event, setCurrentId }) => {
   const dispatch = useDispatch();
-  const classes = useStyles();
+  // const classes = useStyles();
 
   const location = useLocation();
 
@@ -49,33 +49,11 @@ const Event = ({ event, setCurrentId }) => {
 
   return (
     <Card className="card" raised elevation={6}>
-      <CardMedia className={classes.media} image={post.selectedFile || 'https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png'} title={post.title} />
-      <div className={classes.overlay}>
-        <Typography variant="h6">{post.name}</Typography>
-      </div>
-      {(user?.result?.googleId === post?.creator || user?.result?._id === post?.creator) &&(location.pathname ==='/myposts')&&(
-        <div className={classes.overlay2}>
-          <Button onClick={() => {setCurrentId(post._id); window.scrollTo(0,0);}} style={{ color: 'white' }} size="small">
-            <MoreHorizIcon fontSize="default" />
-          </Button>
-        </div>
-      )}
-      <div className={classes.details}>
-        <Typography variant="body2" color="textSecondary" component="h2">{post.tags.map((tag) => `#${tag} `)}</Typography>
-      </div>
-  
-      <CardActions className={classes.cardActions}>
-        <Button size="small" color="primary" disabled={!user?.result} onClick={() => dispatch(likePost(post._id))}>
-          <Likes />
-        </Button>
-        {(user?.result?.googleId === post?.creator || user?.result?._id === post?.creator) && (location.pathname ==='/myposts') && (
-          <Button size="small" color="secondary" onClick={deleteuserPost}>
-            <DeleteIcon fontSize="small" /> Delete
-          </Button>
-        )}
-      </CardActions>
+      <CardMedia image={event.photo || 'https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png'}/>
+      <Typography variant='h3'>{event.title}</Typography>
+      <Typography variant='h3'>{event.date}</Typography>
     </Card>
   );
 };
 
-export default Post;
+export default Event;

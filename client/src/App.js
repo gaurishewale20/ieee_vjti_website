@@ -12,7 +12,7 @@ const App=()=> {
   return (
     <BrowserRouter>
     <Navbar/>
-    <div className="App">
+    <div className="App mt-5 pt-5">
       <Switch>
           <Route path='/' exact component={Home}/>
           <Route path="/events" exact component={Events}/>

@@ -7,6 +7,8 @@ import {
 import { useDispatch } from "react-redux";
 import { getEvents} from "../../actions/events";
 import useStyles from "../../styles";
+import EventsHolder from './EventsHolder';
+
 const Events = () => {
     const [currentId, setCurrentId] = useState(0);
     const classes = useStyles();

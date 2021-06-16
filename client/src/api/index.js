@@ -4,3 +4,4 @@ const API = axios.create({ baseURL: 'http://localhost:5000' });
 
 
 export const fetchEvents = () => API.get(`/events/all`);
+export const createEvent = (newEvent) => API.post('/events', newEvent);
