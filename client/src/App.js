@@ -7,6 +7,7 @@ import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
 import Events from './components/Events/Events';
 import Dashboard from './components/Admin/Dashboard';
+import AdminLogin from './components/Admin/AdminLogin/AdminLogin';
 
 const App=()=> {
   return (
@@ -16,7 +17,8 @@ const App=()=> {
       <Switch>
           <Route path='/' exact component={Home}/>
           <Route path="/events" exact component={Events}/>
-          <Route path="/admin" component={Dashboard}/>
+          <Route path="/admin" component={AdminLogin}/>
+          <Route path="/dashboard" exact component={Dashboard}/>
           
       </Switch>
 
