@@ -1,0 +1,23 @@
+import jwt from "jsonwebtoken";
+
+const secret = 'test';
+
+const admin = async (req, res, next) => {
+  try {
+    const token = req.headers.authorization.split(" ")[1];
+    // const isCustomAuth = token.length < 500;
+
+    let decodedData;
+
+    if (token) {      
+      decodedData = jwt.verify(token, secret);
+
+      req.userId = decodedData?.id;
+    } 
+    next();
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export default admin;
