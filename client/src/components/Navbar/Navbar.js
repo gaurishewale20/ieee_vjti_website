@@ -1,10 +1,35 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
+import {Button} from '@material-ui/core';
 import './Navbar.css';
 import IEEE_logo from '../../assets/images/ieee_logo.png';
-
+import * as actionType from '../../constants/actionTypes';
+import {useLocation, useHistory, Link} from 'react-router-dom';
+import {  useDispatch } from 'react-redux';
+import decode from 'jwt-decode';
 const Navbar = () => {
 
+  const [admin, setAdmin] = useState(JSON.parse(localStorage.getItem('profile')));
+  const dispatch = useDispatch();
+  const location = useLocation();
+  const history = useHistory();
 
+  const logout=()=>{
+dispatch({type:'LOGOUT'});
+history.push('/');
+setAdmin(null);
+  }
+
+  useEffect(() => {
+    const token = admin?.token;
+
+    if (token) {
+      const decodedToken = decode(token);
+
+      if (decodedToken.exp * 1000 < new Date().getTime()) logout();
+    }
+
+    setAdmin(JSON.parse(localStorage.getItem('profile')));
+  }, [location]);
   // window.onscroll = function () {
   //   myFunction();
   // };
@@ -81,6 +106,16 @@ const Navbar = () => {
 
             </ul>
           </div>
+
+          {admin?.result ? (
+          <div >
+            
+        <Button variant="contained"  color="secondary" onClick={logout}>Logout</Button>
+          </div>
+        ) : (
+          
+          <Button component={Link} to="/admin" variant="contained"  color="primary">Sign In</Button>
+        )}
        
       </div>
     </nav>
