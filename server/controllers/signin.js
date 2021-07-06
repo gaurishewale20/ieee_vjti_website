@@ -1,12 +1,15 @@
 import bcrypt from 'bcryptjs';
+import express from 'express';
 import jwt from 'jsonwebtoken';
+import mongoose from 'mongoose';
 
-import Admin from '../models/admin.js';
+import AdminModel from "../models/Admin.js";
 // const user = require('../../models/admin.js');
 const secret = 'test';
 
+const router = express.Router();
 
-const token = jwt.sign( { email: "ieeevjtiofficial@gmail.com"}, secret, { expiresIn: "1h" } );
+//const token = jwt.sign( { email: "ieeevjtiofficial@gmail.com"}, secret, { expiresIn: "1h" } );
 
 
 export const signin = async (req, res) => {
@@ -23,7 +26,8 @@ export const signin = async (req, res) => {
 
     //   res.status(200).json({ result: Admin, token });
     // }
-    const oldUser = await Admin.findOne({ email });
+    const oldUser = await AdminModel.findOne({ email });
+ 
     console.log(oldUser);
     if (!oldUser) return res.status(404).json({ message: "User doesn't exist" });
     // if (!oldUser) console.log('User does not exist.');
@@ -36,4 +40,6 @@ export const signin = async (req, res) => {
   } catch (err) {
     res.status(500).json({ message: "Something went wrong" });
   }
-};
+}
+
+export default router;
