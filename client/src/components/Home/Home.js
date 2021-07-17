@@ -1,22 +1,7 @@
-import React from "react";
-import "./Home.css";
-import purplewave from '../../assets/images/purple_wave.png';
-import bluewave from '../../assets/images/svg_wave.png';
-import Showcase_Image from "../../assets/images/gadgets.webp";
-import AI from "../../assets/images/ieee_tech/ai.png";
-import ML from "../../assets/images/ieee_tech/ml.png";
-import IOT from "../../assets/images/ieee_tech/iot.png";
-import Computation from "../../assets/images/ieee_tech/computation.png";
-import Renewable_Energy from "../../assets/images/ieee_tech/renewable_energy.png";
-import Mechatronics from "../../assets/images/ieee_tech/mechatronics.png";
-import Electric_Vehicles from "../../assets/images/ieee_tech/electric_vehicles.png";
-import Biotechnology from "../../assets/images/ieee_tech/biotech.png";
-import Open_Source from "../../assets/images/ieee_tech/oss.png";
-import ieee_weekly1 from "../../assets/images/ieee_weeklies/ieee_weekly1.png";
-import ieee_weekly2 from "../../assets/images/ieee_weeklies/ieee_weekly2.png";
-import ieee_weekly3 from "../../assets/images/ieee_weeklies/ieee_weekly3.png";
-import Fostering_Tech from "../../assets/videos/gif_Fostering_Technological_Innovation.gif";
-const Home = () => {
+ import React from "react";
+ import "./Home.css";
+ import {purplewave, bluewave, Showcase_Image, AI, ML, IOT, Computation, Renewable_Energy, Mechatronics, Electric_Vehicles, Biotechnology, Open_Source, ieee_weekly1, ieee_weekly2, ieee_weekly3, Fostering_Tech } from './';
+  const Home = () => {
   return (
     <>
       <section className="showcase">
