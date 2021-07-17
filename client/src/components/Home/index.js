@@ -1,0 +1,16 @@
+export {default as  purplewave } from '../../assets/images/purple_wave.png';
+export {default as  bluewave} from '../../assets/images/svg_wave.png';
+export {default as  Showcase_Image } from "../../assets/images/gadgets.webp";
+export {default as  AI } from "../../assets/images/ieee_tech/ai.png";
+export {default as  ML } from "../../assets/images/ieee_tech/ml.png";
+export {default as  IOT } from "../../assets/images/ieee_tech/iot.png";
+export {default as  Computation } from "../../assets/images/ieee_tech/computation.png";
+export {default as  Renewable_Energy }from "../../assets/images/ieee_tech/renewable_energy.png";
+export {default as  Mechatronics }from "../../assets/images/ieee_tech/mechatronics.png";
+export {default as  Electric_Vehicles } from "../../assets/images/ieee_tech/electric_vehicles.png";
+export {default as  Biotechnology } from "../../assets/images/ieee_tech/biotech.png";
+export {default as  Open_Source } from "../../assets/images/ieee_tech/oss.png";
+export {default as  ieee_weekly1 } from "../../assets/images/ieee_weeklies/ieee_weekly1.png";
+export {default as  ieee_weekly2 } from "../../assets/images/ieee_weeklies/ieee_weekly2.png";
+export {default as  ieee_weekly3 } from "../../assets/images/ieee_weeklies/ieee_weekly3.png";
+export {default as  Fostering_Tech } from "../../assets/videos/gif_Fostering_Technological_Innovation.gif";
