@@ -12,6 +12,8 @@ API.interceptors.request.use((req) => {
   return req;
 });
 
+
+export const fetchEvent = (id) => API.get(`/events/${id}`);
 export const fetchEvents = (page) => API.get(`/events?page=${page}`);
 export const createEvent = (newEvent) => API.post("/events", newEvent);
 
