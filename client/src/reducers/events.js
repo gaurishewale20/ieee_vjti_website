@@ -3,14 +3,18 @@ import {
     CREATE
   } from "../constants/actionTypes";
   
-  export default (events = [], action) => {
+  export default (state = [], action) => {
     switch (action.type) {
       case FETCH_ALL:
-        return action.payload;
+        return {...state, 
+          events: action.payload.data,
+          currentPage: action.payload.currentPage,
+          numberOfPages: action.payload.numberOfPages,
+        };
       case CREATE:
-          return [...events, action.payload];
+          return [...state, action.payload];
          default:
-        return events;
+        return state;
     }
   };
   
