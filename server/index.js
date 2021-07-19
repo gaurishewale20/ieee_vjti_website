@@ -13,7 +13,7 @@ app.use(bodyParser.json({ limit: '30mb', extended: true }));
 app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }));
 app.use(cors());
 
-app.use('/events', eventsRoutes);
+app.use("/events", eventsRoutes);
 app.use("/admin", adminRoutes);
 
 const port =  process.env.PORT || 5000;
