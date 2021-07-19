@@ -12,7 +12,7 @@ API.interceptors.request.use((req) => {
   return req;
 });
 
-export const fetchEvents = () => API.get(`/events/all`);
+export const fetchEvents = (page) => API.get(`/events?page=${page}`);
 export const createEvent = (newEvent) => API.post("/events", newEvent);
 
 export const signIn = (adminData) => API.post("/admin/signin", adminData);
