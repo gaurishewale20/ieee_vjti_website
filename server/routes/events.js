@@ -4,7 +4,7 @@ import admin from '../middleware/admin.js';
 
 const router = express.Router();
 
-router.get('/all',getEvents);
+router.get('/',getEvents);
 router.post('/',admin,createEvent);
 
 export default router;
