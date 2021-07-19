@@ -39,11 +39,11 @@ const Dashboard = () => {
     <div>  {admin?.result ? (
        
        <div className='px-4'>
-     <h1>Dashboard for admin</h1>
+     <h1>Dashboard for Admin</h1>
      <hr />
      <Grid container justify="space-between" alignItems="stretch" spacing={3}>
      <Grid item xs={12} sm={3} >
-       <Paper className={classes.paper} >
+       <Paper className={classes.paper} elevation={6}>
          <form autoComplete="off" className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
            <TextField name="title" required variant="outlined" label="Title" fullWidth value={eventData.title} onChange={(e) => setEventData({ ...eventData, title: e.target.value })} />
            <TextField name="location" required variant="outlined" label="Location" fullWidth value={eventData.location} onChange={(e) => setEventData({ ...eventData, location: e.target.value })} />
