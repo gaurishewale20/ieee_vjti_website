@@ -8,22 +8,24 @@ import Footer from './components/Footer/Footer';
 import Events from './components/Events/Events';
 import Dashboard from './components/Admin/Dashboard';
 import AdminLogin from './components/Admin/AdminLogin/AdminLogin';
+import EventDetails from './components/EventDetails/EventDetails';
 
 const App=()=> {
+  const admin = JSON.parse(localStorage.getItem('profile'));
   return (
     <BrowserRouter>
     <Navbar/>
     <div className="App mt-5 pt-5">
       <Switch>
           <Route path='/' exact component={Home}/>
+          {/* <Route path="/" exact component={()=><Redirect to="/events"/>}/> */}
           <Route path="/events" exact component={Events}/>
-          <Route path="/admin" component={AdminLogin}/>
+          {/* <Route path="/events/search" exact component={Events}/> */}
+          <Route path="/events/:id" exact component={EventDetails}/>
+          <Route path="/admin" exact component={()=>(!admin ? <AdminLogin/> : <Redirect to ="/"/>)}/>
           <Route path="/dashboard" exact component={Dashboard}/>
-          
       </Switch>
-
-
-    </div>
+</div>
     <Footer/>
     </BrowserRouter>
   );
