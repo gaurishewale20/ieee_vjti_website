@@ -27,6 +27,17 @@ export const getEvents = async(req,res)=>{
     }
 }
 
+export const getEvent = async (req,res) => {
+  const {id} = req.params;
+
+  try{
+    const event = await EventsModel.findById(id);
+    res.status(200).json(event);
+  } catch(error){
+    res.status(404).json({message : error.message});
+  }
+}
+
 export const createEvent = async (req, res) => {
     const event = req.body;
   

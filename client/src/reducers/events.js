@@ -1,10 +1,24 @@
 import {
     FETCH_ALL,
-    CREATE
+    FETCH_EVENT,
+    CREATE,
+    START_LOADING,
+    END_LOADING
   } from "../constants/actionTypes";
   
-  export default (state = [], action) => {
+  export default (state = { isLoading: true, events : [] }, action) => {
+
     switch (action.type) {
+    
+      case START_LOADING :
+        return {...state, isLoading: true};
+
+      case END_LOADING :
+        return {...state, isLoading: false};
+        
+      case FETCH_EVENT:
+        return {...state, event : action.payload};
+        
       case FETCH_ALL:
         return {...state, 
           events: action.payload.data,
@@ -12,7 +26,7 @@ import {
           numberOfPages: action.payload.numberOfPages,
         };
       case CREATE:
-          return [...state, action.payload];
+          return {...state, events: [...state.events, action.payload]};
          default:
         return state;
     }

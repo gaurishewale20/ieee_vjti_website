@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, CardActions, CardContent, CardMedia, Button, Typography } from '@material-ui/core';
+import { Card, CardActions, CardContent, CardMedia, Button, Typography, ButtonBase } from '@material-ui/core';
 //import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 //import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 
@@ -13,7 +13,9 @@ import { useDispatch } from 'react-redux';
 //import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import {useLocation} from 'react-router-dom';
 //import { likePost, deletePost } from '../../../actions/posts';
-// import useStyles from './styles';
+import useStyles from './styles';
+import { useHistory } from 'react-router-dom';
+
 
 
 /*const handleChange = () => (
@@ -22,7 +24,8 @@ import {useLocation} from 'react-router-dom';
 
 const Event = ({ event, setCurrentId }) => {
   const dispatch = useDispatch();
-  // const classes = useStyles();
+  const classes = useStyles();
+  const history = useHistory();
 
   const location = useLocation();
 
@@ -47,13 +50,26 @@ const Event = ({ event, setCurrentId }) => {
 //      }
 //   }
 const photoURL = (event.photo)? event.photo:'https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png';
-      
+    
+const openPost = (e) => {
+  // dispatch(getPost(post._id, history));
+
+  history.push(`/events/${event._id}`);
+};
+
 
   return (
     <div className="custom-card">
+    <ButtonBase
+        component="span"
+        name="test"
+        className={classes.cardAction}
+        onClick={openPost}
+      >
       <img src={photoURL} className="card-img-top" />
       <h3>{event.title}</h3>
       <h4>{event.date}</h4>
+      </ButtonBase>
     </div>
     
   );
