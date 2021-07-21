@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, CardActions, CardContent, CardMedia, Button, Typography, ButtonBase } from '@material-ui/core';
+import { Card, CardActions, CardActionArea, CardContent, CardMedia, Button, Typography, ButtonBase } from '@material-ui/core';
 //import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 //import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 
@@ -49,7 +49,7 @@ const Event = ({ event, setCurrentId }) => {
 //        window.alert("Post deleted successfully!");
 //      }
 //   }
-const photoURL = (event.photo)? event.photo:'https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png';
+const photoURL = (event.photo)? event.photo :'https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png';
     
 const openPost = (e) => {
   // dispatch(getPost(post._id, history));
@@ -59,18 +59,37 @@ const openPost = (e) => {
 
 
   return (
-    <div className="custom-card">
+    <div className="outer">
+    <Card className={classes.card} raised elevation={6}>
+    
+    <CardActionArea className={classes.notwhite}>
     <ButtonBase
         component="span"
         name="test"
         className={classes.cardAction}
         onClick={openPost}
-      >
-      <img src={photoURL} className="card-img-top" />
-      <h3>{event.title}</h3>
-      <h4>{event.date}</h4>
+      > 
+      {/* <CardMedia component="img" className={classes.media} image={photoURL} /> */}
+      <img src={photoURL} className="cardImage" />
+     
+    
+      
+      
+      
+      {/* <h3>{event.title}</h3> */}
+      {/* <h4>{event.date}</h4> */}
       </ButtonBase>
-    </div>
+      </CardActionArea>
+      <CardContent>
+      <div className={classes.overlay}>
+        <Typography variant="h6">{event.title}</Typography>
+        <Typography variant="body2">{event.date}</Typography>
+      </div>
+      </CardContent>
+     
+      </Card>
+      </div>
+    
     
   );
 };

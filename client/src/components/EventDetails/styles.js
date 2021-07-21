@@ -1,6 +1,9 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
+  outer:{
+   
+  },
   media: {
     borderRadius: '20px',
     objectFit: 'cover',
@@ -8,7 +11,13 @@ export default makeStyles((theme) => ({
     maxHeight: '600px',
 
   },
+  paper:{
+    position: 'relative',
+    margin:'100px'
+  },
   card: {
+    // margin:'70px',
+    position:'relative',
     display: 'flex',
     width: '100%',
     [theme.breakpoints.down('sm')]: {
@@ -22,6 +31,7 @@ export default makeStyles((theme) => ({
     flex: 1,
   },
   imageSection: {
+    position:'relative',
     marginLeft: '20px',
     [theme.breakpoints.down('sm')]: {
       marginLeft: 0,
