@@ -86,13 +86,13 @@ setAdmin(null);
                 <a className="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">Events</a>
+                <a className="nav-link" aria-current="page" href="/events">Events</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">R&D</a>
+                <a className="nav-link" aria-current="page" href="/dashboard">R&D</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">Magazine</a>
+                <a className="nav-link" aria-current="page" href="/magazine">Magazine</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" aria-current="page" href="#">Membership</a>
