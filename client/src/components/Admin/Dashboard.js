@@ -28,7 +28,7 @@ const Dashboard = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    // e.preventDefault();
 
     dispatch(createEvent({ ...eventData }));
     clear();
@@ -39,7 +39,7 @@ const Dashboard = () => {
     <div>  {admin?.result ? (
        
        <div className='px-4'>
-     <h1>Dashboard for Admin</h1>
+     <h1>Dashboard for Events</h1>
      <hr />
      <Grid container justify="space-between" alignItems="stretch" spacing={3}>
      <Grid item xs={12} sm={3} >
