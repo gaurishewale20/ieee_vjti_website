@@ -1,7 +1,8 @@
  import React from "react";
  import "./Home.css";
  import {purplewave, bluewave, Showcase_Image, AI, ML, IOT, Computation, Renewable_Energy, Mechatronics, Electric_Vehicles, Biotechnology, Open_Source, ieee_weekly1, ieee_weekly2, ieee_weekly3, Fostering_Tech } from './';
-  const Home = () => {
+  
+ const Home = () => {
   return (
     <>
       <section className="showcase">
