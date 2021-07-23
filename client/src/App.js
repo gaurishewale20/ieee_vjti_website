@@ -10,6 +10,7 @@ import Dashboard from './components/Admin/Dashboard';
 import AdminLogin from './components/Admin/AdminLogin/AdminLogin';
 import EventDetails from './components/EventDetails/EventDetails';
 import Magazine from './components/Magazine/Magazine';
+import Membership from './components/Membership/Membership';
 
 const App=()=> {
   const admin = JSON.parse(localStorage.getItem('profile'));
@@ -18,7 +19,7 @@ const App=()=> {
     <Navbar/>
     <div className="App mt-5 pt-5">
       <Switch>
-          <Route path='/' exact component={Home}/>
+          <Route path="/" exact component={Home}/>
           {/* <Route path="/" exact component={()=><Redirect to="/events"/>}/> */}
           <Route path="/events" exact component={Events}/>
           {/* <Route path="/events/search" exact component={Events}/> */}
@@ -26,6 +27,7 @@ const App=()=> {
           <Route path="/admin" exact component={()=>(!admin ? <AdminLogin/> : <Redirect to ="/"/>)}/>
           <Route path="/dashboard" exact component={Dashboard}/>
           <Route path="/magazine" exact component={Magazine}/>
+          <Route path="/membership" exact component={Membership}/>
       </Switch>
 </div>
     <Footer/>

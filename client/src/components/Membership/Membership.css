@@ -1,0 +1,91 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"); */
+
+.display-4{
+
+font-family: "Dancing Script", sans-serif;
+}
+
+.card{
+    height: 90%;
+    position:relative;
+    margin-bottom: 50px;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    overflow: hidden;
+}
+
+.card:hover{
+
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+}
+
+.card:hover .card-img-top{
+    transition : all 0.9s ease;
+    transform:scale(1.15);
+}
+
+.card .wrapper-img{
+
+    overflow: hidden;
+    border-radius: 5px;
+}
+/* 
+.wrapper-img img{
+
+    transition : all 0.9 ease;
+    -webkit-transition:all .9s ease; 
+    -moz-transition:all .9s ease; 
+    -o-transition:all .9s ease;
+    -ms-transition:all .9s ease; 
+    width: 100%;
+    height: 200px;
+} */
+
+/* .wrapper-img .card-img-top{
+    opacity: 0.7;
+    -webkit-transform:scale(1.15);
+    -moz-transform:scale(1.15);
+    -ms-transform:scale(1.15);
+    -o-transform:scale(1.15);
+    transform:scale(1.15);
+} */
+
+.card-body h4{
+    border-left: 3px solid hsl(240, 80%, 89%); 
+    padding-left: 12px
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+}
+
+
+.card .card-body a{
+    position:absolute;
+}
+
+.card-footer{
+    background-color: white;
+    border-top:none
+}
+
+@media (max-width: 768px){
+    .card{
+        width:70%
+    }
+}
+
+@media (min-width: 768px){
+    .card{
+        width:90%
+    }
+}
+
+@media (min-width:992px){
+    .card{
+        width:80%
+    }
+}

@@ -1,0 +1,12 @@
+export {default as Author} from '../../assets/images/membership/Author.webp';
+export {default as Conference} from '../../assets/images/membership/Conference.jpeg';
+export {default as Education} from '../../assets/images/membership/Education.jpeg';
+export {default as Employer_Job_Seekers} from '../../assets/images/membership/Employer_Job_Seekers.jpeg';
+export {default as FAQ} from '../../assets/images/membership/FAQ.png';
+export {default as Media} from '../../assets/images/membership/media.jpeg';
+export {default as Member_Benefit} from '../../assets/images/membership/member_benefit.jpeg';
+export {default as Research} from '../../assets/images/membership/research.jpeg';
+export {default as Student} from '../../assets/images/membership/student.jpeg';
+export {default as Volunteer} from '../../assets/images/membership/volunteer.jpeg';
+export {default as Women_Eng} from '../../assets/images/membership/women_eng.jpeg';
+export {default as Young_Professional} from '../../assets/images/membership/young_professional.jpeg';
