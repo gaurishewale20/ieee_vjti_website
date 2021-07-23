@@ -13,7 +13,7 @@ export const getEvents = async(req,res)=>{
   // Number is used to convert the page number (that's in string format in the query) into an integer
 
     try{
-      const LIMIT = 8;
+      const LIMIT = 6;
       // to get the starting index of every page
       const startIndex = ( Number(page) - 1 ) * LIMIT ;
       console.log(req.query);

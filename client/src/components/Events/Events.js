@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Grow, Grid, Paper, AppBar, TextField, Button} from "@material-ui/core";
+import { Container, Grow, Grid, Paper, AppBar, TextField, Button, Typography} from "@material-ui/core";
 import { useHistory, useLocation } from 'react-router-dom';
 import { useDispatch } from "react-redux";
 import { getEvents} from "../../actions/events";
@@ -26,6 +26,12 @@ const Events = () => {
     return (
         <Grow in>
             <Container maxWidth="xl">
+            <div className ="heading">
+            <Typography variant="h4" color="textPrimary" component="h2">
+            Click on the Events for more Information!
+          </Typography>
+            </div>
+            
                 <Grid
                     container
                     className={classes.mainContainer}

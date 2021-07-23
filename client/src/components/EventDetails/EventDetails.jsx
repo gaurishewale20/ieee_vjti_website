@@ -33,16 +33,31 @@ const EventDetails = () => {
 
   // const photoURL = (event.photo)? event.photo:'https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png';
   return (
-    <Paper className={classes.paper} style={{ padding: "20px", borderRadius: "15px" }} elevation={6}>
+    <Paper
+      className={classes.paper}
+      style={{ padding: "20px", borderRadius: "15px" }}
+      elevation={6}
+    >
       <div className={classes.card}>
         <div className={classes.section}>
           <Typography variant="h3" component="h2">
             {event.title}
           </Typography>
-<br/>
-          <Typography gutterBottom variant="body1" component="p">
-            {event.event_desc}
+
+          <Divider style={{ margin: "20px 0"}} />
+          <Typography variant="body2" color="textSecondary" component="h2" >
+            {event.date}
           </Typography>
+
+          <Typography variant="body2" color="textSecondary" component="p">
+            {event.location}
+          </Typography>
+          <Divider style={{ margin: "20px 0" }} />
+      
+            <Typography gutterBottom variant="body1" component="p">
+              {event.event_desc}
+            </Typography>
+         
         </div>
         <div className={classes.imageSection}>
           <img

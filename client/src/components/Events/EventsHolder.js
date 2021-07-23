@@ -14,7 +14,7 @@ const EventsHolder = ({ setCurrentId }) => {
     isLoading ? <div><CircularProgress /></div> : (
       <Grid container alignItems="stretch" spacing={3}>
         {events.map((event) => (
-          <Grid key={event._id} item xs={12} sm={6} md={6}>
+          <Grid key={event._id} item xs={12} sm={4} md={4}>
             <Event event={event} setCurrentId={setCurrentId} />
           </Grid>
         ))}
