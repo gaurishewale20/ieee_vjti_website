@@ -9,6 +9,7 @@ import Events from './components/Events/Events';
 import Dashboard from './components/Admin/Dashboard';
 import AdminLogin from './components/Admin/AdminLogin/AdminLogin';
 import EventDetails from './components/EventDetails/EventDetails';
+import Magazine from './components/Magazine/Magazine';
 
 const App=()=> {
   const admin = JSON.parse(localStorage.getItem('profile'));
@@ -24,6 +25,7 @@ const App=()=> {
           <Route path="/events/:id" exact component={EventDetails}/>
           <Route path="/admin" exact component={()=>(!admin ? <AdminLogin/> : <Redirect to ="/"/>)}/>
           <Route path="/dashboard" exact component={Dashboard}/>
+          <Route path="/magazine" exact component={Magazine}/>
       </Switch>
 </div>
     <Footer/>
