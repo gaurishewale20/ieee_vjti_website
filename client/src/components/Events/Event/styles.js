@@ -21,7 +21,8 @@ const useStyles = makeStyles((theme) => ({
 
     position: "relative",
     height: "100%",
-    width: "300px",
+    // we'll keep posts at size 400.
+    width: "400px",
     transition: "transform 0.2s ease-in",
     "&:hover": {
       transform: "translateY(-5px)",
@@ -31,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
   notwhite: {
     position: "relative",
     // border: 'solid black 8px',
-    overflow: "hidden",
+    // overflow: "hidden",
     maxHeight: "100%",
 
     maxWidth: "100%",

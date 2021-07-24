@@ -76,7 +76,7 @@ const Event = ({ event, setCurrentId }) => {
           className={classes.cardAction}
           onClick={openPost}
         >
-          <CardActionArea>
+          <CardActionArea className={classes.notwhite}>
             <div>
               <img src={photoURL} className="cardImage" />
             </div>
@@ -104,6 +104,7 @@ const Event = ({ event, setCurrentId }) => {
                 </Typography>
               </CardContent>
             </div>
+        
             <Typography
               className={classes.title}
               gutterBottom
@@ -112,6 +113,8 @@ const Event = ({ event, setCurrentId }) => {
             >
               {event.title}
             </Typography>
+            
+           
           </CardContent>
           </ButtonBase>
       </Card>

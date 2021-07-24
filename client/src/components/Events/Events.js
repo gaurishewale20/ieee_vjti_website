@@ -26,10 +26,15 @@ const Events = () => {
     return (
         <Grow in>
             <Container maxWidth="xl">
-            <div className ="heading">
-            <Typography variant="h4" color="textPrimary" component="h2">
-            Click on the Events for more Information!
+            <div className ="heading text-center">
+            <Typography variant="h3" color="textPrimary" component="h1">
+            Events
           </Typography>
+            </div>
+            <div className ="text-center mb-4">
+            <Typography variant="subtitle1" color="textSecondary" component="h2">
+            Click on the events to know more.
+          </Typography>  
             </div>
             
                 <Grid
@@ -39,7 +44,7 @@ const Events = () => {
                     alignItems="center"
                     spacing={3}
                 >
-                    <Grid item xs={12} sm={9} md={9}>
+                    <Grid item xs={12} sm={6} md={6}>
                    
                         <EventsHolder setCurrentId={setCurrentId} />
                         <Paper className={classes.pagination} elevation={6}>
