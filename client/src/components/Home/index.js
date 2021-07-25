@@ -14,3 +14,4 @@ export {default as  ieee_weekly1 } from "../../assets/images/ieee_weeklies/ieee_
 export {default as  ieee_weekly2 } from "../../assets/images/ieee_weeklies/ieee_weekly2.png";
 export {default as  ieee_weekly3 } from "../../assets/images/ieee_weeklies/ieee_weekly3.png";
 export {default as  Fostering_Tech } from "../../assets/videos/gif_Fostering_Technological_Innovation.gif";
+export {default as mag_og} from "../../assets/images/Magazine/ieee_mag_cover_og.png";

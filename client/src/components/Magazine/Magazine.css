@@ -1,5 +1,10 @@
 .magazine{
-    max-width:400px;
-    max-height: 400px;
+    /* max-width:400px; */
+    /* max-height: 400px; */
     padding: 20px;
+}
+
+.img{
+    height: 571.42px;
+    width: 404px;
 }
