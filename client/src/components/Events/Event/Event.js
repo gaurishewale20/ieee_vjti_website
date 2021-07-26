@@ -36,21 +36,8 @@ const Event = ({ event, setCurrentId }) => {
   const history = useHistory();
 
   const location = useLocation();
-
-  //   const Likes = () => {
-  //     if (post.likes.length > 0) {
-  //       return post.likes.find((like) => like === (user?.result?.googleId || user?.result?._id))
-  //         ? (
-  //           <><FavoriteIcon fontSize="small" />&nbsp;{post.likes.length > 2 ? `You and ${post.likes.length - 1} others` : `${post.likes.length} like${post.likes.length > 1 ? 's' : ''}`}</>
-  //         ) : (
-  //           <><FavoriteBorderIcon fontSize="small" />&nbsp;{post.likes.length} {post.likes.length === 1 ? 'Like' : 'Likes'}</>
-  //         );
-  //     }
-
-  //     return <><FavoriteBorderIcon fontSize="small" />&nbsp;Like</>;
-  //   };
-
-    const delete_an_event=()=>{
+  
+  const delete_an_event=()=>{
       if(window.confirm("Are you sure you want to delete this post? "))
        {
          dispatch(deleteEvent(event._id));
@@ -70,27 +57,29 @@ const Event = ({ event, setCurrentId }) => {
 
   return (
 
-      <Card className={classes.card} raised elevation={6}>
+      <Card className={classes.card} raised elevation={6} onClick={openPost}>
         {/* <CardActionArea className={classes.notwhite}> */}
-        <ButtonBase
+        {/* <ButtonBase
           component="span"
           name="test"
           className={classes.cardAction}
           onClick={openPost}
-        >
-          <CardActionArea className={classes.notwhite}>
+        > */}
+          {/* <CardActionArea className={classes.notwhite}>
             <div>
               <img src={photoURL} className={classes.card_img} />
             </div>
-          </CardActionArea>
-          </ButtonBase>
+          </CardActionArea> */}
+          <CardMedia className={classes.media}  image={event.photo || "https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png"} title={event.title} />
+     
+          {/* </ButtonBase>
           <ButtonBase
           component="span"
           name="test"
           className={classes.cardAction}
           onClick={openPost}
-        >
-          <CardContent>
+        > */}
+          
             <div className={classes.details}>
               <CardContent>
                 <Typography
@@ -116,8 +105,7 @@ const Event = ({ event, setCurrentId }) => {
               {event.title}
             </Typography>
             
-          </CardContent>
-          </ButtonBase>
+          {/* </ButtonBase> */}
           { admin?.result && (location.pathname ==='/dashboard')?(
         <div>
           <Button onClick={() => {setCurrentId(event._id); window.scrollTo(0,0);}} style={{ color: 'black' }} size="small">

@@ -3,9 +3,9 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   media: {
     height: 0,
-    paddingTop: "56.25%",
-    // backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    // backgroundBlendMode: 'darken',
+    paddingTop: '100%',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+   // backgroundBlendMode: 'darken',
   },
   border: {
     border: "solid",
@@ -20,9 +20,9 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "5px",
 
     position: "relative",
-    height: "100%",
+    maxHeight: "100%",
     // we'll keep posts at size 400.
-    width: "400px",
+    //width: "400px",
     transition: "transform 0.2s ease-in",
     "&:hover": {
       transform: "translateY(-5px)",
