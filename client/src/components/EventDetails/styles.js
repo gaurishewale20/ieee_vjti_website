@@ -45,6 +45,9 @@ export default makeStyles((theme) => ({
     padding: '20px',
     borderRadius: '15px',
     height: '39vh',
+  },
+  eventmsg: {
+    whiteSpace: "pre",
   }
   
 }));

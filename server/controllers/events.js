@@ -54,5 +54,32 @@ export const createEvent = async (req, res) => {
     }
   };
 
+  export const updateEvent = async (req, res) => {
+    const { id } = req.params;
+ 
+    const { title, date, location, event_desc, photo} = req.body;
+  
+    if (!mongoose.Types.ObjectId.isValid(id))
+      return res.status(404).send(`No post with id: ${id}`);
+  
+    let updatedEvent = { title, date, location, event_desc, photo, _id: id };
+  
+    updatedEvent = await EventsModel.findByIdAndUpdate(id, updatedEvent, {
+      new: true,
+    });
+  
+    res.json(updatedEvent);
+  };
+  
+  export const deleteEvent = async (req, res) => {
+    const { id } = req.params;
+  
+    if (!mongoose.Types.ObjectId.isValid(id))
+      return res.status(404).send(`No post with id: ${id}`);
+  
+    await EventsModel.findByIdAndRemove(id);
+  
+    res.json({ message: "Event deleted successfully." });
+  };
 
 export default router;

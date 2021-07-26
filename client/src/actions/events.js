@@ -2,6 +2,8 @@ import {
   FETCH_ALL,
   FETCH_EVENT,
   CREATE,
+  UPDATE,
+  DELETE,
   START_LOADING,
   END_LOADING,
 } from "../constants/actionTypes";
@@ -38,6 +40,26 @@ export const createEvent = (event) => async (dispatch) => {
 
     dispatch({ type: CREATE, payload: data });
     
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const updateEvent = (id, event) => async (dispatch) => {
+  try {
+    const { data } = await api.updateEvent(id, event);
+
+    dispatch({ type: UPDATE, payload: data });
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const deleteEvent = (id) => async (dispatch) => {
+  try {
+    await await api.deleteEvent(id);
+
+    dispatch({ type: DELETE, payload: id });
   } catch (error) {
     console.log(error);
   }

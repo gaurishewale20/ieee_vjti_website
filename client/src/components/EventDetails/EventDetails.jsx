@@ -54,7 +54,7 @@ const EventDetails = () => {
           </Typography>
           <Divider style={{ margin: "20px 0" }} />
       
-            <Typography gutterBottom variant="body1" component="p">
+            <Typography className={classes.eventmsg} gutterBottom variant="body1" component="p">
               {event.event_desc}
             </Typography>
          

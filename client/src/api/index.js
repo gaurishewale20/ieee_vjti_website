@@ -17,4 +17,6 @@ export const fetchEvent = (id) => API.get(`/events/${id}`);
 export const fetchEvents = (page) => API.get(`/events?page=${page}`);
 export const createEvent = (newEvent) => API.post("/events", newEvent);
 
+export const updateEvent = (id, updatedEvent) => API.patch(`/events/${id}`, updatedEvent);
+export const deleteEvent = (id) => API.delete(`/events/${id}`);
 export const signIn = (adminData) => API.post("/admin/signin", adminData);

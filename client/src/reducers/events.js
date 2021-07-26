@@ -2,6 +2,8 @@ import {
     FETCH_ALL,
     FETCH_EVENT,
     CREATE,
+    UPDATE,
+    DELETE,
     START_LOADING,
     END_LOADING
   } from "../constants/actionTypes";
@@ -27,7 +29,13 @@ import {
         };
       case CREATE:
           return {...state, events: [...state.events, action.payload]};
-         default:
+      case UPDATE:
+            return {...state, events: [state.events.map((event) =>
+              event._id === action.payload._id ? action.payload : event
+            )]};
+      case DELETE:
+            return {...state, events:[state.events.filter((event) => event._id !== action.payload)]};
+      default:
         return state;
     }
   };

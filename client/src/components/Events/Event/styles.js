@@ -28,7 +28,9 @@ const useStyles = makeStyles((theme) => ({
       transform: "translateY(-5px)",
     },
   },
-
+  card_img:{
+    maxWidth: "100%",
+  },
   notwhite: {
     position: "relative",
     // border: 'solid black 8px',
@@ -74,10 +76,10 @@ const useStyles = makeStyles((theme) => ({
     overflowWrap: "break-word",
   },
   cardAction: {
-    // padding: "0 16px 8px 16px",
+    //padding: "0 16px 8px 16px",
     display: "flex",
     justifyContent: "space-between",
-    // marginTop: "10px",
+    //marginTop: "10px",
   },
   postmsg: {
     whiteSpace: "pre",

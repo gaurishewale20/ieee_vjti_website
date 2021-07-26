@@ -21,7 +21,7 @@ import { useDispatch } from "react-redux";
 //import FavoriteIcon from '@material-ui/icons/Favorite';
 //import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import { useLocation } from "react-router-dom";
-//import { likePost, deletePost } from '../../../actions/posts';
+import {deleteEvent,getEvents} from '../../../actions/events';
 import useStyles from "./styles";
 import { useHistory } from "react-router-dom";
 
@@ -30,6 +30,7 @@ import { useHistory } from "react-router-dom";
 );*/
 
 const Event = ({ event, setCurrentId }) => {
+  const [admin, setAdmin] = useState(JSON.parse(localStorage.getItem('profile')));
   const dispatch = useDispatch();
   const classes = useStyles();
   const history = useHistory();
@@ -49,13 +50,14 @@ const Event = ({ event, setCurrentId }) => {
   //     return <><FavoriteBorderIcon fontSize="small" />&nbsp;Like</>;
   //   };
 
-  //   const deleteuserPost=()=>{
-  //     if(window.confirm("Are you sure you want to delete this post? "))
-  //      {
-  //        dispatch(deletePost(post._id));
-  //        window.alert("Post deleted successfully!");
-  //      }
-  //   }
+    const delete_an_event=()=>{
+      if(window.confirm("Are you sure you want to delete this post? "))
+       {
+         dispatch(deleteEvent(event._id));
+         dispatch(getEvents());
+         window.alert("Event deleted successfully!");
+       }
+    }
   const photoURL = event.photo
     ? event.photo
     : "https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png";
@@ -67,7 +69,7 @@ const Event = ({ event, setCurrentId }) => {
   };
 
   return (
-    <div className="outer">
+
       <Card className={classes.card} raised elevation={6}>
         {/* <CardActionArea className={classes.notwhite}> */}
         <ButtonBase
@@ -78,7 +80,7 @@ const Event = ({ event, setCurrentId }) => {
         >
           <CardActionArea className={classes.notwhite}>
             <div>
-              <img src={photoURL} className="cardImage" />
+              <img src={photoURL} className={classes.card_img} />
             </div>
           </CardActionArea>
           </ButtonBase>
@@ -114,11 +116,20 @@ const Event = ({ event, setCurrentId }) => {
               {event.title}
             </Typography>
             
-           
           </CardContent>
           </ButtonBase>
+          { admin?.result && (location.pathname ==='/dashboard')?(
+        <div>
+          <Button onClick={() => {setCurrentId(event._id); window.scrollTo(0,0);}} style={{ color: 'black' }} size="small">
+            EDIT
+          </Button>
+            &nbsp; &nbsp;
+            <Button size="small" color="secondary" onClick={delete_an_event}>
+            DELETE
+          </Button>
+        </div>):null}
+           
       </Card>
-    </div>
   );
 };
 
