@@ -7,6 +7,11 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
    // backgroundBlendMode: 'darken',
   },
+  [theme.breakpoints.down('xs')]: {
+    card: {
+      margin: '0 3em',
+      marginRight:'4em'
+    }},
   border: {
     border: "solid",
   },
@@ -14,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
   },
   card: {
+   
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",

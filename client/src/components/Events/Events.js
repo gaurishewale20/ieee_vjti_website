@@ -40,7 +40,7 @@ const Events = () => {
                 <Grid
                     container
                     className={classes.mainContainer}
-                    justify="space-around"
+                    justify="stretch"
                     alignItems="center"
                     spacing={3}
                 >
