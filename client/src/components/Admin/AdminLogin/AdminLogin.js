@@ -61,7 +61,7 @@ const SignIn = () => {
   //   }
 
   return (
-    <div className="px-4" style={{ height:"55vh" }}>
+    <div className="px-4" style={{ height:"70vh" }}>
       <h1>Login Section for Admin</h1>
       <hr />
       <Grid container justify="space-between" alignItems="stretch" spacing={3}>

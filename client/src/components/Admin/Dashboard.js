@@ -27,7 +27,7 @@ const Dashboard = () => {
 
   return (
 
-    <div>  {admin?.result ? (
+    <div style={{ height:"70vh" }}>  {admin?.result ? (
 
       <div className='px-4'>
         <h1>Dashboard for Events</h1>
