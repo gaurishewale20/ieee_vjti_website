@@ -11,6 +11,8 @@ import AdminLogin from './components/Admin/AdminLogin/AdminLogin';
 import EventDetails from './components/EventDetails/EventDetails';
 import Magazine from './components/Magazine/Magazine';
 import Membership from './components/Membership/Membership';
+// import ContactUs from './components/ContactUs/ContactUs';
+// import Submit from './components/ContactUs/Submit/Submit';
 
 const App=()=> {
   const admin = JSON.parse(localStorage.getItem('profile'));
@@ -28,6 +30,9 @@ const App=()=> {
           <Route path="/dashboard" exact component={Dashboard}/>
           <Route path="/magazine" exact component={Magazine}/>
           <Route path="/membership" exact component={Membership}/>
+          {/* <Route path="/contactus" exact component={ContactUs}/> */}
+          {/* <Route path="/contactsubmit" exact component={Submit}/> */}
+
       </Switch>
 </div>
     <Footer/>
