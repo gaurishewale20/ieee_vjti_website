@@ -8,35 +8,32 @@ export default makeStyles((theme) => ({
     },
   },
   paper: {
-    padding: theme.spacing(2),
-    backgroundColor: '#fefefe'
+    padding: theme.spacing(3),
+    backgroundColor: '#fefefe',
+    justifyContent:'center'
+ 
  
   },
   form: {
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'center',
+    
+    
   },
   fileInput: {
-    width: '97%',
-    margin: '10px 0',
+    // width: '100%',
+    // margin: '10px 5px 0 0',
   },
+
   buttonSubmit: {
-    marginBottom: 10,
+    marginBottom: 5,
     backgroundColor:'#386cb5',
+    
     '&:hover': {
       backgroundColor: '#152238',
       color: '#fff'}
   },
 
-  buttonClear: {
-    marginBottom: 10,
-    backgroundColor:'#e3927a',
-    '&:hover': {
-      backgroundColor: '#e74c3c',
-      color: '#fff'
-  }
-    
-  },
   
   }));
