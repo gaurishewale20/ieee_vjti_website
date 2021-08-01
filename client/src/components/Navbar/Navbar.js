@@ -1,71 +1,11 @@
-import React,{useState,useEffect} from 'react';
-import {Button} from '@material-ui/core';
+import React from 'react';
 import './Navbar.css';
 import IEEE_logo from '../../assets/images/ieee_logo.png';
-import * as actionType from '../../constants/actionTypes';
-import {useLocation, useHistory, Link} from 'react-router-dom';
-import {  useDispatch } from 'react-redux';
-import decode from 'jwt-decode';
+
 const Navbar = () => {
 
-  const [admin, setAdmin] = useState(JSON.parse(localStorage.getItem('profile')));
-  const dispatch = useDispatch();
-  const location = useLocation();
-  const history = useHistory();
-
-  const logout=()=>{
-dispatch({type:'LOGOUT'});
-history.push('/');
-setAdmin(null);
-  }
-
-  useEffect(() => {
-    const token = admin?.token;
-
-    if (token) {
-      const decodedToken = decode(token);
-
-      if (decodedToken.exp * 1000 < new Date().getTime()) logout();
-    }
-
-    setAdmin(JSON.parse(localStorage.getItem('profile')));
-  }, [location]);
-  // window.onscroll = function () {
-  //   myFunction();
-  // };
-
-  // function myFunction() {
-  //   if (
-  //     document.body.scrollTop > 50 ||
-  //     document.documentElement.scrollTop > 50
-  //   ) {
-  //     // document.getElementById("custom-navbar").classNameName = "custom-navbar-shadow";
-  //   } else {
-  //     // document.getElementById("custom-navbar").className = "custom-navbar";
-  //   }
-  // }
-
-
-  // return (
-  //     <div classNameName="navbar" id="navbar">
-  //   <div classNameName="flex">
-  //     <img src={IEEE_logo} loading="lazy"  alt='ieee_logo' classNameName="m-1" />
-
-  //     <nav>
-  //    <ul>
-  //         <li><a href="/">Home</a></li>
-  //         <li><a href="/">Events</a></li>
-  //         <li><a href="/">R&D</a></li>
-  //         <li><a href="/">Magazine</a></li>
-  //         <li><a href="/">Membership</a></li>
-  //         <li><a href="/">Team</a></li>
-  //         <li><a href="/">Contact Us</a></li>
-  //       </ul>
-  //     </nav>
-  //   </div>
-  // </div>
-
-  // );
+  
+  
   return (
     <header>
     <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
@@ -107,16 +47,7 @@ setAdmin(null);
             </ul>
           </div>
 
-          {admin?.result ? (
-          <div >
-            
-        <Button variant="contained"  color="secondary" onClick={logout}>Logout</Button>
-          </div>
-        ) : (
-          
-          <Button component={Link} to="/admin" variant="contained"  color="primary">Sign In</Button>
-        )}
-       
+         
       </div>
     </nav>
    </header>

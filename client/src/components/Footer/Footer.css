@@ -56,9 +56,26 @@
     
     .footer_section {
         padding-bottom: 1.5em;
+        /* text-align: center; */
+    }
+
+    .link{
+      padding-left: 1em;
+      margin:-10px 0;
+      /* margin-left: 1.4em; */
+      margin-bottom: -20px;
+      
+     
+    }
+
+    .a:link{color:'#cdcdcd';
     }
     
     @media (max-width: 500px) {
+        .footer_section {
+            padding-bottom: 1.5em;
+            text-align: center;
+        }
         .footer .grid {
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
@@ -72,4 +89,8 @@
         .footer h1 {
             font-size: 1.5em;
         }
+        .link{
+            margin:auto;
+        }
+        
     }
