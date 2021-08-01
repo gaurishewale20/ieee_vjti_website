@@ -1,20 +1,30 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
-  outer:{
-   
-  },
   media: {
+    position:'relative',
     borderRadius: '20px',
     objectFit: 'cover',
-    width: '100%',
-    maxHeight: '600px',
+    maxWidth: '100%',
+    maxHeight: '300px',
 
   },
   paper:{
     position: 'relative',
-    margin:'100px'
+    margin:'150px',
+    height: '100%', 
+    // width:'100%',
+    '@media (max-width:430px)' : {
+margin:'20px 2em ',
+
+    },
+    // for galaxy fold mobiles. the extra small ones.
+    '@media (max-width:300px)' : {
+      margin:'20px 1em ',
+      
+          }
   },
+ 
   card: {
     // margin:'70px',
     position:'relative',
@@ -29,6 +39,7 @@ export default makeStyles((theme) => ({
     borderRadius: '20px',
     margin: '10px',
     flex: 1,
+    
   },
   imageSection: {
     position:'relative',
@@ -42,12 +53,19 @@ export default makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    padding: '20px',
+    padding: '15px',
     borderRadius: '15px',
     height: '39vh',
   },
   eventmsg: {
-    whiteSpace: "pre",
-  }
-  
+    whiteSpace: "pre-wrap",
+    maxWidth:'100%'
+    
+  },
+  // desc_div:{
+  //   whiteSpace: "pre-line",
+  //   maxWidth:'100%'
+ 
+  // }
+
 }));
