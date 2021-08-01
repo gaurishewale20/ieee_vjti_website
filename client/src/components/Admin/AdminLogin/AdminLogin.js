@@ -61,28 +61,29 @@ const SignIn = () => {
   //   }
 
   return (
-    <div className="px-4" style={{ height:"70vh" }}>
+    <div className="px-4 text-center" style={{ height:"70vh" }}>
       <h1>Login Section for Admin</h1>
       <hr />
-      <Grid container justify="space-between" alignItems="stretch" spacing={3}>
+      <Grid container justify="center" alignItems="stretch" spacing={3}>
         <Grid item xs={12} sm={3}>
-          <Paper className={classes.paper}>
+          <Paper className={classes.paper} >
             <form
               autoComplete="off"
               className={`${classes.root} ${classes.form}`}
               onSubmit={handleSubmit}
+              
             >
-              <Input
+              <Input 
                 name="email"
                 label="Email"
-                fullWidth
+                // fullWidth
                 type="email"
                 handleChange={handleChange}
               />
-              <Input
+              <Input 
                 name="password"
                 label="Password"
-                fullWidth
+                // fullWidth
                 type={showPassword ? "text" : "password"}
                 handleShowPassword={handleShowPassword}
                 handleChange={handleChange}

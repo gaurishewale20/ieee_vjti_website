@@ -27,7 +27,7 @@ const Dashboard = () => {
 
   return (
 
-    <div style={{ height:"70vh" }}>  {admin?.result ? (
+    <div>  {admin?.result ? (
 
       <div className='px-4'>
         <h1>Dashboard for Events</h1>
@@ -51,8 +51,8 @@ const Dashboard = () => {
 
 
     ) : (
-      <div>
-        <h1>Dashboard for admin</h1>
+      <div className='pt-6 text-center mt-8' style={{ height:"70vh" }}>
+        <h1 className='mt-6'>Dashboard for admin</h1>
         <Button component={Link} to="/admin" variant="contained" color="primary">Sign In</Button>
       </div>
     )}
