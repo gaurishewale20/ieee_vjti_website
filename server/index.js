@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import mongoose from 'mongoose';
 import eventsRoutes from './routes/events.js';
+import projectsRoutes from './routes/projects.js';
 import adminRoutes from './routes/admin.js';
 import dotenv from 'dotenv';
 
@@ -15,6 +16,7 @@ app.use(cors());
 
 app.use("/events", eventsRoutes);
 app.use("/admin", adminRoutes);
+app.use("/rd",projectsRoutes);
 
 const port =  process.env.PORT || 5000;
 

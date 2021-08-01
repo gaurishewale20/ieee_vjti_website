@@ -89,7 +89,7 @@ setAdmin(null);
                 <a className="nav-link" aria-current="page" href="/events">Events</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="/dashboard">R&D</a>
+                <a className="nav-link" aria-current="page" href="/rd">R&D</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" aria-current="page" href="/magazine">Magazine</a>
