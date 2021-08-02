@@ -106,7 +106,7 @@ const Event = ({ event, setCurrentId }) => {
             </Typography>
             
           {/* </ButtonBase> */}
-          { admin?.result && (location.pathname ==='/dashboard')?(
+          { admin?.result && (location.pathname ==='/dashboard/events')?(
         <div>
           <Button onClick={() => {setCurrentId(event._id); window.scrollTo(0,0);}} style={{ color: 'black' }} size="small">
             EDIT

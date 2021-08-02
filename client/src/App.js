@@ -8,6 +8,8 @@ import Footer from './components/Footer/Footer';
 import Events from './components/Events/Events';
 import Projects from './components/Projects/Projects';
 import Dashboard from './components/Admin/Dashboard';
+import EventsDashboard from './components/Admin/EventsDashBoard';
+import ProjectsDashboard from './components/Admin/ProjectsDashboard';
 import AdminLogin from './components/Admin/AdminLogin/AdminLogin';
 import EventDetails from './components/EventDetails/EventDetails';
 import Magazine from './components/Magazine/Magazine';
@@ -30,6 +32,8 @@ const App=()=> {
           <Route path="/rd" exact component={Projects}/>
           <Route path="/admin" exact component={()=>(!admin ? <AdminLogin/> : <Redirect to ="/"/>)}/>
           <Route path="/dashboard" exact component={Dashboard}/>
+          <Route path="/dashboard/events" exact component={EventsDashboard}/>
+          <Route path="/dashboard/projects" exact component={ProjectsDashboard}/>
           <Route path="/magazine" exact component={Magazine}/>
           <Route path="/membership" exact component={Membership}/>
           {/* <Route path="/contactus" exact component={ContactUs}/> */}

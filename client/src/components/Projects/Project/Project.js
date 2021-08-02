@@ -59,7 +59,7 @@ const Project = ({ project, setCurrentId }) => {
             </div>
         
             <Typography
-              className={classes.title}
+              className={classes.project_desc}
               gutterBottom
               variant="h5"
               component="h2"
@@ -68,7 +68,7 @@ const Project = ({ project, setCurrentId }) => {
             </Typography>
             
           {/* </ButtonBase> */}
-          { admin?.result && (location.pathname ==='/dashboard')?(
+          { admin?.result && (location.pathname ==='/dashboard/projects')?(
         <div>
           <Button onClick={() => {setCurrentId(project._id); window.scrollTo(0,0);}} style={{ color: 'black' }} size="small">
             EDIT

@@ -90,6 +90,12 @@ const useStyles = makeStyles((theme) => ({
   postmsg: {
     whiteSpace: "pre",
   },
+  project_desc: {
+    whiteSpace: "pre-wrap",
+    padding:"0 16px",
+    maxWidth:'100%'
+    
+  },
   cardImage: {
     width: "100%",
     height: "100%",
