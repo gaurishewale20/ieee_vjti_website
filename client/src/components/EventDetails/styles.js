@@ -14,7 +14,7 @@ export default makeStyles((theme) => ({
     margin:'150px',
     height: '100%', 
     // width:'100%',
-    '@media (max-width:430px)' : {
+    '@media (max-width:530px)' : {
 margin:'20px 2em ',
 
     },
