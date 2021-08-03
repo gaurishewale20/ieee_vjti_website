@@ -65,7 +65,7 @@ const SignIn = () => {
       <h1>Login Section for Admin</h1>
       <hr />
       <Grid container justify="center" alignItems="stretch" spacing={3}>
-        <Grid item xs={12} sm={3}>
+        <Grid item xs={12} sm={9} md={6} lg={3}>
           <Paper className={classes.paper} >
             <form
               autoComplete="off"
