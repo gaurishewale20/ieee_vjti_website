@@ -90,7 +90,7 @@
       {/*  IEEE HELP  */}
 
       <section className="ieee_help">
-        <img src={purplewave} />  
+        {/* <img src={purplewave} />   */}
         <div className="container">
           <h1 className=" text-center my-1 mt-3 py-5 px-2"  >
             How can IEEE help you?
