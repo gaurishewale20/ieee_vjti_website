@@ -165,7 +165,7 @@
             data-aos-duration="1600"
           >
             <h2>Artificial Intelligence</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p> Learn how to simulate human intelligence in machines.</p>
             <img src={AI} alt="ai" loading="lazy" />
           </div>
 
@@ -175,7 +175,7 @@
             data-aos-duration="1600"
           >
             <h2>Machine Learning</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Make machines learn and improve by experience, just like humans!</p>
             <img src={ML} alt="Ml" loading="lazy" />
           </div>
 
@@ -185,7 +185,7 @@
             data-aos-duration="1600"
           >
             <h2>Internet of Things</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Make your devices smart and enable them to talk to you.</p>
             <img src={IOT} alt="iot" loading="lazy" />
           </div>
 
@@ -195,7 +195,7 @@
             data-aos-duration="1700"
           >
             <h2>Computation</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p></p>
             <img src={Computation} alt="Computation" loading="lazy" />
           </div>
 
@@ -205,7 +205,7 @@
             data-aos-duration="1700"
           >
             <h2>Renewable Energy</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Explore and learn more about this domain to help create a better environment.</p>
             <img src={Renewable_Energy} alt="renewable_energy" loading="lazy" />
           </div>
 
@@ -215,7 +215,7 @@
             data-aos-duration="1700"
           >
             <h2>Mechatronics</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Delve deeper into this field and gain multidisciplinary skills and knowledge to solve complex problems.</p>
             <img src={Mechatronics} alt="mechatronics" loading="lazy" />
           </div>
 
@@ -225,7 +225,7 @@
             data-aos-duration="1800"
           >
             <h2>Electric Vehicles</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Explore tech that goes behind creating electric vehicles.</p>
             <img
               src={Electric_Vehicles}
               alt="electric vechicles"
@@ -239,7 +239,7 @@
             data-aos-duration="1800"
           >
             <h2>Biotechnology</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p></p>
             <img src={Biotechnology} alt="Biotech" loading="lazy" />
           </div>
 
@@ -249,7 +249,7 @@
             data-aos-duration="1800"
           >
             <h2>Open Source</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Contibute to interesting open source projects and showcase your skills to the developer community.</p>
             <img src={Open_Source} alt="open source" loading="lazy" />
           </div>
         </div>
