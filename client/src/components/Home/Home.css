@@ -1,6 +1,6 @@
 .showcase .container {
   position: relative;
-  padding-top: 4em;
+  /* padding-top: 1em; */
   z-index: 3;
 }
 

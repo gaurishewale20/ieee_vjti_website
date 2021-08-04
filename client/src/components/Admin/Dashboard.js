@@ -17,13 +17,13 @@ const Dashboard = () => {
   
   return (
 
-    <div>  {admin?.result ? (
+    <div className='pt-6 text-center mt-8' style={{ height:"70vh" }}>  {admin?.result ? (
 
       <div>
-        <Button component={Link} to="/dashboard/events" variant="contained" size="large" color="secondary">Events</Button>
+        <Button  component={Link} to="/dashboard/events" variant="contained" size="large" color="secondary" style={{ padding:"1em", margin:'1em' }}>Events</Button>
         <br/>
         
-        <Button component={Link} to="/dashboard/projects" variant="contained" size="large" color="secondary">Projects</Button>
+        <Button component={Link} to="/dashboard/projects" variant="contained" size="large" color="secondary" style={{ padding:"1em", margin:'1em' }}>Projects</Button>
       
       </div>
 
