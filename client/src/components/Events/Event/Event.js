@@ -43,6 +43,7 @@ const Event = ({ event, setCurrentId }) => {
          dispatch(deleteEvent(event._id));
          dispatch(getEvents());
          window.alert("Event deleted successfully!");
+         
        }
     }
   const photoURL = event.photo
@@ -56,8 +57,9 @@ const Event = ({ event, setCurrentId }) => {
   };
 
   return (
+    <>
 
-      <Card className={classes.card} raised elevation={6} onClick={openPost}>
+      <Card className={classes.card} raised elevation={6} >
         {/* <CardActionArea className={classes.notwhite}> */}
         {/* <ButtonBase
           component="span"
@@ -70,6 +72,7 @@ const Event = ({ event, setCurrentId }) => {
               <img src={photoURL} className={classes.card_img} />
             </div>
           </CardActionArea> */}
+          <div onClick={openPost}>
           <CardMedia className={classes.media}  image={event.photo || "https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png"} title={event.title} />
      
           {/* </ButtonBase>
@@ -106,6 +109,8 @@ const Event = ({ event, setCurrentId }) => {
             </Typography>
             
           {/* </ButtonBase> */}
+         
+          </div>
           { admin?.result && (location.pathname ==='/dashboard/events')?(
         <div>
           <Button onClick={() => {setCurrentId(event._id); window.scrollTo(0,0);}} style={{ color: 'black' }} size="small">
@@ -116,8 +121,11 @@ const Event = ({ event, setCurrentId }) => {
             DELETE
           </Button>
         </div>):null}
-           
       </Card>
+     
+     
+        </>
+
   );
 };
 
