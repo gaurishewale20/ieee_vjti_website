@@ -14,17 +14,6 @@ import Form from './Form';
 
 const Dashboard = () => {
   const [admin, setAdmin] = useState(JSON.parse(localStorage.getItem('profile')));
-  // const [currentId, setCurrentId] = useState(0);
-  // const dispatch = useDispatch();
-  // const classes = useStyles();
-  // const { events, isLoading } = useSelector((state) => state.events);
-
-
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  //   dispatch(getEvents());
-  // }, [currentId, dispatch]);
-
   
   return (
 
