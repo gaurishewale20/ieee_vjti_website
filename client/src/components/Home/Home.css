@@ -1,7 +1,9 @@
 .showcase .container {
   position: relative;
-  /* padding-top: 1em; */
+  /* padding-top: -1em; */
   z-index: 3;
+  min-height: 100vh;
+
 }
 /* 
 .showcase .grid {
@@ -35,7 +37,7 @@
   width: 90%;
 }
 
-.showcase::before,
+/* .showcase::before,
 .showcase::after {
   content: "";
   position: absolute;
@@ -49,7 +51,7 @@
   -moz-transform: skewY(-3deg);
   -ms-transform: skewY(-3deg);
   z-index: 0;
-}
+} */
 /* ABOUT */
 
 .about {

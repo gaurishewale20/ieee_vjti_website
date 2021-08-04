@@ -30,7 +30,7 @@ const Project = ({ project, setCurrentId }) => {
        {
          dispatch(deleteProject(project._id));
          dispatch(getProjects());
-         window.alert("Event deleted successfully!");
+         window.alert("Project deleted successfully!");
        }
     }
 
