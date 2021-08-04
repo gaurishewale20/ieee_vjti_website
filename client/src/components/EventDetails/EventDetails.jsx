@@ -36,7 +36,7 @@ const EventDetails = () => {
     
     <Paper
       className={classes.paper}
-      style={{ padding: "20px", borderRadius: "15px" }}
+      style={{ padding: "20px", borderRadius: "15px",  minHeight:"70vh"  }}
       elevation={6}
     >
     {/* <div className={classes.paper_content}> */}
@@ -59,7 +59,7 @@ const EventDetails = () => {
             <Typography
               className={classes.eventmsg}
               gutterBottom
-              variant="body1"
+              variant="body2"
               component="p"
             >
               {event.event_desc}

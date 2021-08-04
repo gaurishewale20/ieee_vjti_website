@@ -11,7 +11,7 @@ export default makeStyles((theme) => ({
   },
   paper:{
     position: 'relative',
-    margin:'150px',
+    margin:'2em 5em',
     height: '100%', 
     // width:'100%',
     '@media (max-width:530px)' : {
@@ -30,7 +30,7 @@ margin:'20px 2em ',
     position:'relative',
     display: 'flex',
     width: '100%',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
       flexWrap: 'wrap',
       flexDirection: 'column',
     },
