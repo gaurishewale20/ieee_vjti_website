@@ -8,6 +8,7 @@ import {
   Button,
   Typography,
   ButtonBase,
+  Divider
 } from "@material-ui/core";
 
 import { useDispatch } from "react-redux";
@@ -45,7 +46,7 @@ const Project = ({ project, setCurrentId }) => {
             <div className={classes.details}>
               <CardContent>
                 <Typography
-                  variant="body2"
+                  variant="h4"
                   color="textSecondary"
                   component="h2"
                 >
@@ -57,14 +58,24 @@ const Project = ({ project, setCurrentId }) => {
                 </Typography>
               </CardContent>
             </div>
-        
+            <Divider style={{ margin: "20px 0" }} />
             <Typography
               className={classes.project_desc}
               gutterBottom
-              variant="h5"
+              variant="body1"
               component="h2"
             >
               {project.project_desc}
+            </Typography>
+
+            <Typography
+              className={classes.github_link}
+              gutterBottom
+              variant="body1"
+              component="h2"
+            >
+              <a href={project.github_link} target="_blank"><i class="fab fa-github-square fa-2x"></i>  Link to Project Code!</a>
+           
             </Typography>
             
           {/* </ButtonBase> */}

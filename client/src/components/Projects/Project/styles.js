@@ -3,15 +3,26 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   media: {
     height: 0,
-    paddingTop: '100%',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-   // backgroundBlendMode: 'darken',
+    paddingTop: "100%",
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    // backgroundBlendMode: 'darken',
   },
-  [theme.breakpoints.down('xs')]: {
+  [theme.breakpoints.down("xs")]: {
     card: {
-      margin: '0 3em',
-      marginRight:'4em'
-    }},
+      margin: "0 0.7em",
+      marginRight: "2em",
+    },
+    project_desc: {
+      whiteSpace: "pre-wrap",
+      padding: "0 6px",
+      maxWidth: "100%",
+      // margin: "20px",
+      margin: "0",
+      fontSize: "0.9em"
+
+    },
+  },
+  
   border: {
     border: "solid",
   },
@@ -19,7 +30,6 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
   },
   card: {
-   
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
@@ -34,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
       transform: "translateY(-5px)",
     },
   },
-  card_img:{
+  card_img: {
     maxWidth: "100%",
   },
   notwhite: {
@@ -74,8 +84,17 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "space-between",
     margin: "20px",
+    marginBottom: '0', 
+    paddingBottom: '0'
   },
   title: {
+    padding: "0 16px",
+    margin: " 0 20px",
+    marginTop: "0",
+    overflowWrap: "break-word",
+  },
+
+  github_link: {
     padding: "0 16px",
     margin: "20px",
     marginTop: "0",
@@ -92,9 +111,10 @@ const useStyles = makeStyles((theme) => ({
   },
   project_desc: {
     whiteSpace: "pre-wrap",
-    padding:"0 16px",
-    maxWidth:'100%'
-    
+    padding: "0 16px",
+    maxWidth: "100%",
+    margin: "20px",
+    marginTop: "0",
   },
   cardImage: {
     width: "100%",
