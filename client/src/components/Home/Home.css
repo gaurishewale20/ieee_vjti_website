@@ -3,18 +3,6 @@
   /* padding-top: 1em; */
   z-index: 3;
 }
-
-.showcase h1 {
-  position: relative;
-  font-weight: 300;
-  line-height: 1.7em;
-  /* margin: 10px auto; */
-  font-size: 4em;
-  text-align: center;
-  /* padding: 10px auto; */
-  /* margin-left: 100px; */
-  /* text-align: left; */
-}
 /* 
 .showcase .grid {
     overflow: visible;
@@ -28,6 +16,19 @@
 .showcase .showcase-img {
     border: 1px red solid;
 } */
+
+.showcase h1 {
+  position: relative;
+  font-weight: 300;
+  line-height: 1.7em;
+  /* margin: 10px auto; */
+  font-size: 4em;
+  text-align: center;
+  /* padding: 10px auto; */
+  /* margin-left: 100px; */
+  /* text-align: left; */
+}
+
 
 .showcase img {
   height: 90%;
