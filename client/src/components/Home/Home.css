@@ -1,9 +1,8 @@
 .showcase .container {
   position: relative;
-  /* padding-top: -1em; */
   z-index: 3;
-  min-height: 100vh;
-
+  margin-top: -20px;
+  min-height: 90vh;
 }
 /* 
 .showcase .grid {
@@ -31,10 +30,9 @@
   /* text-align: left; */
 }
 
-
 .showcase img {
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
 }
 
 /* .showcase::before,
@@ -103,7 +101,6 @@
   font-size: 3em;
   color: var(--primary-color);
 }
-
 
 .events .images-anim {
   position: relative;
@@ -457,6 +454,9 @@ hr.style1 {
     height: auto;
     width: 100%;
   }
+  .showcase .container {
+    margin-top: -80px;
+  }
   .showcase-text {
     /* margin-top: 2em; */
     margin-top: 20px;
@@ -469,7 +469,7 @@ hr.style1 {
     text-align: center;
     line-height: 1.2em;
   }
- 
+
   .about h1,
   .events h1,
   .ieee_help h1,
@@ -480,14 +480,9 @@ hr.style1 {
 
   .about h5,
   .events h5,
-
-  .ieee_weeklies p
- {
+  .ieee_weeklies p {
     font-size: 1em;
   }
-
-
-
 
   .tech_heading .grid .os {
     grid-column: 1 / 1;
@@ -502,6 +497,4 @@ hr.style1 {
     height: 100%;
     width: 100%;
   }
-
-  
 }

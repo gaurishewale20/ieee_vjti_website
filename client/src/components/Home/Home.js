@@ -72,10 +72,9 @@
               informative events!
             </h5>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates voluptas repellat quasi! Obcaecati dolorem quam soluta
-              amet, natus perferendis tempora architecto odio illum delectus
-              atque saepe tenetur quasi placeat accusantium?
+              IEEE is a mix of all sorts of creative students that have a curiosity to keep on exploring new things! It's a place where innovation thrives.
+              After all, there's no limit to learning! :) IEEE is known for its research and development projects and spectacular events. Here at VJTI, we organize various events + mentorship programs so that you can turn your ideas into reality under the best teacher.
+              Check out some of IEEE's cool events, and register for the upcoming ones!
             </p>
             <div>
               <div className="btn btn-primary my-2">
@@ -100,7 +99,7 @@
             <div>
               <i className="far fa-newspaper fa-3x"></i>
               <h3>Newsletters</h3>
-              <p >
+              <p>
                 Join IEEE VJTI today and start connecting to breakthrough
                 technical information in your technology field. As a member of
                 IEEE VJTI you'll receive access to select content which will
@@ -175,7 +174,7 @@
             data-aos-duration="1600"
           >
             <h2>Machine Learning</h2>
-            <p>Make machines learn and improve by experience, just like humans!</p>
+            <p>Make machines learn and improve by experience, just like humans!. Teach a device how to analyse patterns in data.</p>
             <img src={ML} alt="Ml" loading="lazy" />
           </div>
 
@@ -185,7 +184,7 @@
             data-aos-duration="1600"
           >
             <h2>Internet of Things</h2>
-            <p>Make your devices smart and enable them to talk to you.</p>
+            <p>Make your devices smart and enable them to talk to you. Enable physical devices to connect to each other over the internet.</p>
             <img src={IOT} alt="iot" loading="lazy" />
           </div>
 
@@ -195,7 +194,7 @@
             data-aos-duration="1700"
           >
             <h2>Computation</h2>
-            <p></p>
+            <p>Generate computational models and simulations, and learn how engineering analysis and design works.</p>
             <img src={Computation} alt="Computation" loading="lazy" />
           </div>
 
@@ -215,7 +214,7 @@
             data-aos-duration="1700"
           >
             <h2>Mechatronics</h2>
-            <p>Delve deeper into this field and gain multidisciplinary skills and knowledge to solve complex problems.</p>
+            <p>Delve deeper into this domain, and integrate the mechanical, electronics and electrical fields to solve complex problems.</p>
             <img src={Mechatronics} alt="mechatronics" loading="lazy" />
           </div>
 
@@ -225,7 +224,7 @@
             data-aos-duration="1800"
           >
             <h2>Electric Vehicles</h2>
-            <p>Explore tech that goes behind creating electric vehicles.</p>
+            <p>Explore the technology that goes behind creating electric vehicles. It's tech for the future!</p>
             <img
               src={Electric_Vehicles}
               alt="electric vechicles"
@@ -239,7 +238,7 @@
             data-aos-duration="1800"
           >
             <h2>Biotechnology</h2>
-            <p></p>
+            <p>Combine the features of Biology and Technology to redesign healthcare devices for the future.</p>
             <img src={Biotechnology} alt="Biotech" loading="lazy" />
           </div>
 
