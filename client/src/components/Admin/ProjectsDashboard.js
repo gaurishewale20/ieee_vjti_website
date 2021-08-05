@@ -27,11 +27,11 @@ const ProjectsDashboard = () => {
   return (
 
     <div>  {admin?.result ? (
-        <div className='px-4'>
+        <div className='px-4 text-center'>
         <h1>Dashboard for Projects</h1>
         <hr />
         <Grid container justify="space-between" alignItems="stretch" spacing={3}>
-          <Grid item xs={12} sm={3} >
+          <Grid item xs={12} sm={4} md={4}>
             <ProjectForm currentId={currentId} setCurrentId={setCurrentId} />
           </Grid>
           <Grid item xs={12} sm={8} md={8}>

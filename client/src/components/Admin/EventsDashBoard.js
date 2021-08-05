@@ -27,11 +27,11 @@ const EventsDashboard = () => {
   return (
 
     <div>  {admin?.result ? (
-        <div className='px-4'>
+        <div className='px-4 text-center'>
         <h1>Dashboard for Events</h1>
         <hr />
-        <Grid container justify="space-between" alignItems="stretch" spacing={3}>
-          <Grid item xs={12} sm={3} >
+        <Grid container justify="space-between" alignItems="stretch" spacing={3} style={{paddingBottom:'1em'}}>
+          <Grid item xs={12} sm={4} md={4} >
             <Form currentId={currentId} setCurrentId={setCurrentId} />
           </Grid>
           <Grid item xs={12} sm={8} md={8}>
