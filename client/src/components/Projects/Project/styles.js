@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: "100%",
       // margin: "20px",
       margin: "0",
-      fontSize: "0.9em"
+      // fontSize: "1em"
 
     },
   },

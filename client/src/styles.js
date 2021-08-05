@@ -16,13 +16,24 @@ export default makeStyles((theme) => ({
     borderRadius: 15,
     margin: "30px 0",
     display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "10px 0",
+    minHeight: "75vh"
+    // border: '1px red solid',
+  },
+  projectsContainer: {
+    borderRadius: 15,
+    margin: "30px 0",
+    display: "flex",
     flexDirection: "column-reverse",
     justifyContent: "space-between",
     alignItems: "center",
     padding: "10px 0",
+    minHeight: "75vh"
     // border: '1px red solid',
   },
-
   paper: {
     marginTop: theme.spacing(8),
     display: "flex",
