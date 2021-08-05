@@ -100,8 +100,13 @@ const Footer = () => {
         {admin?.result ? (
           <div>
             
-            <div className="link">
+            <div className="link py-2">
           <a href="/" onClick={logout}>Logout</a>
+              </div>
+
+               
+            <div className="link">
+          <a href="/dashboard">Dashboard</a>
               </div>
           </div>
         
