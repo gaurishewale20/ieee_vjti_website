@@ -2,9 +2,48 @@
     /* max-width:400px; */
     /* max-height: 400px; */
     padding: 20px;
+   
+   
+}
+
+.magazine_div
+{
+    /* max-width:400px; */
+    /* max-height: 400px; */
+    padding: 20px;
+    min-height: 75vh;
 }
 
 .img{
     height: 571.42px;
     width: 404px;
+    border: 1px solid #654ea3;
+    transition: transform 0.2s ease-in;
+
+    
+}
+
+.img:hover{
+    transform: translateY(-5px);
+    border: 1px solid #eaafc8;
+}
+
+@media (max-width: 479px){
+    .img{
+        height: 380.94px;
+        width: 269.33px;
+     
+    
+        
+    }  
+}
+
+@media (max-width: 330px){
+    .img{
+        height: 285.71px;
+        width: 202px;
+     
+    
+        
+    }  
 }
