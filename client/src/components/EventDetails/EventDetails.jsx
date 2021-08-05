@@ -59,7 +59,7 @@ const EventDetails = () => {
             <Typography
               className={classes.eventmsg}
               gutterBottom
-              variant="body2"
+              variant="body1"
               component="p"
             >
               {event.event_desc}
