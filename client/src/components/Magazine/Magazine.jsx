@@ -4,7 +4,8 @@ import {mag_og} from "../Home/index"
 const Magazine = () => {
     return (
         <>
-         <div className="magazine_div text-center">
+         <div className="magazine_div text-center"  data-aos="fade-up"
+            data-aos-duration="1700">
         <h1>IEEE Annual Magazines</h1>
         <h5 className="text-secondary">Click on them to Read!</h5>
            
