@@ -35,10 +35,13 @@ export default makeStyles((theme) => ({
       color: '#fff'}
   },
 
-projContainer: {
-    display:'flex',
-    flexDirection: 'column-reverse'
-  }
 
+  [theme.breakpoints.down("xs")]: {
+    projContainer: {
+      display:'flex',
+      flexDirection: 'column-reverse'
+    }
+    
+  },
   
   }));

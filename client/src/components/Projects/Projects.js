@@ -19,6 +19,16 @@ const Projects = () => {
     return (
         <Grow in>
             <Container maxWidth="xl">
+            <div className="heading text-center mt-2">
+                    <Typography variant="h3" color="textPrimary" component="h1">
+                        Projects
+          </Typography>
+                </div>
+                <div className="text-center">
+                    <Typography variant="subtitle1" color="textSecondary" component="h2">
+                        A glimpse into some of our projects
+          </Typography>
+                </div>
                 <Grid
                     container
                     className={classes.mainContainer}
