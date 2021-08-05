@@ -27,16 +27,16 @@ const ProjectsDashboard = () => {
   return (
 
     <div>  {admin?.result ? (
-        <div className='px-4 text-center'>
-        <h1>Dashboard for Projects</h1>
+        <div className='px-4 '>
+        <h1 className="text-center">Dashboard for Projects</h1>
         <hr />
-        <Grid container justify="space-between" alignItems="stretch" spacing={3}>
+        <Grid  container justify="space-between" alignItems="stretch" spacing={3} style={{paddingBottom:'1em'}}>
           <Grid item xs={12} sm={4} md={4}>
             <ProjectForm currentId={currentId} setCurrentId={setCurrentId} />
           </Grid>
           <Grid item xs={12} sm={8} md={8}>
             { !projects.length  ? <div><CircularProgress /></div> : (
-              <Grid className={classes.holderContainer} container alignItems='stretch' spacing={10}>
+              <Grid className={classes.projContainer} container alignItems='stretch' spacing={10}>
                 {projects.map((project) => (
                   <Grid key={project._id} item xs={12} sm={6} md={6} >
                     <Project project={project} setCurrentId={setCurrentId} />
