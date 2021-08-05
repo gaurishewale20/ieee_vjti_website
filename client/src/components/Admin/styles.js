@@ -35,5 +35,10 @@ export default makeStyles((theme) => ({
       color: '#fff'}
   },
 
+projContainer: {
+    display:'flex',
+    flexDirection: 'column-reverse'
+  }
+
   
   }));
