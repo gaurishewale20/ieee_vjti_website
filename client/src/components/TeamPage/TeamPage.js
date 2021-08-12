@@ -3,13 +3,13 @@ import './TeamPage.css';
 class TeamPage extends Component {
   render() {
     return (
-      <div className="row TeampageBody ">
-        <div className="medium-12 columns">
-          <section id="team" className="team section-bg">
-            <div className="container" data-aos="fade-up">
-              <div className="section-title">
-                <h2>IEEE CORE COMMITTEE</h2>
-                <p>
+      <div className="row TeampageBody">
+        <div>
+          <section id="team" className="contain team section-bg ">
+            <div data-aos="fade-up" data-aos-duration="1300">
+              <div className="section-title text-center">
+                <h1 className=" ieee-core-title pt-5 pb-3">IEEE CORE COMMITTEE</h1>
+                <p className=" para py-3 text-justify px-2">
                   IEEE VJTI and its members inspire everyone to innovate for a
                   better tomorrow through publications, conferences, technology
                   standards, and professional and educational activities such as
@@ -20,22 +20,23 @@ class TeamPage extends Component {
                 </p>
               </div>
 
-              <div className="row">
-                <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div className="row cards-contain">
+                <div className="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center">
                   <div
                     className="member"
                     data-aos="fade-up"
-                    data-aos-delay="100"
+                    data-aos-duration="1300"
                   >
                     <div className="member-img">
                       <img
                         src="assets/img/team/sharal.jpeg"
                         className="img-fluid"
-                        alt=""
+                        alt="IEEE Chairman" 
+                        loading="lazy"
                       />
                       <div className="social">
                       
-                        <a href="https://www.linkedin.com/in/sharal-deegoju-8ab44320a">
+                        <a href="https://www.linkedin.com/in/sharal-deegoju-8ab44320a" target="_blank">
                           <i className="icofont-linkedin"></i>
                         </a>
                         <a href="mailto:sharaldeegoju@gmail.com">
@@ -44,27 +45,28 @@ class TeamPage extends Component {
                       </div>
                     </div>
                     <div className="member-info">
-                      <h4>SHARAL DEEGOJU</h4>
+                      <h4>Sharal Deegoju</h4>
                       <span>IEEE Chairman</span>
                     </div>
                   </div>
                 </div>
 
-                <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div className="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center">
                   <div
                     className="member"
                     data-aos="fade-up"
-                    data-aos-delay="200"
+                    data-aos-duration="1300"
                   >
                     <div className="member-img">
                       <img
                         src="assets/img/team/shreyash.jpeg"
                         className="img-fluid"
-                        alt=""
+                        alt="IEEE Vice Chairman" 
+                        loading="lazy"
                       />
                       <div className="social">
                         
-                        <a href="https://www.linkedin.com/in/shreyash-wasnik-44145818b/">
+                        <a href="https://www.linkedin.com/in/shreyash-wasnik-44145818b/"  target="_blank">
                           <i className="icofont-linkedin"></i>
                         </a>
                         <a href="mailto:shreyashwasnik24@gmail.com">
@@ -79,21 +81,22 @@ class TeamPage extends Component {
                   </div>
                 </div>
 
-                <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div className="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center">
                   <div
                     className="member"
                     data-aos="fade-up"
-                    data-aos-delay="300"
+                    data-aos-duration="1300"
                   >
                     <div className="member-img">
                       <img
                         src="assets/img/team/u1.jpeg"
                         className="img-fluid"
-                        alt=""
+                        alt="IEEE Secretary" 
+                        loading="lazy"
                       />
                       <div className="social">
                       
-                        <a href="https://www.linkedin.com/in/samina-a-863172190/">
+                        <a href="https://www.linkedin.com/in/samina-a-863172190/" target="_blank">
                           <i className="icofont-linkedin"></i>
                         </a>
                         <a href="mailto:attarisameena@gmail.com">
@@ -108,21 +111,22 @@ class TeamPage extends Component {
                   </div>
                 </div>
 
-                <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div className="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center">
                   <div
                     className="member"
                     data-aos="fade-up"
-                    data-aos-delay="400"
+                    data-aos-duration="1300"
                   >
                     <div className="member-img">
                       <img
                         src="assets/img/team/jay.jpeg"
                         className="img-fluid"
-                        alt=""
+                        alt="Treasurer" 
+                        loading="lazy"
                       />
                       <div className="social">
                         
-                        <a href="https://www.linkedin.com/in/jay-rampariya-0733841b3/">
+                        <a href="https://www.linkedin.com/in/jay-rampariya-0733841b3/"  target="_blank">
                           <i className="icofont-linkedin"></i>
                         </a>
                         <a href="mailto:jayrampariya06@gmail.com">
@@ -137,22 +141,23 @@ class TeamPage extends Component {
                   </div>
                 </div>
 
-                <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div className="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center">
                   <div
                     className="member"
                     data-aos="fade-up"
-                    data-aos-delay="400"
+                    data-aos-duration="1300"
                   >
                     <div className="member-img">
                       <img
                         src="assets/img/team/Aniket2.jpeg"
                         className="img-fluid"
-                        alt=""
+                        alt="Research and Development Head" 
+                        loading="lazy"
                       />
                       <div className="social">
                         {/* <ul class = "social-media"> */}
                         
-                        <a href="https://www.linkedin.com/company/ieee-vjti/about/">
+                        <a href="https://www.linkedin.com/company/ieee-vjti/about/" target="_blank">
                           <i className="icofont-linkedin"></i>
                         </a>
                         <a href="mailto:anmahajan_b19@ee.vjti.ac.in">
@@ -167,21 +172,22 @@ class TeamPage extends Component {
                   </div>
                 </div>
 
-                <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div className="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center">
                   <div
                     className="member"
                     data-aos="fade-up"
-                    data-aos-delay="400"
+                    data-aos-duration="1300"
                   >
                     <div className="member-img">
                       <img
                         src="assets/img/team/Omkar.jpeg"
                         className="img-fluid"
-                        alt=""
+                        alt="Project Manager" 
+                        loading="lazy"
                       />
                       <div className="social">
                       
-                        <a href="https://www.linkedin.com/in/omkar-dhatingan-60705b212">
+                        <a href="https://www.linkedin.com/in/omkar-dhatingan-60705b212" target="_blank">
                           <i className="icofont-linkedin"></i>
                         </a>
                         <a href="mailto:dhatingan2002@gmail.com">
@@ -196,21 +202,22 @@ class TeamPage extends Component {
                   </div>
                 </div>
 
-                <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div className="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center">
                   <div
                     className="member"
                     data-aos="fade-up"
-                    data-aos-delay="400"
+                    data-aos-duration="1300"
                   >
                     <div className="member-img">
                       <img
                         src="assets/img/team/Shreya.jpeg"
                         className="img-fluid"
-                        alt=""
+                        alt="Marketing Head" 
+                        loading="lazy"
                       />
                       <div className="social">
                      
-                        <a href="https://www.linkedin.com/company/ieee-vjti/about/">
+                        <a href="https://www.linkedin.com/company/ieee-vjti/about/" target="_blank">
                           <i className="icofont-linkedin"></i>
                         </a>
                         <a href="mailto:shriyamudras@gmail.com">
@@ -224,21 +231,22 @@ class TeamPage extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div className="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center">
                   <div
                     className="member"
                     data-aos="fade-up"
-                    data-aos-delay="400"
+                    data-aos-duration="1300"
                   >
                     <div className="member-img">
                       <img
                         src="assets/img/team/Deep.jpg"
                         className="img-fluid"
-                        alt=""
+                        alt="Event Manager" 
+                        loading="lazy"
                       />
                       <div className="social">
                        
-                        <a href="https://www.linkedin.com/in/deep-fumtiya-510958212/">
+                        <a href="https://www.linkedin.com/in/deep-fumtiya-510958212/" target="_blank">
                           <i className="icofont-linkedin"></i>
                         </a>
                         <a href="mailto:deepfumtiya210@gmail.com">
@@ -261,3 +269,5 @@ class TeamPage extends Component {
   }
 }
 export default TeamPage;
+
+

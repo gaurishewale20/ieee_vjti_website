@@ -1,138 +1,171 @@
  /* CSS Code */
+ 
  .TeampageBody {
-    font-family: "Open sans",sans-serif;
-    color: #444444;
-  }
-  a {
-    color: #e03a3c;
-  }
-  a:hover {
-    color: #f1c40f;
-    text-decoration: none;
-  }
-  .team .member {
-   margin-bottom: 20px;
-   overflow: hidden;
-   border-radius: 5px;
-   background: #fff;
+     font-family: "Open sans", sans-serif;
+     color: #fff;
+     background-color: #202A44;
+     margin-top: -15px;
+ }
+ 
+ .contain {
+     /* border: solid red 2px; */
+     padding: 0 1em;
+     margin: 0 3.5em;
+ }
+ /* .cards-contain {
+     padding-left: 1em;
+ } */
+ /* a {
+  color: #e03a3c;
+} */
+ 
+ .ieee-core-title {
+     border-bottom: 3px solid #e74c3c;
+ }
+ 
+ a:hover {
+     /* color: #f1c40f; */
+     text-decoration: none;
+ }
+ 
+ .team .member {
+     margin-bottom: 20px;
+     overflow: hidden;
+     border-radius: 5px;
+     background: #fff;
  }
  
  .team .member .member-img {
-   position: relative;
-   overflow: hidden;
-   width:255px;
-   height:250px;
+     position: relative;
+     overflow: hidden;
+     width: 255px;
+     height: 250px;
  }
  
  .team .member .social {
-   position: absolute;
-   left: 0;
-   bottom: 30px;
-   right: 0;
-   opacity: 0;
-   transition: ease-in-out 0.3s;
-   text-align: center;
+     position: absolute;
+     left: 0;
+     bottom: 30px;
+     right: 0;
+     opacity: 0;
+     transition: ease-in-out 0.3s;
+     text-align: center;
  }
+ 
  .team .member:hover .social {
-   opacity: 1;
-   bottom: 15px;
+     opacity: 1;
+     bottom: 15px;
  }
+ 
  .team .member .social a {
-   transition: color 0.3s;
-   color: #111111;
-   margin: 0 3px;
-   padding-top: 7px;
-   border-radius: 50px;
-   width: 36px;
-   height: 36px;
-   background: #e74c3c;
-   display: inline-block;
-   transition: ease-in-out 0.3s;
-   color: #fff;
+     transition: color 0.3s;
+     color: #111111;
+     margin: 0 3px;
+     padding-top: 7px;
+     border-radius: 50px;
+     width: 36px;
+     height: 36px;
+     background: #e74c3c;
+     display: inline-block;
+     transition: ease-in-out 0.3s;
+     color: #fff;
  }
  
  .team .member .social a:hover {
-   background: #111111;
+     background: #111111;
  }
+ 
  .team .member .member-info p {
-   font-style: italic;
-   font-size: 14px;
-   line-height: 26px;
-   color: #777777;
+     font-style: italic;
+     font-size: 14px;
+     line-height: 26px;
+     color: #777777;
  }
  
  .team .member .social i {
-   font-size: 18px;
+     font-size: 18px;
  }
  
  .team .member .member-info {
-   padding: 25px 15px;
+     padding: 25px 15px;
  }
  
  .team .member .member-info h4 {
-   font-weight: 700;
-   margin-bottom: 5px;
-   font-size: 18px;
-   color: #111111;
+     font-weight: 700;
+     margin-bottom: 5px;
+     font-size: 18px;
+     color: #111111;
  }
  
  .team .member .member-info span {
-   display: block;
-   font-size: 13px;
-   font-weight: 400;
-   color: #696969;
+     display: block;
+     font-size: 13px;
+     font-weight: 400;
+     color: #696969;
  }
  
+ @media (max-width: 420px) {
+     /* .para {
+         display: none;
+     } */
+     .contain {
+         padding: 0 0.5em;
+         margin: 0 0.5em;
+         /* border: 1px red solid; */
+     }
+     /* .cards-contain {
+         padding-left: 0.5em;
+     } */
+ }
  /* section */
- section {
-   padding: 60px 0;
-   overflow: hidden;
-   position: relative;
- } 
- 
- .section-title {
-   text-align: center;
-   padding-bottom: 30px;
-   position: relative;
- }
- .section-title h2 {
-   font-size: 32px;
-   font-weight: bold;
-   text-transform: uppercase;
-   margin-bottom: 20px;
-   padding-bottom: 20px;
-   position: relative;
- }
- .section-title h2::after {
-   content: "";
-   position: absolute;
-   display: block;
-   width: 50px;
-   height: 3px;
-   background: #e03a3c;
-   bottom: 0;
-   left: calc(50% - 25px);
-   color:#111111;
- }
- .section-title p {
-   margin-bottom: 0;
- }
-  
- .section-bg {
-   padding: 120px 0;
-   color: #fff;
- }
- 
- .section-bg:before {
-   content: "";
-   /* background-color: #20bf55;
-   background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%); */
-   background-color: #202A44;
- 
-   position: absolute;
-   bottom: 60px;
-   top: 60px;
-   left: 0;
-   right: 0;
-   transform: skewY(-3deg);
- }
+ /* section-team {
+ padding: 60px 0;
+ overflow: hidden;
+ position: relative;
+} 
+
+.section-team-title {
+ text-align: center;
+ padding-bottom: 30px;
+ position: relative;
+}
+.section-team-title h2 {
+ font-size: 32px;
+ font-weight: bold;
+ text-transform: uppercase;
+ margin-bottom: 20px;
+ padding-bottom: 20px;
+ position: relative;
+}
+.section-title h2::after {
+ content: "";
+ position: absolute;
+ display: block;
+ width: 50px;
+ height: 3px;
+ background: #e03a3c;
+ bottom: 0;
+ left: calc(50% - 25px);
+ color:#111111;
+}
+.section-title p {
+ margin-bottom: 0;
+}
+
+.section-bg {
+ padding: 120px 0;
+ color: #fff;
+}
+
+.section-bg:before {
+ content: "";
+
+ background-color: #202A44;
+
+ position: absolute;
+ bottom: 60px;
+ top: 60px;
+ left: 0;
+ right: 0;
+ transform: skewY(-3deg);
+} */
