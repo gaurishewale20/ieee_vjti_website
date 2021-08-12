@@ -41,12 +41,15 @@ const Footer = () => {
             <div>
               <h1>IEEE VJTI</h1>
               <div className="line1">
+                <a href="/">
                 <img
                   src={ieee_smallest_logo}
                   alt="ieee_logo"
                   loading="lazy"
                   id="ieee_smallest"
                 />
+                </a>
+               
               </div>
             </div>
             <div className="info">
