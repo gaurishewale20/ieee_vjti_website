@@ -7,8 +7,7 @@
    
     <>
       <section className="showcase">
-        <div className="container grid" data-aos="fade-in"
-    data-aos-duration="900">
+        <div className="container grid">
           <div className="showcase-text">
             <h1>LEARN.</h1>
 
