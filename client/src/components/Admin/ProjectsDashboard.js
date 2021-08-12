@@ -27,7 +27,7 @@ const ProjectsDashboard = () => {
   return (
 
     <div>  {admin?.result ? (
-        <div className='px-4 '>
+        <div className='px-4' >
         <h1 className="text-center">Dashboard for Projects</h1>
         <hr />
         <Grid  container justify="space-between" alignItems="stretch" spacing={3} style={{paddingBottom:'1em'}}>
