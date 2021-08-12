@@ -6,6 +6,7 @@ import { getEvents } from "../../actions/events";
 import useStyles from "../../styles";
 import EventsHolder from './EventsHolder';
 import Pagination from '../Pagination';
+//import ScrollToBottom from "../ScrollToBottom/ScrollToBottom";
 
 function useQuery() {
     return new URLSearchParams(useLocation().search);
@@ -37,7 +38,7 @@ const Events = () => {
                         Click on the events to know more.
           </Typography>
                 </div>
-
+             
                 <Grid
                     container
                     className={classes.mainContainer}

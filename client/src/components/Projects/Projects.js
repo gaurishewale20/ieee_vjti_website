@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import { getProjects } from "../../actions/projects";
 import useStyles from "../../styles";
 import ProjectsHolder from './ProjectHolder';
+//import ScrollToBottom from "../ScrollToBottom/ScrollToBottom";
 
 const Projects = () => {
     const [currentId, setCurrentId] = useState(0);
@@ -30,6 +31,7 @@ const Projects = () => {
                         A glimpse into some of our projects
           </Typography>
                 </div>
+                {/* <ScrollToBottom/> */}
                 <Grid
                     container
                     className={classes.mainContainer}

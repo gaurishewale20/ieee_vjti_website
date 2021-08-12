@@ -16,6 +16,8 @@ import Magazine from './components/Magazine/Magazine';
 import Membership from './components/Membership/Membership';
 import TeamPage from './components/TeamPage/TeamPage';
 import ContactUs from './components/ContactUs/ContactUs';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import ScrollToBottom from './components/ScrollToBottom/ScrollToBottom';
 // import Submit from './components/ContactUs/Submit/Submit';
 
 const App=()=> {
@@ -23,6 +25,8 @@ const App=()=> {
   return (
     <BrowserRouter>
     <Navbar/>
+    <ScrollToBottom/>
+    <ScrollToTop />
     <div className="App mt-5 pt-5">
       <Switch>
           <Route path="/" exact component={Home}/>

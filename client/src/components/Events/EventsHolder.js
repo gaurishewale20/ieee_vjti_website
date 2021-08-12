@@ -3,6 +3,7 @@ import { Grid, CircularProgress } from '@material-ui/core';
 import { useSelector } from 'react-redux';
 import useStyles from "../../styles";
 import Event from './Event/Event';
+// import ScrollToBottom from '../ScrollToBottom/ScrollToBottom';
 
 const EventsHolder = ({ setCurrentId }) => {
   const { events, isLoading }= useSelector((state) => state.events);
@@ -12,6 +13,8 @@ const EventsHolder = ({ setCurrentId }) => {
 
   return (
     isLoading ? <div><CircularProgress /></div> : (
+      <>
+         {/* <ScrollToBottom/> */}
       <Grid className={classes.holderContainer} container alignItems='stretch' spacing={3}>
         {events.map((event) => (
           <Grid key={event._id} item xs={12} sm={6} md={6} >
@@ -19,6 +22,7 @@ const EventsHolder = ({ setCurrentId }) => {
           </Grid>
         ))}
       </Grid>
+      </>
     )
   );
 };
