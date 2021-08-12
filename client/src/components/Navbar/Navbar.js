@@ -41,7 +41,7 @@ const Navbar = () => {
                 <a className="nav-link" aria-current="page" href="/teampage">Team</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">Contact Us</a>
+                <a className="nav-link" aria-current="page" href="/contactus">Contact Us</a>
               </li>
 
             </ul>
