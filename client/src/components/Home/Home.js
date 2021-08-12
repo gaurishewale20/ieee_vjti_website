@@ -4,9 +4,11 @@
   
  const Home = () => {
   return (
+   
     <>
       <section className="showcase">
-        <div className="container grid">
+        <div className="container grid" data-aos="fade-in"
+    data-aos-duration="900">
           <div className="showcase-text">
             <h1>LEARN.</h1>
 
@@ -71,7 +73,7 @@
               Our Student Committee arranges all sorts of fun, interactive &
               informative events!
             </h5>
-            <p>
+            <p className="text-justify">
               IEEE is a mix of all sorts of creative students that have a curiosity to keep on exploring new things! It's a place where innovation thrives.
               After all, there's no limit to learning! :) IEEE is known for its research and development projects and spectacular events. Here at VJTI, we organize various events + mentorship programs so that you can turn your ideas into reality under the best teacher.
               Check out some of IEEE's cool events, and register for the upcoming ones!
@@ -83,7 +85,7 @@
             </div>
           </div>
         </div>
-        <img src={bluewave}/>
+        <img src={bluewave} loading="lazy"/>
       </section>
 
       {/*  IEEE HELP  */}
@@ -332,7 +334,7 @@
             ></iframe>
           </div>
           <div className="canva_anim">
-            <img src={Fostering_Tech} alt="fostering_tech" />
+            <img src={Fostering_Tech} alt="fostering_tech" loading="lazy" />
           </div>
         </div>
       </section>

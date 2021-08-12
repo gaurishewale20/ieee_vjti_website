@@ -24,7 +24,8 @@ const Events = () => {
     }, [currentId, dispatch]);
 
     return (
-        <Grow in>
+        <div data-aos="fade-up"
+        data-aos-duration="1300">
             <Container maxWidth="xl">
                 <div className="heading text-center mt-2">
                     <Typography variant="h3" color="textPrimary" component="h1">
@@ -55,7 +56,7 @@ const Events = () => {
 
 
             </Container>
-        </Grow>
+        </div>
     );
 };
 

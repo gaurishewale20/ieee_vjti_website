@@ -17,8 +17,9 @@ const Projects = () => {
     }, [currentId, dispatch]);
 
     return (
-        <Grow in>
-            <Container maxWidth="xl">
+       <div data-aos="fade-up"
+       data-aos-duration="1300">
+            <Container maxWidth="xl" >
             <div className="heading text-center mt-2">
                     <Typography variant="h3" color="textPrimary" component="h1">
                         Projects
@@ -43,7 +44,8 @@ const Projects = () => {
 
 
             </Container>
-        </Grow>
+            </div>
+        
     );
 };
 
