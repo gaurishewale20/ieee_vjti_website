@@ -165,8 +165,7 @@ const Membership = () => {
               <div className="card-body">
                 <h4 className="card-title">FAQs</h4>
                 <p className="card-text text-muted">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Have any questions that you need to get answered? Go ahead and check out the official IEEE Support Center!
                 </p>
               </div>
               <div className="card-footer text-end">
