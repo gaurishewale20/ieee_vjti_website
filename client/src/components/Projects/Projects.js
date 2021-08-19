@@ -5,12 +5,19 @@ import { useDispatch } from "react-redux";
 import { getProjects } from "../../actions/projects";
 import useStyles from "../../styles";
 import ProjectsHolder from './ProjectHolder';
+import Pagination from '../PaginationProjects';
 //import ScrollToBottom from "../ScrollToBottom/ScrollToBottom";
+
+function useQuery() {
+    return new URLSearchParams(useLocation().search);
+}
 
 const Projects = () => {
     const [currentId, setCurrentId] = useState(0);
     const classes = useStyles();
     const dispatch = useDispatch();
+    const query = useQuery();
+    const page = query.get('page') || 1;
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -41,6 +48,9 @@ const Projects = () => {
                 >
                     <Grid item xs={12} sm={9} md={9}>
                         <ProjectsHolder setCurrentId={setCurrentId} />
+                        <Paper className={classes.pagination} elevation={6}>
+                            <Pagination page={page} />
+                        </Paper>
                     </Grid>
                 </Grid>
 

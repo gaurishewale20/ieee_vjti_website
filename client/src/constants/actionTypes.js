@@ -3,6 +3,7 @@ export const UPDATE = 'UPDATE';
 export const DELETE = 'DELETE';
 export const FETCH_ALL = 'FETCH_ALL';
 export const FETCH_EVENT = 'FETCH_EVENT';
+export const FETCH_PROJECT = 'FETCH_PROJECT';
 export const FETCH_BY_SEARCH = 'FETCH_BY_SEARCH';
 export const LIKE = 'LIKE';
 

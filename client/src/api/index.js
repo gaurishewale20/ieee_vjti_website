@@ -3,13 +3,13 @@ import axios from "axios";
 const API = axios.create({ baseURL: "http://localhost:5000" });
 
 API.interceptors.request.use((req) => {
-  if (localStorage.getItem("profile")) {
-    req.headers.Authorization = `Bearer ${
+    if (localStorage.getItem("profile")) {
+        req.headers.Authorization = `Bearer ${
       JSON.parse(localStorage.getItem("profile")).token
     }`;
-  }
+    }
 
-  return req;
+    return req;
 });
 
 
@@ -21,7 +21,7 @@ export const updateEvent = (id, updatedEvent) => API.patch(`/events/${id}`, upda
 export const deleteEvent = (id) => API.delete(`/events/${id}`);
 export const signIn = (adminData) => API.post("/admin/signin", adminData);
 
-export const fetchProjects = () => API.get("/rd");
+export const fetchProjects = (page) => API.get(`/rd?page=${page}`);
 export const createProject = (newProject) => API.post("/rd", newProject);
 export const updateProject = (id, updatedProject) => API.patch(`/rd/${id}`, updatedProject);
 export const deleteProject = (id) => API.delete(`/rd/${id}`);

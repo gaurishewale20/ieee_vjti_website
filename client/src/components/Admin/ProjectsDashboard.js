@@ -1,19 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { TextField, Button, Typography, Paper, Grid, CircularProgress } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
 import useStyles from './styles';
 import { getProjects } from "../../actions/projects";
 import Project from '../Projects/Project/Project';
 import ProjectForm from './ProjectForm';
+import Pagination from '../PaginationProjects';
 
+function useQuery() {
+  return new URLSearchParams(useLocation().search);
+}
 
 const ProjectsDashboard = () => {
   const [admin, setAdmin] = useState(JSON.parse(localStorage.getItem('profile')));
   const [currentId, setCurrentId] = useState(0);
   const dispatch = useDispatch();
   const classes = useStyles();
-  const projects = useSelector((state) => state.projects);
+  const { projects, isLoading } = useSelector((state) => state.projects);
+  const query = useQuery();
+  const page = query.get('page') || 1;
 
 
   useEffect(() => {
@@ -38,11 +44,14 @@ const ProjectsDashboard = () => {
             { !projects.length  ? <div><CircularProgress /></div> : (
               <Grid className={classes.projContainer} container alignItems='stretch' spacing={10}>
                 {projects.map((project) => (
-                  <Grid key={project._id} item xs={12} sm={6} md={6} >
+                  <Grid key={project._id} item xs={12} sm={12} md={12} >
                     <Project project={project} setCurrentId={setCurrentId} />
                   </Grid>
                 ))}
               </Grid>)}
+              <Paper className={classes.pagination} elevation={6}>
+                            <Pagination page={page} />
+                        </Paper>
           </Grid>
         </Grid>
       </div>

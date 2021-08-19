@@ -7,11 +7,13 @@ import useStyles from '../../styles';
 
 
 const ProjectsHolder = ({ setCurrentId }) => {
-  const projects = useSelector((state) => state.projects);
+  const { projects, isLoading } = useSelector((state) => state.projects);
   const classes = useStyles();
 
+  if(!projects.length && !isLoading) return 'No Projects';
+
   return (
-    !projects.length ? <CircularProgress /> : (
+    isLoading ? <div><CircularProgress /></div> : (
       <Grid className={classes.projectsContainer} container alignItems="stretch" spacing={3}>
         {projects.map((project) => (
           <Grid key={project._id} item xs={12} sm={12} md={12}>
