@@ -56,7 +56,7 @@ const EventsDashboard = () => {
         </Grid>
       </div>
     ) : (
-      <div className='pt-6 text-center mt-8' style={{ height:"70vh" }}>
+      <div className='pt-6 text-center mt-8' style={{ height:"75vh" }}>
         <h1 className='mt-6'>Dashboard for admin</h1>
         <Button component={Link} to="/admin" variant="contained" color="primary">Sign In</Button>
       </div>

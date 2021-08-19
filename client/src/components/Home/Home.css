@@ -68,6 +68,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 90vh;
 }
 
 .about h1 {
@@ -98,6 +99,7 @@
 .events .container {
     position: relative;
     padding-bottom: 4em;
+    min-height: 80vh;
 }
 
 .events .grid {
@@ -159,6 +161,7 @@
 .ieee_help {
     position: relative;
     padding-bottom: 3em;
+    min-height: 80vh;
     /* background-image: url("../../assets/images/purple_wave.png");
   background-repeat: no-repeat;
   background-size: cover;

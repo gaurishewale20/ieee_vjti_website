@@ -21,7 +21,7 @@ const Membership = () => {
     <>
       <div className="contain">
         <h1
-          className="text-center display-4 title py-5"
+          className="text-center title py-5"
           data-aos="fade-up"
           data-aos-duration="1000"
         >

@@ -9,17 +9,8 @@ import {
   Typography,
   ButtonBase,
 } from "@material-ui/core";
-//import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-//import ExpandLessIcon from '@material-ui/icons/ExpandLess';
-
-//import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
-//import DeleteIcon from '@material-ui/icons/Delete';
-//import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
-//import ThumbUpAltOutlined from '@material-ui/icons/ThumbUpAltOutlined';
 import { useDispatch } from "react-redux";
-//import moment from 'moment';
-//import FavoriteIcon from '@material-ui/icons/Favorite';
-//import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
+
 import { useLocation } from "react-router-dom";
 import {deleteEvent,getEvents} from '../../../actions/events';
 import useStyles from "./styles";
@@ -60,28 +51,10 @@ const Event = ({ event, setCurrentId }) => {
     <>
 
       <Card className={classes.card} raised elevation={6} >
-        {/* <CardActionArea className={classes.notwhite}> */}
-        {/* <ButtonBase
-          component="span"
-          name="test"
-          className={classes.cardAction}
-          onClick={openPost}
-        > */}
-          {/* <CardActionArea className={classes.notwhite}>
-            <div>
-              <img src={photoURL} className={classes.card_img} />
-            </div>
-          </CardActionArea> */}
+        
           <div onClick={openPost}>
           <CardMedia className={classes.media}  image={event.photo || "https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png"} title={event.title} />
      
-          {/* </ButtonBase>
-          <ButtonBase
-          component="span"
-          name="test"
-          className={classes.cardAction}
-          onClick={openPost}
-        > */}
           
             <div className={classes.details}>
               <CardContent>
@@ -90,11 +63,11 @@ const Event = ({ event, setCurrentId }) => {
                   color="textSecondary"
                   component="h2"
                 >
-                  {event.date}
+                  <i class="fas fa-calendar-day"></i> {event.date}
                 </Typography>
 
                 <Typography variant="body2" color="textSecondary" component="p">
-                  {event.location}
+                <i class="fas fa-map-marker-alt"></i> {event.location}
                 </Typography>
               </CardContent>
             </div>

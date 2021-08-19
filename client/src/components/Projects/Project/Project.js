@@ -74,7 +74,7 @@ const Project = ({ project, setCurrentId }) => {
               variant="body1"
               component="h2"
             >
-              <a href={project.github_link} target="_blank"><i class="fab fa-github-square fa-2x"></i>  Link to Project Code!</a>
+              <a href={project.github_link} target="_blank"><i class="fab fa-github-square"></i>  Link to Project Code!</a>
            
             </Typography>
             

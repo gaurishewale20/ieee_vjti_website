@@ -48,11 +48,11 @@ const EventDetails = () => {
 
           <Divider style={{ margin: "20px 0" }} />
           <Typography variant="body2" color="textSecondary" component="h2">
-            {event.date}
+          <i class="fas fa-calendar-day"></i> {event.date}
           </Typography>
 
           <Typography variant="body2" color="textSecondary" component="p">
-            {event.location}
+          <i class="fas fa-map-marker-alt"></i> {event.location}
           </Typography>
           <Divider style={{ margin: "20px 0" }} />
           {/* <div className={classes.desc_div}> */}
