@@ -1,0 +1,24 @@
+.bars{
+    width:90px;
+    height:120px;
+    --ieee_cyan: linear-gradient(#1abc9e 0 0);
+    --ieee_blue: linear-gradient(#386cb5 0 0);
+    --ieee_red: linear-gradient(#e74c3c 0 0);
+    --ieee_yellow: linear-gradient(#f1c40f 0 0);
+    background: 
+      var(--ieee_blue) 0% 33%,
+      var(--ieee_red) 33% 33%,
+      var(--ieee_yellow) 67% 67%,
+      var(--ieee_cyan) 100% 100%;
+    background-size:9px 65%;
+    background-repeat: no-repeat;
+    animation:b7 1s infinite linear alternate;
+  }
+  @keyframes b7 {
+     20%{background-size: 9px 100%,9px 20%,9px 20%,9px 20%;}
+     40%{background-size: 9px 50%,9px 20%,9px 20%,9px 20%;}
+     60%{background-size: 9px 80%,9px 50%,9px 80%,9px 80%;}
+     80%{background-size: 9px 50%,9px 20%,9px 50%,9px 80%;}
+     
+  }
+  
