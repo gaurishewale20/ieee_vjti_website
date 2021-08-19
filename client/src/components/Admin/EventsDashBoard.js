@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { TextField, Button, Typography, Paper, Grid, CircularProgress } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
 import useStyles from './styles';
 import { getEvents } from "../../actions/events";
 import Event from '../Events/Event/Event';
 import Form from './Form';
+import Pagination from '../Pagination';
 
+function useQuery() {
+  return new URLSearchParams(useLocation().search);
+}
 
 const EventsDashboard = () => {
   const [admin, setAdmin] = useState(JSON.parse(localStorage.getItem('profile')));
@@ -14,7 +18,8 @@ const EventsDashboard = () => {
   const dispatch = useDispatch();
   const classes = useStyles();
   const { events, isLoading } = useSelector((state) => state.events);
-
+  const query = useQuery();
+  const page = query.get('page') || 1;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -43,7 +48,11 @@ const EventsDashboard = () => {
                   </Grid>
                 ))}
               </Grid>)}
+              <Paper className={classes.pagination} elevation={6}>
+                            <Pagination page={page} />
+                        </Paper>
           </Grid>
+         
         </Grid>
       </div>
     ) : (
