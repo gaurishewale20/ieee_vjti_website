@@ -18,6 +18,7 @@ import TeamPage from './components/TeamPage/TeamPage';
 import ContactUs from './components/ContactUs/ContactUs';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import ScrollToBottom from './components/ScrollToBottom/ScrollToBottom';
+import Submit from './components/ContactUs/Submit';
 // import Submit from './components/ContactUs/Submit/Submit';
 
 const App=()=> {
@@ -43,8 +44,7 @@ const App=()=> {
           <Route path="/membership" exact component={Membership}/>
           <Route path="/teampage" exact component={TeamPage}/>
           <Route path="/contactus" exact component={ContactUs}/>
-          {/* <Route path="/contactsubmit" exact component={Submit}/> */}
-
+          <Route path="/formsubmitted" exact component={Submit}/>
       </Switch>
 </div>
     <Footer/>
