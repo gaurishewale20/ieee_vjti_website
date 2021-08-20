@@ -18,7 +18,7 @@ const ProjectForm = ({currentId,setCurrentId}) => {
   //console.log(" This is from Form "+state.events);
   const t = useSelector((state)=>state.projects);
   console.log(t);
-  const project = currentId ? t.find((msg) => msg._id === currentId) : null;
+  const project = currentId ? t.projects.find((msg) => msg._id === currentId) : null;
 
   useEffect(() => {
     if (project) setProjectData(project);
