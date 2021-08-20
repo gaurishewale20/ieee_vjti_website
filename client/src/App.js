@@ -43,7 +43,7 @@ const App=()=> {
           <Route path="/teampage" exact component={TeamPage}/>
           <Route path="/contactus" exact component={ContactUs}/>
           <Route path="/formsubmitted" exact component={Submit}/>
-          <Route path="/error404" exact component={Error404}/>
+          <Route component={Error404}/>
       </Switch>
 </div>
     <Footer/>
