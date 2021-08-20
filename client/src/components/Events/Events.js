@@ -38,8 +38,8 @@ const Events = () => {
                         Click on the events to know more.
           </Typography>
                 </div>
-             
-                <Grid
+ 
+                 <Grid
                     container
                     className={classes.mainContainer}
                     justify="stretch"
@@ -53,7 +53,15 @@ const Events = () => {
                             <Pagination page={page} />
                         </Paper>
                     </Grid>
-                </Grid>
+                </Grid> 
+                {/* <div className="contain">
+                    <div className="col-md-6 col-xl-4">
+                    <EventsHolder setCurrentId={setCurrentId} />
+                        <Paper className={classes.pagination} elevation={6}>
+                            <Pagination page={page} />
+                        </Paper>
+                    </div>
+                </div> */}
 
 
             </Container>
