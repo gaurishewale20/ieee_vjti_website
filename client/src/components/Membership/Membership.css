@@ -1,13 +1,8 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"); */
 .contain {
   /* border: solid red 2px; */
   padding: 0 1em;
 
   margin: 0 3.5em;
-}
-
-.display-4 {
-  font-family: "Dancing Script", sans-serif;
 }
 
 .card {

@@ -19,6 +19,7 @@ import ContactUs from './components/ContactUs/ContactUs';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import ScrollToBottom from './components/ScrollToBottom/ScrollToBottom';
 import Submit from './components/ContactUs/Submit';
+import Error404 from './components/Error404/Error404';
 
 const App=()=> {
   const admin = JSON.parse(localStorage.getItem('profile'));
@@ -42,6 +43,7 @@ const App=()=> {
           <Route path="/teampage" exact component={TeamPage}/>
           <Route path="/contactus" exact component={ContactUs}/>
           <Route path="/formsubmitted" exact component={Submit}/>
+          <Route path="/error404" exact component={Error404}/>
       </Switch>
 </div>
     <Footer/>
