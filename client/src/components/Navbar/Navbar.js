@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 import './Navbar.css';
 import IEEE_logo from '../../assets/images/ieee_logo.png';
 
@@ -23,25 +24,32 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">Home</a>
+                {/* <a className="nav-link active" aria-current="page" href="/">Home</a> */}
+                <NavLink exact className="nav-link nvlink" activeClassName="active" to="/">Home</NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="/events">Events</a>
+                {/* <a className="nav-link" aria-current="page" href="/events">Events</a> */}
+                <NavLink exact className="nav-link nvlink" activeClassName="active" to="/events">Events</NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="/rd">R&D</a>
+                {/* <a className="nav-link" aria-current="page" href="/rd">R&D</a> */}
+                <NavLink exact className="nav-link nvlink" activeClassName="active" to="/rd">R&D</NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="/magazine">Magazine</a>
+                {/* <a className="nav-link" aria-current="page" href="/magazine">Magazine</a> */}
+                <NavLink exact className="nav-link nvlink" activeClassName="active" to="/magazine">Magazine</NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="/membership">Membership</a>
+                {/* <a className="nav-link" aria-current="page" href="/membership">Membership</a> */}
+                <NavLink exact className="nav-link nvlink" activeClassName="active" to="/membership">Membership</NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="/teampage">Team</a>
+                {/* <a className="nav-link" aria-current="page" href="/teampage">Team</a> */}
+                <NavLink exact className="nav-link nvlink" activeClassName="active" to="/teampage">Team</NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="/contactus">Contact Us</a>
+                {/* <a className="nav-link" aria-current="page" href="/contactus">Contact Us</a> */}
+                <NavLink exact className="nav-link nvlink" activeClassName="active" to="/contactus">Contact Us</NavLink>
               </li>
 
             </ul>

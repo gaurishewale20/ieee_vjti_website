@@ -41,12 +41,16 @@
             margin: 0 5px;
         }
         
-        .nav-item a {
+        .nav-item .nvlink {
             text-decoration: none;
+            color: hsl(227, 4%, 54%);
+            padding: 2px;
+            margin: 0 5px;
+        }
+        .nav-item .active{
             color: var(--primary-color);
         }
-        
-        .nav-item a:hover {
+        .nav-item .nvlink:hover {
             color: var(--ieee_blue);
             font-weight: bold;
             border-bottom: 2px var(--ieee_blue) solid;
