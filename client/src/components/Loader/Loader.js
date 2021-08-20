@@ -1,10 +1,16 @@
 import React from 'react';
 import "./Loader.model.css";
-const Loader = () =>{
+const Loader = () => {
     return (
-    <div className="bars">
-
-    </div>);
+        < div className = "col-sm-2" >
+            <div id="bars1">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+             
+            </div></div>
+     );
 
 }
 

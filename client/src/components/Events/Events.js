@@ -46,7 +46,7 @@ const Events = () => {
                     alignItems="center"
                     spacing={3}
                 >
-                    <Grid item xs={12} sm={6} md={6}>
+                    <Grid item xs={12} sm={12} md={6} xl={4}>
 
                         <EventsHolder setCurrentId={setCurrentId} />
                         <Paper className={classes.pagination} elevation={6}>

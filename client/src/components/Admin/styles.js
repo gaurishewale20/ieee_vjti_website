@@ -34,8 +34,11 @@ export default makeStyles((theme) => ({
 
     },
     fileInput: {
-        // width: '100%',
-        // margin: '10px 5px 0 0',
+        width: '100%',
+        margin: theme.spacing(1),
+        display: 'flex',
+        flexWrap: 'wrap',
+        // marginBottom:5,
     },
 
     buttonSubmit: {
@@ -53,6 +56,10 @@ export default makeStyles((theme) => ({
         projContainer: {
             display: 'flex',
             flexDirection: 'column-reverse'
+        },
+        fileInput:{
+            justifyContent: 'center'
+
         }
 
     },
