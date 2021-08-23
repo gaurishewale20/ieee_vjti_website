@@ -1,4 +1,5 @@
 import { makeStyles } from "@material-ui/core/styles";
+import { Author } from "../../Membership/imports";
 
 const useStyles = makeStyles((theme) => ({
     media: {
@@ -7,6 +8,10 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
         // backgroundBlendMode: 'darken',
     },
+    MuiGridSpacingXs6: {
+        margin : 'auto',
+    },
+
     [theme.breakpoints.down('xs')]: {
         card: {
             margin: '0 1.5em',

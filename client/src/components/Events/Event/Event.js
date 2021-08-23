@@ -50,8 +50,8 @@ const Event = ({ event, setCurrentId }) => {
   return (
     <>
 
-      <Card className={classes.card} raised elevation={6} >
-        
+      {/* <Card className={classes.card} raised elevation={6} > */}
+        <div className="card mx-auto">
           <div onClick={openPost}>
           <CardMedia className={classes.media}  image={event.photo || "https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png"} title={event.title} />
      
@@ -85,7 +85,7 @@ const Event = ({ event, setCurrentId }) => {
          
           </div>
           { admin?.result && (location.pathname ==='/dashboard/events')?(
-        <div>
+        <div className="card-footer">
           <Button onClick={() => {setCurrentId(event._id); window.scrollTo(0,0);}} style={{ color: 'black' }} size="small">
             EDIT
           </Button>
@@ -94,8 +94,8 @@ const Event = ({ event, setCurrentId }) => {
             DELETE
           </Button>
         </div>):null}
-      </Card>
-     
+      {/* </Card> */}
+            </div>
      
         </>
 

@@ -15,13 +15,18 @@ const EventsHolder = ({ setCurrentId }) => {
     isLoading ? <div><CircularProgress /></div> : (
       <>
          {/* <ScrollToBottom/> */}
-      <Grid className={classes.holderContainer} container alignItems='stretch' spacing={3}>
+      {/* <Grid className={classes.holderContainer} container spacing={6}>
         {events.map((event) => (
-          <Grid key={event._id} item xs={12} sm={6} md={6} >
+          <Grid key={event._id} item xs={12} sm={6} md={4} >
             <Event event={event} setCurrentId={setCurrentId} />
           </Grid>
         ))}
-      </Grid>
+      </Grid> */}
+              {events.map((event) => (
+                <div className="col-md-6 col-xl-4">
+                   <Event event={event} setCurrentId={setCurrentId} />
+                </div>
+        ))}
       </>
     )
   );

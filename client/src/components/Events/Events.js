@@ -38,7 +38,7 @@ const Events = () => {
                         Click on the events to know more.
           </Typography>
                 </div>
- 
+{/*  
                  <Grid
                     container
                     className={classes.mainContainer}
@@ -53,7 +53,13 @@ const Events = () => {
                             <Pagination page={page} />
                         </Paper>
                     </Grid>
-                </Grid> 
+                </Grid>  */}
+                <div className="row" data-aos="fade-up" data-aos-duration="1000">
+                <EventsHolder setCurrentId={setCurrentId} />
+                        <Paper className={classes.pagination} elevation={6}>
+                            <Pagination page={page} />
+                        </Paper>
+                </div>
                 {/* <div className="contain">
                     <div className="col-md-6 col-xl-4">
                     <EventsHolder setCurrentId={setCurrentId} />
