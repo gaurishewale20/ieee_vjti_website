@@ -1,4 +1,4 @@
-import React,{ useEffect} from "react";
+import React,{ useEffect, useState} from "react";
 import  Pagination from "@material-ui/lab/Pagination";
 import  PaginationItem from "@material-ui/lab/PaginationItem";
 import { Link,useLocation } from "react-router-dom";
@@ -9,6 +9,9 @@ import {getEvents} from "../actions/events";
 import useStyles from "./styles";
 
 const Paginate = ({page}) => {
+
+
+
   const { numberOfPages } = useSelector((state) => state.events);
   const classes = useStyles();
   const dispatch = useDispatch();
@@ -16,6 +19,8 @@ const Paginate = ({page}) => {
   useEffect(()=>{
     if(page) dispatch(getEvents(page));
   },[page]);
+
+
 
   return (<>{
     (location.pathname == '/events')?( <Pagination
@@ -25,7 +30,7 @@ const Paginate = ({page}) => {
       variant="outlined"
       color="primary"
       renderItem={(item) => (
-        <PaginationItem {...item} component={Link} to={`/events?page=${item.page}`} />
+        <PaginationItem {...item} component={Link} to={`/events?page=${item.page}`} onClick={() => window.scrollTo( { top: 0, behavior: 'smooth' } )}  /> 
       )}
     />):( <Pagination
       classes={{ ul: classes.ul }}
@@ -34,7 +39,7 @@ const Paginate = ({page}) => {
       variant="outlined"
       color="primary"
       renderItem={(item) => (
-        <PaginationItem {...item} component={Link} to={`/dashboard/events?page=${item.page}`} />
+        <PaginationItem {...item} component={Link} to={`/dashboard/events?page=${item.page}`} onClick={() => window.scrollTo( { top: 0, behavior: 'smooth' } )}  />
       )}
     />)
       }   
