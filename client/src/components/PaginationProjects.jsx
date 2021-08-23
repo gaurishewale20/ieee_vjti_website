@@ -1,4 +1,4 @@
-import React,{ useEffect} from "react";
+import React,{ useEffect, useState} from "react";
 
 import  Pagination from "@material-ui/lab/Pagination";
 import  PaginationItem from "@material-ui/lab/PaginationItem";
@@ -15,12 +15,14 @@ const Paginate = ({page}) => {
   const dispatch = useDispatch();
   const location = useLocation();
 
-  
-
   useEffect(()=>{
     if(page) dispatch(getProjects(page));
     console.log(location);
   },[page]);
+
+    
+
+ 
 
   return (<div>
     {
@@ -31,7 +33,7 @@ const Paginate = ({page}) => {
       variant="outlined"
       color="primary"
       renderItem={(item) => (
-        <PaginationItem {...item} component={Link} to={`/rd?page=${item.page}`} />
+        <PaginationItem {...item} component={Link} to={`/rd?page=${item.page}`} onClick={() => window.scrollTo( { top: 0, behavior: 'smooth' } )}  />
       )}
     />):
     (
@@ -42,7 +44,7 @@ const Paginate = ({page}) => {
       variant="outlined"
       color="primary"
       renderItem={(item) => (
-        <PaginationItem {...item} component={Link} to={`/dashboard/projects?page=${item.page}`} />
+        <PaginationItem {...item} component={Link} to={`/dashboard/projects?page=${item.page}`} onClick={() => window.scrollTo( { top: 0, behavior: 'smooth' } )}  />
       )}
     />
     )
