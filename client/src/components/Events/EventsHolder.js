@@ -1,10 +1,9 @@
 import React from 'react';
-import { Grid, CircularProgress } from '@material-ui/core';
+// import { Grid, CircularProgress } from '@material-ui/core';
 import { useSelector } from 'react-redux';
 import useStyles from "../../styles";
 import Event from './Event/Event';
-// import ScrollToBottom from '../ScrollToBottom/ScrollToBottom';
-
+import Loader from '../Loader/Loader';
 const EventsHolder = ({ setCurrentId }) => {
   const { events, isLoading }= useSelector((state) => state.events);
   const classes = useStyles();
@@ -12,7 +11,7 @@ const EventsHolder = ({ setCurrentId }) => {
   if(!events.length && !isLoading) return 'No Events';
 
   return (
-    isLoading ? <div><CircularProgress /></div> : (
+    isLoading ? <center><Loader /></center> : (
       <>
          {/* <ScrollToBottom/> */}
       {/* <Grid className={classes.holderContainer} container spacing={6}>

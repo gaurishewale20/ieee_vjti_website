@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import './utilities.css';
 import {Switch,BrowserRouter,Route,Redirect} from 'react-router-dom';
-import Navbar from './components/Navbar/Navbar';
+import NavbarComponent from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
 import Events from './components/Events/Events';
@@ -25,7 +25,7 @@ const App=()=> {
   const admin = JSON.parse(localStorage.getItem('profile'));
   return (
     <BrowserRouter>
-    <Navbar/>
+    <NavbarComponent/>
     <ScrollToBottom/>
     <ScrollToTop />
     <div className="App mt-5 pt-5">
