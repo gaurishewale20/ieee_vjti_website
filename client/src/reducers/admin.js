@@ -15,14 +15,5 @@ const adminReducer = (state = { adminData: null }, action) => {
     }
   };
   
-// const adminReducer=(state ={adminData: null}, action)=>{
-//     switch(action.type)
-//     {
-//         case ADMIN:
-//             console.log(action?.data);
-//             return state;
-//         default: return state;
-//     }
-// }
 
   export default adminReducer;

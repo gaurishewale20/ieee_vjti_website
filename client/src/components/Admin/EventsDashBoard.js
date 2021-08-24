@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from "react-router-dom";
-import { TextField, Button, Typography, Paper, Grid, CircularProgress } from '@material-ui/core';
+import {  Button, Paper, Grid, CircularProgress } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
 import useStyles from './styles';
 import { getEvents } from "../../actions/events";
@@ -57,7 +57,7 @@ const EventsDashboard = () => {
       </div>
     ) : (
       <div className='pt-6 text-center mt-8' style={{ height:"75vh" }}>
-        <h1 className='mt-6'>Dashboard for admin</h1>
+        <h1 className='mt-6'>Dashboard for Admin</h1>
         <Button component={Link} to="/admin" variant="contained" color="primary">Sign In</Button>
       </div>
     )}

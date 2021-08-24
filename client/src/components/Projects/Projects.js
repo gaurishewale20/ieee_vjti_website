@@ -6,7 +6,7 @@ import { getProjects } from "../../actions/projects";
 import useStyles from "../../styles";
 import ProjectsHolder from './ProjectHolder';
 import Pagination from '../PaginationProjects';
-//import ScrollToBottom from "../ScrollToBottom/ScrollToBottom";
+
 
 function useQuery() {
     return new URLSearchParams(useLocation().search);
@@ -38,7 +38,6 @@ const Projects = () => {
                         A glimpse into some of our projects
           </Typography>
                 </div>
-                {/* <ScrollToBottom/> */}
                 <Grid
                     container
                     className={classes.mainContainer}

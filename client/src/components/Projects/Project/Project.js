@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 import {
   Card,
-  CardActions,
-  CardActionArea,
   CardContent,
-  CardMedia,
   Button,
   Typography,
-  ButtonBase,
   Divider
 } from "@material-ui/core";
 
@@ -34,11 +30,6 @@ const Project = ({ project, setCurrentId }) => {
        }
     }
 
-//   const openPost = (e) => {
-//     // dispatch(getPost(post._id, history));
-
-//     history.push(`/events/${event._id}`);
-//   };
 
   return (
 
@@ -78,7 +69,7 @@ const Project = ({ project, setCurrentId }) => {
            
             </Typography>
             
-          {/* </ButtonBase> */}
+         
           { admin?.result && (location.pathname ==='/dashboard/projects')?(
         <div>
           <Button onClick={() => {setCurrentId(project._id); window.scrollTo(0,0);}} style={{ color: 'black' }} size="small">

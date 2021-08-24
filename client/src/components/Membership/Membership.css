@@ -1,33 +1,33 @@
 .contain {
-  /* border: solid red 2px; */
-  padding: 0 1em;
-
-  margin: 0 3.5em;
+    padding: 0 1em;
+    margin: 0 3.5em;
 }
 
 .card {
-  height: 90%;
-  position: relative;
-  margin-bottom: 50px;
-  transition-property: transform;
-  transition-duration: 2s;
-  transition-timing-function: ease-in;
-  overflow: hidden;
+    height: 90%;
+    position: relative;
+    margin-bottom: 50px;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    overflow: hidden;
 }
 
 .card:hover {
-  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
 }
 
 .card:hover .card-img-top {
-  transition: all 0.9s ease;
-  transform: scale(1.15);
+    transition: all 0.9s ease;
+    transform: scale(1.15);
 }
 
 .card .wrapper-img {
-  overflow: hidden;
-  border-radius: 5px;
+    overflow: hidden;
+    border-radius: 5px;
 }
+
+
 /* 
 .wrapper-img img{
 
@@ -40,6 +40,7 @@
     height: 200px;
 } */
 
+
 /* .wrapper-img .card-img-top{
     opacity: 0.7;
     -webkit-transform:scale(1.15);
@@ -50,58 +51,55 @@
 } */
 
 .card-body h4 {
-  border-left: 3px solid hsl(240, 80%, 89%);
-  padding-left: 12px;
+    border-left: 3px solid hsl(240, 80%, 89%);
+    padding-left: 12px;
 }
 
 .card-img-top {
-  width: 100%;
-  height: 200px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 200px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
 }
 
 .card .card-body a {
-  position: absolute;
+    position: absolute;
 }
 
 .card-footer {
-  background-color: white;
-  border-top: none;
+    background-color: white;
+    border-top: none;
 }
 
 @media (max-width: 768px) {
-  .card {
-    width: 70%;
-  }
+    .card {
+        width: 70%;
+    }
 }
 
 @media (min-width: 768px) {
-  .card {
-    width: 90%;
-  }
+    .card {
+        width: 90%;
+    }
 }
 
 @media (min-width: 992px) {
-  .card {
-    width: 80%;
-  }
+    .card {
+        width: 80%;
+    }
 }
 
 @media (max-width: 520px) {
-  .btn-responsive {
-    padding: 0.5em;
-    line-height: 1em;
-  }
-
-  .contain {
-    padding: 0 0.5em;
-    margin: 0 0.5em;
-
-  }
-
-  .title{
-      font-size: 2.5em;
-      padding-bottom:0;
-      margin: 0;
-  }
+    .btn-responsive {
+        padding: 0.5em;
+        line-height: 1em;
+    }
+    .contain {
+        padding: 0 0.5em;
+        margin: 0 0.5em;
+    }
+    .title {
+        font-size: 2.5em;
+        padding-bottom: 0;
+        margin: 0;
+    }
 }

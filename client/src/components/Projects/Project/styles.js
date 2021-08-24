@@ -5,22 +5,19 @@ const useStyles = makeStyles((theme) => ({
         height: 0,
         paddingTop: "100%",
         backgroundColor: "rgba(0, 0, 0, 0.5)",
-        // backgroundBlendMode: 'darken',
+
     },
     [theme.breakpoints.down("sm")]: {
         card: {
-            // margin: "0 0.7em",
             marginRight: "3em",
-            // marginLeft: '-30px'
 
         },
         project_desc: {
             whiteSpace: "pre-wrap",
             padding: "0 6px",
             maxWidth: "100%",
-            // margin: "20px",
             margin: "0",
-            // fontSize: "1em"
+
 
         },
     },
@@ -39,8 +36,6 @@ const useStyles = makeStyles((theme) => ({
 
         position: "relative",
         maxHeight: "100%",
-        // we'll keep posts at size 400.
-        //width: "400px",
         transition: "transform 0.2s ease-in",
         "&:hover": {
             transform: "translateY(-5px)",
@@ -51,19 +46,15 @@ const useStyles = makeStyles((theme) => ({
     },
     notwhite: {
         position: "relative",
-        // border: 'solid black 8px',
-        // overflow: "hidden",
         maxHeight: "100%",
 
         maxWidth: "100%",
     },
     heading: {
-        //fontSize: theme.typography.pxToRem(15),
         flexBasis: "85%",
         flexShrink: 0,
     },
     secondaryHeading: {
-        //fontSize: theme.typography.pxToRem(15),
         color: theme.palette.text.secondary,
         marginTop: "5px",
     },
@@ -71,13 +62,11 @@ const useStyles = makeStyles((theme) => ({
         position: "absolute",
         bottom: "20px",
         left: "20px",
-        // color: 'white',
     },
     overlay2: {
         position: "absolute",
         top: "20px",
         right: "20px",
-        // color: 'white',
     },
     grid: {
         display: "flex",
@@ -103,10 +92,8 @@ const useStyles = makeStyles((theme) => ({
         overflowWrap: "break-word",
     },
     cardAction: {
-        //padding: "0 16px 8px 16px",
         display: "flex",
         justifyContent: "space-between",
-        //marginTop: "10px",
     },
     postmsg: {
         whiteSpace: "pre",

@@ -1,23 +1,20 @@
 import React, { useState, useEffect } from 'react';
-//import {Link} from "react-router-dom";
 import { TextField, Button, Typography, Paper, Grid } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
 import FileBase from 'react-file-base64';
 import useStyles from './styles';
 import { createEvent, updateEvent } from '../../actions/events';
-//import { getEvents} from "../../actions/events";
-//import EventsHolder from '../Events/EventsHolder';
+
 
 
 const Form = ({ currentId, setCurrentId }) => {
   const [admin, setAdmin] = useState(JSON.parse(localStorage.getItem('profile')));
   const [eventData, setEventData] = useState({ title: '', location: '', date: '', event_desc: '', photo: '' });
-  // const [currentId, setCurrentId] = useState(0);
   const dispatch = useDispatch();
   const classes = useStyles();
   //console.log(" This is from Form "+state.events);
   const t = useSelector((state) => state.events);
-  console.log(t);
+  // console.log(t);
   const event = currentId ? t.events.find((msg) => msg._id === currentId) : null;
 
   useEffect(() => {

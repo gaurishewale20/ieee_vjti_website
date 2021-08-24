@@ -39,7 +39,7 @@ const EventDetails = () => {
       style={{ padding: "20px", borderRadius: "15px",  minHeight:"70vh"  }}
       elevation={6}
     >
-    {/* <div className={classes.paper_content}> */}
+  
       <div className={classes.card}>
         <div className={classes.section}>
           <Typography variant="h3" component="h2">
@@ -55,7 +55,7 @@ const EventDetails = () => {
           <i class="fas fa-map-marker-alt"></i> {event.location}
           </Typography>
           <Divider style={{ margin: "20px 0" }} />
-          {/* <div className={classes.desc_div}> */}
+          
             <Typography
               className={classes.eventmsg}
               gutterBottom
@@ -64,7 +64,7 @@ const EventDetails = () => {
             >
               {event.event_desc}
             </Typography>
-          {/* </div> */}
+        
         </div>
         <div className={classes.imageSection}>
           <img
@@ -77,7 +77,7 @@ const EventDetails = () => {
           />
         </div>
       </div>
-      {/* </div> */}
+      
     </Paper>
     
   );

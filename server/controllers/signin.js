@@ -4,28 +4,18 @@ import jwt from 'jsonwebtoken';
 import mongoose from 'mongoose';
 
 import AdminModel from "../models/Admin.js";
-// const user = require('../../models/admin.js');
 const secret = 'test';
 
 const router = express.Router();
 
-//const token = jwt.sign( { email: "ieeevjtiofficial@gmail.com"}, secret, { expiresIn: "1h" } );
 
 
 export const signin = async (req, res) => {
   const { email, password } = req.body;
-  console.log(email, password);
+  // console.log(email, password);
  
   try {
-    // if(email === Admin.email) { 
-    //   console.log("User is found!")
-    //   const isPasswordCorrect = await bcrypt.compare(password, Admin.password);
-    //   if (!isPasswordCorrect) return res.status(400).json({ message: "Invalid credentials" });
 
-    //   const token = jwt.sign({ email: Admin.email }, secret, { expiresIn: "1h" });
-
-    //   res.status(200).json({ result: Admin, token });
-    // }
     const oldUser = await AdminModel.findOne({ email });
  
     console.log(oldUser);

@@ -16,9 +16,9 @@ export const getEvents = async(req,res)=>{
       const LIMIT = 6;
       // to get the starting index of every page
       const startIndex = ( Number(page) - 1 ) * LIMIT ;
-      console.log(req.query);
+      // console.log(req.query);
       const total = await EventsModel.countDocuments({});
-      // sorting cuz we want the posts from newest to oldest. -1 means sort in descending order
+      // sorting because we want the posts from newest to oldest. -1 means sort in descending order
       const events = await EventsModel.find().sort({ _id: -1 }).limit(LIMIT).skip(startIndex);
       res.status(200).json({data : events, currentPage: Number(page) , numberOfPages: Math.ceil(total/LIMIT)} );
     }

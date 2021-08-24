@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Container, Grow, Grid, Paper, AppBar, TextField, Button, Typography } from "@material-ui/core";
+import { Container,  Paper, Typography } from "@material-ui/core";
 import { useHistory, useLocation } from 'react-router-dom';
 import { useDispatch } from "react-redux";
 import { getEvents } from "../../actions/events";
 import useStyles from "../../styles";
 import EventsHolder from './EventsHolder';
 import Pagination from '../Pagination';
-//import ScrollToBottom from "../ScrollToBottom/ScrollToBottom";
+
 
 function useQuery() {
     return new URLSearchParams(useLocation().search);
@@ -38,36 +38,14 @@ const Events = () => {
                         Click on the events to know more.
           </Typography>
                 </div>
-{/*  
-                 <Grid
-                    container
-                    className={classes.mainContainer}
-                    justify="stretch"
-                    alignItems="center"
-                    spacing={3}
-                >
-                    <Grid item xs={12} sm={12} md={6} xl={4}>
 
-                        <EventsHolder setCurrentId={setCurrentId} />
-                        <Paper className={classes.pagination} elevation={6}>
-                            <Pagination page={page} />
-                        </Paper>
-                    </Grid>
-                </Grid>  */}
                 <div className="row" data-aos="fade-up" data-aos-duration="1000">
                 <EventsHolder setCurrentId={setCurrentId} />
                         <Paper className={classes.pagination} elevation={6}>
                             <Pagination page={page} />
                         </Paper>
                 </div>
-                {/* <div className="contain">
-                    <div className="col-md-6 col-xl-4">
-                    <EventsHolder setCurrentId={setCurrentId} />
-                        <Paper className={classes.pagination} elevation={6}>
-                            <Pagination page={page} />
-                        </Paper>
-                    </div>
-                </div> */}
+                
 
 
             </Container>

@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import {
-  Card,
-  CardActions,
-  CardActionArea,
+  
   CardContent,
   CardMedia,
   Button,
   Typography,
-  ButtonBase,
+ 
 } from "@material-ui/core";
 import { useDispatch } from "react-redux";
 
@@ -16,9 +14,6 @@ import {deleteEvent,getEvents} from '../../../actions/events';
 import useStyles from "./styles";
 import { useHistory } from "react-router-dom";
 
-/*const handleChange = () => (
-  rm == "READ MORE" ? "READ LESS" : "READ MORE"
-);*/
 
 const Event = ({ event, setCurrentId }) => {
   const [admin, setAdmin] = useState(JSON.parse(localStorage.getItem('profile')));
@@ -50,7 +45,7 @@ const Event = ({ event, setCurrentId }) => {
   return (
     <>
 
-      {/* <Card className={classes.card} raised elevation={6} > */}
+   
         <div className="card mx-auto">
           <div onClick={openPost}>
           <CardMedia className={classes.media}  image={event.photo || "https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png"} title={event.title} />
@@ -81,7 +76,7 @@ const Event = ({ event, setCurrentId }) => {
               {event.title}
             </Typography>
             
-          {/* </ButtonBase> */}
+         
          
           </div>
           { admin?.result && (location.pathname ==='/dashboard/events')?(
@@ -94,7 +89,7 @@ const Event = ({ event, setCurrentId }) => {
             DELETE
           </Button>
         </div>):null}
-      {/* </Card> */}
+ 
             </div>
      
         </>

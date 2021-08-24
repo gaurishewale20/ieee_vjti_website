@@ -17,7 +17,7 @@ const Paginate = ({page}) => {
 
   useEffect(()=>{
     if(page) dispatch(getProjects(page));
-    console.log(location);
+    // console.log(location);
   },[page]);
 
     

@@ -8,23 +8,15 @@
  }
  
  .contain {
-     /* border: solid red 2px; */
      padding: 0 1em;
      margin: 0 3.5em;
  }
- /* .cards-contain {
-     padding-left: 1em;
- } */
- /* a {
-  color: #e03a3c;
-} */
  
  .ieee-core-title {
      border-bottom: 3px solid #e74c3c;
  }
  
  a:hover {
-     /* color: #f1c40f; */
      text-decoration: none;
  }
  
@@ -105,67 +97,8 @@
  }
  
  @media (max-width: 420px) {
-     /* .para {
-         display: none;
-     } */
      .contain {
          padding: 0 0.5em;
          margin: 0 0.5em;
-         /* border: 1px red solid; */
      }
-     /* .cards-contain {
-         padding-left: 0.5em;
-     } */
  }
- /* section */
- /* section-team {
- padding: 60px 0;
- overflow: hidden;
- position: relative;
-} 
-
-.section-team-title {
- text-align: center;
- padding-bottom: 30px;
- position: relative;
-}
-.section-team-title h2 {
- font-size: 32px;
- font-weight: bold;
- text-transform: uppercase;
- margin-bottom: 20px;
- padding-bottom: 20px;
- position: relative;
-}
-.section-title h2::after {
- content: "";
- position: absolute;
- display: block;
- width: 50px;
- height: 3px;
- background: #e03a3c;
- bottom: 0;
- left: calc(50% - 25px);
- color:#111111;
-}
-.section-title p {
- margin-bottom: 0;
-}
-
-.section-bg {
- padding: 120px 0;
- color: #fff;
-}
-
-.section-bg:before {
- content: "";
-
- background-color: #202A44;
-
- position: absolute;
- bottom: 60px;
- top: 60px;
- left: 0;
- right: 0;
- transform: skewY(-3deg);
-} */

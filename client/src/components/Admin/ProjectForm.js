@@ -1,23 +1,20 @@
 import React, { useState, useEffect } from 'react';
 
-import { TextField, Button, Typography, Paper,Grid } from '@material-ui/core';
+import { TextField, Button, Paper } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
-import FileBase from 'react-file-base64';
 import useStyles from './styles';
 import { createProject,updateProject } from '../../actions/projects';
-//import { getEvents} from "../../actions/events";
-//import EventsHolder from '../Events/EventsHolder';
+
 
 
 const ProjectForm = ({currentId,setCurrentId}) => {
   const [admin, setAdmin] = useState(JSON.parse(localStorage.getItem('profile')));
   const [projectData, setProjectData] = useState({ title: '', project_desc: '', github_link: '', year: ''});
- // const [currentId, setCurrentId] = useState(0);
   const dispatch = useDispatch();
   const classes = useStyles();
   //console.log(" This is from Form "+state.events);
   const t = useSelector((state)=>state.projects);
-  console.log(t);
+  // console.log(t);
   const project = currentId ? t.projects.find((msg) => msg._id === currentId) : null;
 
   useEffect(() => {
