@@ -6,6 +6,7 @@ const eventsSchema = mongoose.Schema({
     location: String,
     event_desc: String,
     photo: String,
+    reg_link: String
 })
 
 var EventsModel = mongoose.model('EventsModel', eventsSchema);

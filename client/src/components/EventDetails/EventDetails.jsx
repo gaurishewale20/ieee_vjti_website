@@ -23,7 +23,7 @@ const EventDetails = () => {
 
   const openEvent = (_id) => history.push(`/events/${_id}`);
   if (!event) return null;
-  // if(!event) history.push(`/events/${_id}/notfound`);
+  // if(!event) history.push(`/oops`);
   if (isLoading) {
     return (
      <center>
@@ -65,6 +65,17 @@ const EventDetails = () => {
             >
               {event?.event_desc}
             </Typography>
+
+            <Typography
+              className={classes.reg_link}
+              gutterBottom
+              variant="body1"
+              component="h2"
+            >
+              <a href={event?.reg_link} target="_blank">Link to Register!</a>
+           
+            </Typography>
+            
         
         </div>
         <div className={classes.imageSection}>
