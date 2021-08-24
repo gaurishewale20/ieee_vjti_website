@@ -41,7 +41,7 @@
             margin: 0 5px;
         }
         
-        .nav-item .nvlink {
+        .nav-item {
             text-decoration: none;
             color: hsl(227, 4%, 54%);
             padding: 2px;
@@ -52,10 +52,10 @@
             color: var(--primary-color);
         }
         
-        .nav-item .nvlink:hover {
-            color: var(--ieee_blue);
-            font-weight: bold;
-            border-bottom: 2px var(--ieee_blue) solid;
+        .nvlink:hover {
+            /* color: var(--ieee_yellow); */
+            /* font-weight: bold; */
+            border-bottom: 2px var(--ieee_yellow) solid;
         }
         
         .custom-navbar .flex,

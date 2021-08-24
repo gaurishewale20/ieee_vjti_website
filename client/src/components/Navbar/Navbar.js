@@ -8,7 +8,7 @@ const NavComponent = () => {
 
   return (
     <>
-      <Navbar collapseOnSelect fixed='top' expand='lg' bg='light' variant='light'>
+      <Navbar collapseOnSelect fixed='top' expand='lg' bg='dark' variant='dark'>
         
         <div className="container-fluid">
           
@@ -17,12 +17,12 @@ const NavComponent = () => {
             
             <Navbar.Collapse id='responsive-navbar-nav' className="justify-content-end">
               <Nav>
-                <Nav.Link eventKey="1"><Link activeClassname="active" to='/' className="nav-link nvlink">Home</Link></Nav.Link>
-                <Nav.Link eventKey="2"><Link activeClassName="active" to='/events' className="nav-link nvlink">Events</Link></Nav.Link>
-                <Nav.Link eventKey="3"><Link activeClassName="active" to='/rd' className="nav-link nvlink">R&D</Link></Nav.Link>
-                <Nav.Link eventKey="4"><Link activeClassName="active" to='/magazine' className="nav-link nvlink">Magazine</Link></Nav.Link>
-                <Nav.Link eventKey="5"><Link activeClassName="active" to='/teampage' className="nav-link nvlink">Team</Link></Nav.Link>
-                <Nav.Link eventKey="6"><Link activeClassName="active" to='/contactus' className="nav-link nvlink">Contact Us</Link></Nav.Link>
+                <Nav.Link eventKey="1"><Link activeClassname="active nvlink" to='/' className="nav-link nvlink">Home</Link></Nav.Link>
+                <Nav.Link eventKey="2"><Link activeClassName="active nvlink" to='/events' className="nav-link nvlink">Events</Link></Nav.Link>
+                <Nav.Link eventKey="3"><Link activeClassName="active nvlink" to='/rd' className="nav-link nvlink">R&D</Link></Nav.Link>
+                <Nav.Link eventKey="4"><Link activeClassName="active nvlink" to='/magazine' className="nav-link nvlink">Magazine</Link></Nav.Link>
+                <Nav.Link eventKey="5"><Link activeClassName="active nvlink" to='/teampage' className="nav-link nvlink">Team</Link></Nav.Link>
+                <Nav.Link eventKey="6"><Link activeClassName="active nvlink" to='/contactus' className="nav-link nvlink">Contact Us</Link></Nav.Link>
 
               </Nav>
             </Navbar.Collapse>
