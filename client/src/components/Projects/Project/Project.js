@@ -71,7 +71,7 @@ const Project = ({ project, setCurrentId }) => {
             
          
           { admin?.result && (location.pathname ==='/dashboard/projects')?(
-        <div>
+        <div className="card-footer">
           <Button onClick={() => {setCurrentId(project._id); window.scrollTo(0,0);}} style={{ color: 'black' }} size="small">
             EDIT
           </Button>

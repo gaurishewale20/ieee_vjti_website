@@ -35,7 +35,7 @@ const ProjectsDashboard = () => {
 
     <div>  {admin?.result ? (
         <div className='px-4' >
-        <h1 className="text-center">Dashboard for Projects</h1>
+        <h1 className="text-center mt-3 pb-2">Dashboard for Projects</h1>
         <hr />
         <Grid  container justify="space-between" alignItems="stretch" spacing={3} style={{paddingBottom:'1em'}}>
           <Grid item xs={12} sm={4} md={4}>
