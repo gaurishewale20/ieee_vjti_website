@@ -23,6 +23,10 @@
             box-shadow: 0px 0px 5px 5px #e1e1e1;
         }
         
+        .navv {
+            background-color: #f8f8f8;
+        }
+        
         .custom-ieee-logo {
             width: 100px;
             height: 50px;
@@ -40,13 +44,12 @@
             padding: 10px;
             margin: 0 5px;
         }
-        
-        .nav-item {
+        /* .nav-item {
             text-decoration: none;
             color: hsl(227, 4%, 54%);
             padding: 2px;
             margin: 0 5px;
-        }
+        } */
         
         .nav-item .active {
             color: var(--primary-color);
@@ -55,7 +58,7 @@
         .nvlink:hover {
             /* color: var(--ieee_yellow); */
             /* font-weight: bold; */
-            border-bottom: 2px var(--ieee_yellow) solid;
+            border-bottom: 2px var(--ieee_blue) solid;
         }
         
         .custom-navbar .flex,
