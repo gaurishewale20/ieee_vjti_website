@@ -24,7 +24,23 @@ export default makeStyles((theme) => ({
 
         }
     },
-
+    dashpaper:{
+        
+            position: 'relative',
+            margin: '0 2em',
+            height: '100%',
+    
+            '@media (max-width:530px)': {
+                margin: '10px 1em ',
+    
+            },
+            // for galaxy fold mobiles. the extra small ones.
+            '@media (max-width:300px)': {
+                margin: '10px 1em ',
+    
+            }
+        
+    },
     card: {
 
         position: 'relative',

@@ -2,13 +2,13 @@ import React, { useEffect } from "react";
 import {
   Paper,
   Typography,
-  CircularProgress,
   Divider,
 } from "@material-ui/core";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams, useHistory } from "react-router-dom";
 import { getEvent } from "../../actions/events";
 import useStyles from "./styles";
+import Loader from '../Loader/Loader';
 
 const EventDetails = () => {
   const { event, events, isLoading } = useSelector((state) => state.events);
@@ -23,11 +23,12 @@ const EventDetails = () => {
 
   const openEvent = (_id) => history.push(`/events/${_id}`);
   if (!event) return null;
+  // if(!event) history.push(`/events/${_id}/notfound`);
   if (isLoading) {
     return (
-      <Paper elevation={6} className={classes.loadingPaper}>
-        <CircularProgress size="7em" />
-      </Paper>
+     <center>
+       <Loader/>
+     </center>
     );
   }
 
@@ -43,16 +44,16 @@ const EventDetails = () => {
       <div className={classes.card}>
         <div className={classes.section}>
           <Typography variant="h3" component="h2">
-            {event.title}
+            {event?.title}
           </Typography>
 
           <Divider style={{ margin: "20px 0" }} />
           <Typography variant="body2" color="textSecondary" component="h2">
-          <i class="fas fa-calendar-day"></i> {event.date}
+          <i class="fas fa-calendar-day"></i> {event?.date}
           </Typography>
 
           <Typography variant="body2" color="textSecondary" component="p">
-          <i class="fas fa-map-marker-alt"></i> {event.location}
+          <i class="fas fa-map-marker-alt"></i> {event?.location}
           </Typography>
           <Divider style={{ margin: "20px 0" }} />
           
@@ -62,7 +63,7 @@ const EventDetails = () => {
               variant="body1"
               component="p"
             >
-              {event.event_desc}
+              {event?.event_desc}
             </Typography>
         
         </div>
@@ -70,10 +71,10 @@ const EventDetails = () => {
           <img
             className={classes.media}
             src={
-              event.photo ||
+              event?.photo ||
               "https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png"
             }
-            alt={event.title}
+            alt={event?.title}
           />
         </div>
       </div>

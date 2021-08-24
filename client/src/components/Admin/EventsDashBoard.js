@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from "react-router-dom";
-import {  Button, Paper, Grid, CircularProgress } from '@material-ui/core';
+import {  Button, Paper, Grid} from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
 import useStyles from './styles';
 import { getEvents } from "../../actions/events";
 import Event from '../Events/Event/Event';
 import Form from './Form';
 import Pagination from '../Pagination';
-
+import Loader from '../Loader/Loader';
 function useQuery() {
   return new URLSearchParams(useLocation().search);
 }
@@ -40,7 +40,7 @@ const EventsDashboard = () => {
             <Form currentId={currentId} setCurrentId={setCurrentId} />
           </Grid>
           <Grid item xs={12} sm={8} md={8}>
-            {isLoading ? <div><CircularProgress /></div> : (
+            {isLoading ? <center><Loader/></center> : (
               <Grid className={classes.holderContainer} container alignItems='stretch' spacing={10}>
                 {events.map((event) => (
                   <Grid key={event._id} item xs={12} sm={6} md={6} >

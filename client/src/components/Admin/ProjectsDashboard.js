@@ -7,6 +7,7 @@ import { getProjects } from "../../actions/projects";
 import Project from '../Projects/Project/Project';
 import ProjectForm from './ProjectForm';
 import Pagination from '../PaginationProjects';
+import Loader from '../Loader/Loader';
 
 function useQuery() {
   return new URLSearchParams(useLocation().search);
@@ -41,7 +42,7 @@ const ProjectsDashboard = () => {
             <ProjectForm currentId={currentId} setCurrentId={setCurrentId} />
           </Grid>
           <Grid item xs={12} sm={8} md={8}>
-            { !projects.length  ? <div><CircularProgress /></div> : (
+            { !projects.length  ? <center><Loader/></center> : (
               <Grid className={classes.projContainer} container alignItems='stretch' spacing={10}>
                 {projects.map((project) => (
                   <Grid key={project._id} item xs={12} sm={12} md={12} >

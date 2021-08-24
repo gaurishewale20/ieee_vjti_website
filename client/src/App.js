@@ -9,6 +9,7 @@ import Events from './components/Events/Events';
 import Projects from './components/Projects/Projects';
 import Dashboard from './components/Admin/Dashboard';
 import EventsDashboard from './components/Admin/EventsDashBoard';
+import DetailedEvent from './components/Admin/DetailedEvent';
 import ProjectsDashboard from './components/Admin/ProjectsDashboard';
 import AdminLogin from './components/Admin/AdminLogin/AdminLogin';
 import EventDetails from './components/EventDetails/EventDetails';
@@ -37,6 +38,7 @@ const App=()=> {
           <Route path="/admin" exact component={()=>(!admin ? <AdminLogin/> : <Redirect to ="/"/>)}/>
           <Route path="/dashboard" exact component={Dashboard}/>
           <Route path="/dashboard/events" exact component={EventsDashboard}/>
+          <Route path="/dashboard/events/:id" exact component={DetailedEvent}/>
           <Route path="/dashboard/projects" exact component={ProjectsDashboard}/>
           <Route path="/magazine" exact component={Magazine}/>
           <Route path="/membership" exact component={Membership}/>
