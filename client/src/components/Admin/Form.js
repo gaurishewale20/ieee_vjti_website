@@ -43,6 +43,7 @@ const Form = ({ currentId, setCurrentId }) => {
         <TextField name="title" required variant="outlined" label="Title" fullWidth value={eventData.title} onChange={(e) => setEventData({ ...eventData, title: e.target.value })} />
         <TextField name="location" required variant="outlined" label="Location" fullWidth value={eventData.location} onChange={(e) => setEventData({ ...eventData, location: e.target.value })} />
         <TextField name="date" required variant="outlined" label="Date" fullWidth value={eventData.date} onChange={(e) => setEventData({ ...eventData, date: e.target.value })} />
+        <TextField name="reg_link" required variant="outlined" label="Registration Link" fullWidth value={eventData.reg_link} onChange={(e) => setEventData({ ...eventData, reg_link: e.target.value })} />
         <TextField name="event_desc" required variant="outlined" label="Description" fullWidth multiline rows={6} value={eventData.event_desc} onChange={(e) => setEventData({ ...eventData, event_desc: e.target.value })} />
        <div className={classes.fileInput}><FileBase type="file" multiple={false} onDone={({ base64 }) => setEventData({ ...eventData, photo: base64 })} /></div>
         <Button className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Submit</Button>

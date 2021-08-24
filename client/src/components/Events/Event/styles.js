@@ -90,6 +90,12 @@ const useStyles = makeStyles((theme) => ({
         width: "100%",
         height: "100%",
     },
+    button: {
+        '&:hover': {
+            backgroundColor: '#fff1d0',
+            color: '#3c52b2',
+        }
+    }
 }));
 
 export default useStyles;

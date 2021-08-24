@@ -36,6 +36,17 @@ const ProjectsDashboard = () => {
     <div>  {admin?.result ? (
         <div className='px-4' >
         <h1 className="text-center mt-3 pb-2">Dashboard for Projects</h1>
+       
+          <Button
+            component={Link}
+            to="/dashboard/events"
+            variant="contained"
+            color="primary"
+            className={classes.button}
+          >
+            Events Dashboard
+          </Button>
+
         <hr />
         <Grid  container justify="space-between" alignItems="stretch" spacing={3} style={{paddingBottom:'1em'}}>
           <Grid item xs={12} sm={4} md={4}>

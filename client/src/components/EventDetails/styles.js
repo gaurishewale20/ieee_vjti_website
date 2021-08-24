@@ -24,22 +24,22 @@ export default makeStyles((theme) => ({
 
         }
     },
-    dashpaper:{
-        
-            position: 'relative',
-            margin: '0 2em',
-            height: '100%',
-    
-            '@media (max-width:530px)': {
-                margin: '10px 1em ',
-    
-            },
-            // for galaxy fold mobiles. the extra small ones.
-            '@media (max-width:300px)': {
-                margin: '10px 1em ',
-    
-            }
-        
+    dashpaper: {
+
+        position: 'relative',
+        margin: '0 2em',
+        height: '100%',
+
+        '@media (max-width:530px)': {
+            margin: '10px 1em ',
+
+        },
+        // for galaxy fold mobiles. the extra small ones.
+        '@media (max-width:300px)': {
+            margin: '10px 1em ',
+
+        }
+
     },
     card: {
 
@@ -77,6 +77,18 @@ export default makeStyles((theme) => ({
         whiteSpace: "pre-wrap",
         maxWidth: '100%'
 
-    }
+    },
+    button: {
+        '&:hover': {
+            backgroundColor: '#fff1d0',
+            color: '#3c52b2',
+        }
+    },
+    reg_link: {
+        paddingTop: "15px",
+        // margin: "20px",
+        // marginTop: "0",
+        overflowWrap: "break-word",
+    },
 
 }));

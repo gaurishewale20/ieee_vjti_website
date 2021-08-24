@@ -40,6 +40,12 @@ export default makeStyles((theme) => ({
         flexWrap: 'wrap',
         // marginBottom:5,
     },
+    button: {
+        '&:hover': {
+            backgroundColor: '#fff1d0',
+            color: '#3c52b2',
+        }
+    },
 
     buttonSubmit: {
         marginBottom: 5,
@@ -57,7 +63,7 @@ export default makeStyles((theme) => ({
             display: 'flex',
             flexDirection: 'column-reverse'
         },
-        fileInput:{
+        fileInput: {
             justifyContent: 'center'
 
         }

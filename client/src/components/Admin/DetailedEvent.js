@@ -12,6 +12,9 @@ import { deleteEvent, getEvent } from '../../actions/events';
 import useStyles from '../EventDetails/styles';
 import Loader from '../Loader/Loader';
 import Form from './Form';
+
+
+
 const DetailedEvent = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
@@ -35,11 +38,12 @@ const DetailedEvent = () => {
   }, [id])
 
   return (
+  
 
     <div>  {admin?.result ? (
       <div className='px-4'>
         <h1 className=" text-center">Dashboard for Events</h1>
-        <Button component={Link} to="/dashboard/events" variant="contained" color="primary">All events</Button>
+        <Button component={Link} to="/dashboard/events" variant="contained" color="primary" className={classes.button}>All Events</Button>
         <hr />
         <Grid container justify="space-between" alignItems="stretch" spacing={3} style={{ paddingBottom: '1em' }}>
           <Grid item xs={12} sm={5} md={4} >
@@ -78,6 +82,15 @@ const DetailedEvent = () => {
                       {event?.event_desc}
                     </Typography>
 
+                    <Typography
+              className={classes.reg_link}
+              gutterBottom
+              variant="body1"
+              component="h2"
+            >
+              <a href={event?.reg_link} target="_blank">Link to Register!</a>
+           
+            </Typography>
                   </div>
                   <div className={classes.imageSection}>
                     <img

@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@material-ui/core";
+import useStyles from "../Events/Event/styles";
 
 const Dashboard = () => {
   const [admin, setAdmin] = useState(
     JSON.parse(localStorage.getItem("profile"))
   );
+
+  const classes = useStyles();
 
   return (
     <div className="pt-6 text-center mt-8" style={{ height: "75vh" }}>
@@ -17,8 +20,9 @@ const Dashboard = () => {
             to="/dashboard/events"
             variant="contained"
             size="large"
-            color="secondary"
+            color="primary"
             style={{ padding: "1em", margin: "1em" }}
+            className={classes.button}
           >
             Events
           </Button>
@@ -29,8 +33,9 @@ const Dashboard = () => {
             to="/dashboard/projects"
             variant="contained"
             size="large"
-            color="secondary"
+            color="primary"
             style={{ padding: "1em", margin: "1em" }}
+            className={classes.button}
           >
             Projects
           </Button>
@@ -43,6 +48,7 @@ const Dashboard = () => {
             to="/admin"
             variant="contained"
             color="primary"
+            className={classes.button}
           >
             Sign In
           </Button>
