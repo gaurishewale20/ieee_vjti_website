@@ -8,7 +8,7 @@ const ContactUs = () => (
   <div className="container pb-2 ">
     <div className="row justify-content-center">
     <h1
-          className="text-center title py-3 contact_us_title"
+          className="text-center title py-3 contact_us_title pt-5"
           
         >
          CONTACT US
