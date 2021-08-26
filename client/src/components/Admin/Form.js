@@ -9,7 +9,7 @@ import { createEvent, updateEvent } from '../../actions/events';
 
 const Form = ({ currentId, setCurrentId }) => {
   const [admin, setAdmin] = useState(JSON.parse(localStorage.getItem('profile')));
-  const [eventData, setEventData] = useState({ title: '', location: '', date: '', event_desc: '', photo: '' });
+  const [eventData, setEventData] = useState({ title: '', location: '', date: '', event_desc: '', photo: '',reg_link:'' });
   const dispatch = useDispatch();
   const classes = useStyles();
   //console.log(" This is from Form "+state.events);
@@ -23,7 +23,7 @@ const Form = ({ currentId, setCurrentId }) => {
 
   const clear = () => {
     setCurrentId(0);
-    setEventData({ title: '', location: '', date: '', event_desc: '', photo: '' });
+    setEventData({ title: '', location: '', date: '', event_desc: '', photo: '',reg_link:'' });
   };
 
   const handleSubmit = async (e) => {
