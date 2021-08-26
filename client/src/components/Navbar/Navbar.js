@@ -21,8 +21,9 @@ const NavComponent = () => {
                 <Nav.Link eventKey="2"><Link activeClassName="active" to='/events' className="nav-link nvlink">Events</Link></Nav.Link>
                 <Nav.Link eventKey="3"><Link activeClassName="active" to='/rd' className="nav-link nvlink">R&D</Link></Nav.Link>
                 <Nav.Link eventKey="4"><Link activeClassName="active" to='/magazine' className="nav-link nvlink">Magazine</Link></Nav.Link>
-                <Nav.Link eventKey="5"><Link activeClassName="active" to='/teampage' className="nav-link nvlink">Team</Link></Nav.Link>
-                <Nav.Link eventKey="6"><Link activeClassName="active" to='/contactus' className="nav-link nvlink">Contact Us</Link></Nav.Link>
+                <Nav.Link eventKey="5"><Link activeClassName="active" to='/membership' className="nav-link nvlink">Membership</Link></Nav.Link>
+                <Nav.Link eventKey="6"><Link activeClassName="active" to='/teampage' className="nav-link nvlink">Team</Link></Nav.Link>
+                <Nav.Link eventKey="7"><Link activeClassName="active" to='/contactus' className="nav-link nvlink">Contact Us</Link></Nav.Link>
 
               </Nav>
             </Navbar.Collapse>

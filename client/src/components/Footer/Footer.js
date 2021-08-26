@@ -54,7 +54,7 @@ const Footer = () => {
             </div>
             <div className="info">
               <h3>
-                <a href="/"> Become a Member </a>
+                <a href="/membership"> Become a Member </a>
               </h3>
               <p>
                 Get notified with the latest updates in the technical world,
