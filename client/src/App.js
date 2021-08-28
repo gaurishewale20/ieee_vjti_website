@@ -35,7 +35,7 @@ const App=()=> {
           <Route path="/events" exact component={Events}/>
           <Route path="/events/:id" exact component={EventDetails}/>
           <Route path="/rd" exact component={Projects}/>
-          <Route path="/admin" exact component={()=>(!admin ? <AdminLogin/> : <Redirect to ="/"/>)}/>
+          <Route path="/admin" exact component={AdminLogin}/>
           <Route path="/dashboard" exact component={Dashboard}/>
           <Route path="/dashboard/events" exact component={EventsDashboard}/>
           <Route path="/dashboard/events/:id" exact component={DetailedEvent}/>
