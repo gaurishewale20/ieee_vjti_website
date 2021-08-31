@@ -113,7 +113,7 @@ const ContactUs = () => (
             </div>
             <div className="col-md-4 d-flex pt-6 justify-content-center align-items-center">
               <div id="map">
-                <img src={vjti} className="img-fluid rounded" loading="lazy"></img>
+                <img src={vjti} className="img-fluid rounded" loading="lazy" alt="vjti"></img>
               </div>
             </div>
           </div>

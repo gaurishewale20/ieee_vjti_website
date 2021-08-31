@@ -17,6 +17,7 @@ const Project = ({ project, setCurrentId }) => {
   const admin = JSON.parse(localStorage.getItem('profile'));
   const dispatch = useDispatch();
   const classes = useStyles();
+  // const history = useHistory();
 
   const location = useLocation();
   

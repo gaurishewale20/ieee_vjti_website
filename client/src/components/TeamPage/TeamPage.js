@@ -36,7 +36,7 @@ class TeamPage extends Component {
                       />
                       <div className="social">
                       
-                        <a href="https://www.linkedin.com/in/sharal-deegoju-8ab44320a" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/sharal-deegoju-8ab44320a" target="_blank" rel="noreferrer">
                           <i className="icofont-linkedin"></i>
                         </a>
                         <a href="mailto:sharaldeegoju@gmail.com">
@@ -66,7 +66,7 @@ class TeamPage extends Component {
                       />
                       <div className="social">
                         
-                        <a href="https://www.linkedin.com/in/shreyash-wasnik-44145818b/"  target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/shreyash-wasnik-44145818b/"  target="_blank" rel="noreferrer" >
                           <i className="icofont-linkedin"></i>
                         </a>
                         <a href="mailto:shreyashwasnik24@gmail.com">
@@ -96,7 +96,7 @@ class TeamPage extends Component {
                       />
                       <div className="social">
                       
-                        <a href="https://www.linkedin.com/in/samina-a-863172190/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/samina-a-863172190/" target="_blank" rel="noreferrer">
                           <i className="icofont-linkedin"></i>
                         </a>
                         <a href="mailto:attarisameena@gmail.com">
@@ -126,7 +126,7 @@ class TeamPage extends Component {
                       />
                       <div className="social">
                         
-                        <a href="https://www.linkedin.com/in/jay-rampariya-0733841b3/"  target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/jay-rampariya-0733841b3/"  target="_blank" rel="noreferrer">
                           <i className="icofont-linkedin"></i>
                         </a>
                         <a href="mailto:jayrampariya06@gmail.com">
@@ -157,7 +157,7 @@ class TeamPage extends Component {
                       <div className="social">
                         {/* <ul class = "social-media"> */}
                         
-                        <a href="https://www.linkedin.com/company/ieee-vjti/about/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/company/ieee-vjti/about/" target="_blank" rel="noreferrer">
                           <i className="icofont-linkedin"></i>
                         </a>
                         <a href="mailto:anmahajan_b19@ee.vjti.ac.in">
@@ -187,7 +187,7 @@ class TeamPage extends Component {
                       />
                       <div className="social">
                       
-                        <a href="https://www.linkedin.com/in/omkar-dhatingan-60705b212" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/omkar-dhatingan-60705b212" target="_blank" rel="noreferrer">
                           <i className="icofont-linkedin"></i>
                         </a>
                         <a href="mailto:dhatingan2002@gmail.com">
@@ -217,7 +217,7 @@ class TeamPage extends Component {
                       />
                       <div className="social">
                      
-                        <a href="https://www.linkedin.com/company/ieee-vjti/about/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/company/ieee-vjti/about/" target="_blank" rel="noreferrer">
                           <i className="icofont-linkedin"></i>
                         </a>
                         <a href="mailto:shriyamudras@gmail.com">
@@ -246,7 +246,7 @@ class TeamPage extends Component {
                       />
                       <div className="social">
                        
-                        <a href="https://www.linkedin.com/in/deep-fumtiya-510958212/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/deep-fumtiya-510958212/" target="_blank" rel="noreferrer">
                           <i className="icofont-linkedin"></i>
                         </a>
                         <a href="mailto:deepfumtiya210@gmail.com">
