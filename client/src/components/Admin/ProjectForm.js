@@ -8,7 +8,7 @@ import { createProject,updateProject } from '../../actions/projects';
 
 
 const ProjectForm = ({currentId,setCurrentId}) => {
-  const [admin, setAdmin] = useState(JSON.parse(localStorage.getItem('profile')));
+  
   const [projectData, setProjectData] = useState({ title: '', project_desc: '', github_link: '', year: ''});
   const dispatch = useDispatch();
   const classes = useStyles();

@@ -19,7 +19,7 @@ const DetailedEvent = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
   const classes = useStyles();
-  const [admin, setAdmin] = useState(JSON.parse(localStorage.getItem('profile')));
+  const admin = JSON.parse(localStorage.getItem('profile'));
   const { event, isLoading } = useSelector((state) => state.events);
   const location = useLocation();
   const history = useHistory();
@@ -88,7 +88,7 @@ const DetailedEvent = () => {
               variant="body1"
               component="h2"
             >
-              <a href={event?.reg_link} target="_blank">Link to Register!</a>
+              <a href={event?.reg_link} target="_blank" rel="noreferrer">Link to Register!</a>
            
             </Typography>
                   </div>

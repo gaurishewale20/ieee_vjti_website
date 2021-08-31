@@ -8,7 +8,7 @@ import { createEvent, updateEvent } from '../../actions/events';
 
 
 const Form = ({ currentId, setCurrentId }) => {
-  const [admin, setAdmin] = useState(JSON.parse(localStorage.getItem('profile')));
+  
   const [eventData, setEventData] = useState({ title: '', location: '', date: '', event_desc: '', photo: '',reg_link:'' });
   const dispatch = useDispatch();
   const classes = useStyles();

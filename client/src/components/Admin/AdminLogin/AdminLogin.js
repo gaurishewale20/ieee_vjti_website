@@ -14,9 +14,8 @@ import { signin } from "../../../actions/admin";
 
 const initialState = { email: " ", password: " " };
 const SignIn = () => {
-  const [admin, setAdmin] = useState(
-    JSON.parse(localStorage.getItem("profile"))
-  );
+  const admin = 
+    JSON.parse(localStorage.getItem("profile"));
   const [adminData, setAdminData] = useState(initialState);
   const dispatch = useDispatch();
   const history = useHistory();

@@ -5,15 +5,15 @@ import {
   Divider,
 } from "@material-ui/core";
 import { useDispatch, useSelector } from "react-redux";
-import { useParams, useHistory } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { getEvent } from "../../actions/events";
 import useStyles from "./styles";
 import Loader from '../Loader/Loader';
 
 const EventDetails = () => {
-  const { event, events, isLoading } = useSelector((state) => state.events);
+  const { event, isLoading } = useSelector((state) => state.events);
   const dispatch = useDispatch();
-  const history = useHistory();
+  
   const classes = useStyles();
   const { id } = useParams();
 
@@ -21,9 +21,9 @@ const EventDetails = () => {
     dispatch(getEvent(id));
   }, [id]);
 
-  const openEvent = (_id) => history.push(`/events/${_id}`);
+
   if (!event) return null;
-  // if(!event) history.push(`/oops`);
+ 
   if (isLoading) {
     return (
      <center>
@@ -72,7 +72,7 @@ const EventDetails = () => {
               variant="body1"
               component="h2"
             >
-              <a href={event?.reg_link} target="_blank">Link to Register!</a>
+              <a href={event?.reg_link} target="_blank" rel="noreferrer">Link to Register!</a>
            
             </Typography>
             

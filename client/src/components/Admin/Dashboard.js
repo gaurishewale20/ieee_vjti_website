@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@material-ui/core";
 import useStyles from "../Events/Event/styles";
 
 const Dashboard = () => {
-  const [admin, setAdmin] = useState(
-    JSON.parse(localStorage.getItem("profile"))
-  );
+  const admin = 
+    JSON.parse(localStorage.getItem("profile"));
 
   const classes = useStyles();
 

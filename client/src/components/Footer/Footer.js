@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from "react";
 
-import { useLocation, useHistory, Link } from "react-router-dom";
+import { useLocation, useHistory } from "react-router-dom";
 import "./Footer.css";
 import ieee_smallest_logo from "../../assets/images/ieee_smallest.png";
 
@@ -65,11 +65,11 @@ const Footer = () => {
               <h3>Connect With Us</h3>
               <a
                 href="https://www.linkedin.com/company/ieee-vjti"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 <i className="fab fa-linkedin-in fa-2x"></i>
               </a>
-              <a href="https://www.instagram.com/ieeevjti/" target="_blank">
+              <a href="https://www.instagram.com/ieeevjti/" target="_blank" rel="noreferrer">
                 <i className="fab fa-instagram fa-2x"></i>
               </a>
               <a
@@ -79,17 +79,17 @@ const Footer = () => {
               </a>
               <a
                 href="https://www.youtube.com/channel/UCXkEZSsh_RWiBfrJIPY27vg"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 <i className="fab fa-youtube fa-2x"></i>
               </a>
 
               <p>
-                <a href="https://issuu.com/ieeevjti" target="_blank">
+                <a href="https://issuu.com/ieeevjti" target="_blank" rel="noreferrer">
                   Issuu
                 </a>
                 <br />
-                <a href="https://linktr.ee/ieeevjti" target="_blank">
+                <a href="https://linktr.ee/ieeevjti" target="_blank" rel="noreferrer">
                   LinkTree
                 </a>
               </p>

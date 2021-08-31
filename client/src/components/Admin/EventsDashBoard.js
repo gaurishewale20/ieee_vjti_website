@@ -13,8 +13,8 @@ function useQuery() {
 }
 
 const EventsDashboard = () => {
-  const [admin, setAdmin] = useState(
-    JSON.parse(localStorage.getItem("profile"))
+  const admin = 
+    JSON.parse(localStorage.getItem("profile")
   );
   const [currentId, setCurrentId] = useState(0);
   const dispatch = useDispatch();

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   
   CardContent,
@@ -16,7 +16,7 @@ import { useHistory } from "react-router-dom";
 
 
 const Event = ({ event, setCurrentId }) => {
-  const [admin, setAdmin] = useState(JSON.parse(localStorage.getItem('profile')));
+  const admin = JSON.parse(localStorage.getItem('profile'));
   const dispatch = useDispatch();
   const classes = useStyles();
   const history = useHistory();

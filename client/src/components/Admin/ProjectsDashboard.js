@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from "react-router-dom";
-import { TextField, Button, Typography, Paper, Grid, CircularProgress } from '@material-ui/core';
+import { Button,  Paper, Grid} from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
 import useStyles from './styles';
 import { getProjects } from "../../actions/projects";
@@ -14,11 +14,11 @@ function useQuery() {
 }
 
 const ProjectsDashboard = () => {
-  const [admin, setAdmin] = useState(JSON.parse(localStorage.getItem('profile')));
+  const admin = JSON.parse(localStorage.getItem('profile'));
   const [currentId, setCurrentId] = useState(0);
   const dispatch = useDispatch();
   const classes = useStyles();
-  const { projects, isLoading } = useSelector((state) => state.projects);
+  const { projects} = useSelector((state) => state.projects);
   const query = useQuery();
   const page = query.get('page') || 1;
 
