@@ -26,7 +26,7 @@ const EventsDashboard = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     if (!events.length) dispatch(getEvents());
-  }, [currentId, dispatch]);
+  }, [currentId, dispatch, events.length]);
 
   return (
     <div>

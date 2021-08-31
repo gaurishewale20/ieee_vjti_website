@@ -19,7 +19,7 @@ const EventDetails = () => {
 
   useEffect(() => {
     dispatch(getEvent(id));
-  }, [id]);
+  }, [id,dispatch]);
 
 
   if (!event) return null;

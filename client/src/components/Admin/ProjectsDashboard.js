@@ -27,7 +27,7 @@ const ProjectsDashboard = () => {
     window.scrollTo(0, 0);
     if(!projects.length)
     dispatch(getProjects());
-  }, [currentId, dispatch]);
+  }, [currentId, dispatch, projects.length]);
 
   
 
