@@ -1,9 +1,9 @@
 import React,{useState,useEffect} from "react";
-import { Button } from "@material-ui/core";
+
 import { useLocation, useHistory, Link } from "react-router-dom";
 import "./Footer.css";
 import ieee_smallest_logo from "../../assets/images/ieee_smallest.png";
-import * as actionType from "../../constants/actionTypes";
+
 
 import { useDispatch } from "react-redux";
 import decode from "jwt-decode";
