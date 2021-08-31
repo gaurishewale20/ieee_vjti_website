@@ -35,7 +35,7 @@ const DetailedEvent = () => {
   }
   useEffect(() => {
     dispatch(getEvent(id));
-  }, [id])
+  }, [dispatch,id])
 
   return (
   

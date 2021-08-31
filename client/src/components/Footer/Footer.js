@@ -32,7 +32,7 @@ const Footer = () => {
     }
 
     setAdmin(JSON.parse(localStorage.getItem("profile")));
-  }, [location]);
+  }, [dispatch,location]);
   return (
     <>
       <section className="footer_section bg-footer">
