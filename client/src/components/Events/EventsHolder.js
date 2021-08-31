@@ -1,11 +1,11 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import useStyles from "../../styles";
+// import useStyles from "../../styles";
 import Event from './Event/Event';
 import Loader from '../Loader/Loader';
 const EventsHolder = ({ setCurrentId }) => {
   const { events, isLoading }= useSelector((state) => state.events);
-  const classes = useStyles();
+  // const classes = useStyles();
 
   if(!events.length && !isLoading) return 'No Events';
 

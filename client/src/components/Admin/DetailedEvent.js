@@ -20,7 +20,7 @@ const DetailedEvent = () => {
   const dispatch = useDispatch();
   const classes = useStyles();
   const [admin, setAdmin] = useState(JSON.parse(localStorage.getItem('profile')));
-  const { event, events, isLoading } = useSelector((state) => state.events);
+  const { event, isLoading } = useSelector((state) => state.events);
   const location = useLocation();
   const history = useHistory();
   const [currentId, setCurrentId] = useState(0);

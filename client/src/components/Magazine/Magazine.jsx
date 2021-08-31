@@ -17,6 +17,7 @@ const Magazine = () => {
           <a
             href="https://www.canva.com/design/DAD98MmmtKs/6oqGF4C6PHlJg8AdFgJ7Wg/view?utm_content=DAD98MmmtKs&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
             target="_blank"
+            rel="noreferrer"
           >
             <img className="img" src={mag_og} loading="lazy"></img>
           </a>

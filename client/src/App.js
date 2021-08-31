@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import './utilities.css';
-import {Switch,BrowserRouter,Route,Redirect} from 'react-router-dom';
+import {Switch,BrowserRouter,Route} from 'react-router-dom';
 import NavbarComponent from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
@@ -23,7 +23,7 @@ import Submit from './components/ContactUs/Submit';
 import Error404 from './components/Error404/Error404';
 
 const App=()=> {
-  const admin = JSON.parse(localStorage.getItem('profile'));
+  // const admin = JSON.parse(localStorage.getItem('profile'));
   return (
     <BrowserRouter>
     <NavbarComponent/>
