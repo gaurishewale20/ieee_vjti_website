@@ -1,5 +1,4 @@
-import React,{ useEffect, useState} from "react";
-
+import React,{ useEffect} from "react";
 import  Pagination from "@material-ui/lab/Pagination";
 import  PaginationItem from "@material-ui/lab/PaginationItem";
 import { Link, useLocation } from "react-router-dom";
@@ -17,8 +16,7 @@ const Paginate = ({page}) => {
 
   useEffect(()=>{
     if(page) dispatch(getProjects(page));
-    // console.log(location);
-  },[page]);
+  },[dispatch,page]);
 
     
 
@@ -26,7 +24,7 @@ const Paginate = ({page}) => {
 
   return (<div>
     {
-  (location.pathname == '/rd') ? ( <Pagination
+  (location.pathname === '/rd') ? ( <Pagination
       classes={{ ul: classes.ul }}
       count={numberOfPages}
       page={Number(page) || 1}

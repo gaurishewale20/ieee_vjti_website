@@ -50,7 +50,7 @@ const Membership = () => {
                 <a
                   href="https://www.ieee.org/publications_standards/publications/authors/author_information.html?WT.mc_id="
                   className="btn btn-primary btn-responsive"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer" 
                 >
                   More Details
                 </a>
@@ -78,7 +78,7 @@ const Membership = () => {
                 <a
                   href="https://www.ieee.org/conferences_events/conferences/organizers/organizers_index.html?WT.mc_id="
                   className="btn btn-primary btn-responsive"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer" 
                 >
                   More Details
                 </a>
@@ -106,7 +106,7 @@ const Membership = () => {
                 <a
                   href="https://www.ieee.org/education/index.html"
                   className="btn btn-primary btn-responsive"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer" 
                 >
                   More Details
                 </a>
@@ -140,7 +140,7 @@ const Membership = () => {
                 <a
                   href="https://www.ieee.org/membership_services/membership/students/index_students.html?WT.mc_id="
                   className="btn btn-primary btn-responsive"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer" 
                 >
                   More Details
                 </a>
@@ -172,7 +172,7 @@ const Membership = () => {
                 <a
                   href="https://supportcenter.ieee.org/app/home?utm_source=hp&utm_campaign=faq&utm_medium=how&utm_term=support%20center%2C%20faqs&WT.mc_id="
                   className="btn btn-primary btn-responsive"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer" 
                 >
                   More Details
                 </a>
@@ -206,7 +206,7 @@ const Membership = () => {
                 <a
                   href="https://www.ieee.org/about/volunteers/volunteer_index.html?WT.mc_id="
                   className="btn btn-primary btn-responsive"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer" 
                 >
                   More Details
                 </a>
@@ -241,7 +241,7 @@ const Membership = () => {
                 <a
                   href="https://www.ieee.org/membership/index.html?WT.mc_id="
                   className="btn btn-primary btn-responsive"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer" 
                 >
                   More Details
                 </a>
@@ -275,7 +275,7 @@ const Membership = () => {
                 <a
                   href="https://www.ieee.org/about/news/media_kit/media_kit_index.html?WT.mc_id="
                   className="btn btn-primary btn-responsive"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer" 
                 >
                   More Details
                 </a>
@@ -308,7 +308,7 @@ const Membership = () => {
                 <a
                   href="https://ieeexplore.ieee.org/Xplore/home.jsp?utm_source=hp&utm_campaign=xpl_research&utm_medium=how&utm_term=Xplore%20researchers&WT.mc_id="
                   className="btn btn-primary btn-responsive"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer" 
                 >
                   More Details
                 </a>
@@ -344,7 +344,7 @@ const Membership = () => {
                 <a
                   href="https://www.ieee.org/membership_services/membership/women/women_in_engineering.html?WT.mc_id="
                   className="btn btn-primary btn-responsive"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer" 
                 >
                   More Details
                 </a>
@@ -377,7 +377,7 @@ const Membership = () => {
                 <a
                   href="https://www.ieee.org/education_careers/careers/employers_job_seekers.html?WT.mc_id="
                   className="btn btn-primary btn-responsive"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer" 
                 >
                   More Details
                 </a>
@@ -410,7 +410,7 @@ const Membership = () => {
                 <a
                   href="https://www.ieee.org/membership_services/membership/young_professionals/index_young_professionals.html?WT.mc_id="
                   className="btn btn-primary btn-responsive"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer" 
                 >
                   More Details
                 </a>

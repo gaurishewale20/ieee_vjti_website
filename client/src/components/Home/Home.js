@@ -1,6 +1,6 @@
  import React from "react";
  import "./Home.css";
- import {purplewave, bluewave, Showcase_Image, AI, ML, IOT, Computation, Renewable_Energy, Mechatronics, Electric_Vehicles, Biotechnology, Open_Source, ieee_weekly1, ieee_weekly2, ieee_weekly3, Fostering_Tech } from './';
+ import { bluewave, Showcase_Image, AI, ML, IOT, Computation, Renewable_Energy, Mechatronics, Electric_Vehicles, Biotechnology, Open_Source, ieee_weekly1, ieee_weekly2, ieee_weekly3, Fostering_Tech } from './';
   
  const Home = () => {
   return (
@@ -84,7 +84,7 @@
             </div>
           </div>
         </div>
-        <img src={bluewave} loading="lazy"/>
+        <img src={bluewave} loading="lazy" alt="a blue wave"/>
       </section>
 
       {/*  IEEE HELP  */}
@@ -267,7 +267,7 @@
           <h1>IEEE Weeklies!</h1>
           <p>
             Catch the very best from the tech world now on the{" "}
-            <a href="https://www.instagram.com/ieeevjti/" target="_blank">
+            <a href="https://www.instagram.com/ieeevjti/" target="_blank" rel="noopener noreferrer">
               @ieeevjti
             </a>{" "}
             page!
@@ -283,7 +283,7 @@
             <div className="custom-card ">
               <a
                 href="https://www.instagram.com/p/CPTK-GsMiJD/"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 <img src={ieee_weekly1} alt="ieee_weekly1" loading="lazy" />
               </a>
@@ -293,7 +293,7 @@
             <div className="custom-card ">
               <a
                 href="https://www.instagram.com/p/COlPqwiswfz/"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 <img src={ieee_weekly2} alt="ieee_weekly2" loading="lazy" />
               </a>
@@ -303,9 +303,9 @@
             <div className="custom-card ">
               <a
                 href="https://www.instagram.com/p/CPa5pHOM_nN/"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
               >
-                {" "}
+                
                 <img src={ieee_weekly3} alt="ieee_weekly3" loading="lazy" />
               </a>
             </div>

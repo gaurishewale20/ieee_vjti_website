@@ -8,7 +8,7 @@ import {
     END_LOADING
 } from "../constants/actionTypes";
 
-export default (state = { isLoading: true, projects: [] }, action) => {
+const projectreducer = (state = { isLoading: true, projects: [] }, action) => {
 
     switch (action.type) {
 
@@ -43,3 +43,5 @@ export default (state = { isLoading: true, projects: [] }, action) => {
             return state;
     }
 };
+
+export default projectreducer;

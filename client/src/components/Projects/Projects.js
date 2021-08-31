@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Container, Grow, Grid, Paper, AppBar, TextField, Button, Typography } from "@material-ui/core";
-import { useHistory, useLocation } from 'react-router-dom';
+import { Container,  Grid, Paper, Typography } from "@material-ui/core";
+import { useLocation } from 'react-router-dom';
 import { useDispatch } from "react-redux";
 import { getProjects } from "../../actions/projects";
 import useStyles from "../../styles";

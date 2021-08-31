@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Card,
   CardContent,
@@ -11,13 +11,12 @@ import { useDispatch } from "react-redux";
 import { useLocation } from "react-router-dom";
 import {deleteProject,getProjects} from '../../../actions/projects';
 import useStyles from "./styles";
-import { useHistory } from "react-router-dom";
+
 
 const Project = ({ project, setCurrentId }) => {
-  const [admin, setAdmin] = useState(JSON.parse(localStorage.getItem('profile')));
+  const admin = JSON.parse(localStorage.getItem('profile'));
   const dispatch = useDispatch();
   const classes = useStyles();
-  const history = useHistory();
 
   const location = useLocation();
   
@@ -65,7 +64,7 @@ const Project = ({ project, setCurrentId }) => {
               variant="body1"
               component="h2"
             >
-              <a href={project.github_link} target="_blank"><i class="fab fa-github-square"></i>  Link to Project Code!</a>
+              <a href={project.github_link} target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square"></i>  Link to Project Code!</a>
            
             </Typography>
             

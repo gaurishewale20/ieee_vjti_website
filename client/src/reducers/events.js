@@ -8,7 +8,7 @@ import {
     END_LOADING
   } from "../constants/actionTypes";
   
-  export default (state = { isLoading: true, events : [] }, action) => {
+  const eventreducer= (state = { isLoading: true, events : [] }, action) => {
 
     switch (action.type) {
     
@@ -40,3 +40,4 @@ import {
     }
   };
   
+  export default eventreducer;
