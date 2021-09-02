@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { TextField, Button, Paper } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
-import FileBase from 'react-file-base64';
+// import FileBase from 'react-file-base64';
 import useStyles from './styles';
 import { createEvent, updateEvent } from '../../actions/events';
 
@@ -39,13 +39,14 @@ const Form = ({ currentId, setCurrentId }) => {
 
 
     <Paper className={classes.paper} elevation={6}>
-      <form autoComplete="off" className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
+      <form autoComplete="off" className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit} enctype="multipart/form-data" >
         <TextField name="title" required variant="outlined" label="Title" fullWidth value={eventData.title} onChange={(e) => setEventData({ ...eventData, title: e.target.value })} />
         <TextField name="location" required variant="outlined" label="Location" fullWidth value={eventData.location} onChange={(e) => setEventData({ ...eventData, location: e.target.value })} />
         <TextField name="date" required variant="outlined" label="Date" fullWidth value={eventData.date} onChange={(e) => setEventData({ ...eventData, date: e.target.value })} />
         <TextField name="reg_link" required variant="outlined" label="Registration Link" fullWidth value={eventData.reg_link} onChange={(e) => setEventData({ ...eventData, reg_link: e.target.value })} />
         <TextField name="event_desc" required variant="outlined" label="Description" fullWidth multiline rows={6} value={eventData.event_desc} onChange={(e) => setEventData({ ...eventData, event_desc: e.target.value })} />
-       <div className={classes.fileInput}><FileBase type="file" multiple={false} onDone={({ base64 }) => setEventData({ ...eventData, photo: base64 })} /></div>
+        <TextField name="event_photo" required variant="outlined" label="PhotoUrl" multiline rows={6} fullWidth value={eventData.photo} onChange={(e) => setEventData({ ...eventData, photo : e.target.value })} />
+       {/* <div className={classes.fileInput}><FileBase type="file" multiple={false} onDone={({ base64 }) => setEventData({ ...eventData, photo: base64 })} /></div> */}
         <Button className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Submit</Button>
         <Button className={classes.buttonClear} variant="contained" color="secondary" size="small" onClick={clear} fullWidth>Clear</Button>
       </form>
