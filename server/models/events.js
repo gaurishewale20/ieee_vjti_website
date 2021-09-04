@@ -9,6 +9,6 @@ const eventsSchema = mongoose.Schema({
     reg_link: String
 })
 
-var EventsModel = mongoose.model('EventsModel', eventsSchema);
+var EventsModel = mongoose.model("EventsModel", eventsSchema, 'eventsmodel');
 
 export default EventsModel;

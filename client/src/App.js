@@ -33,6 +33,7 @@ const App=()=> {
       <Switch>
           <Route path="/" exact component={Home}/>
           <Route path="/events" exact component={Events}/>
+          <Route path="/events/none" exact component={Error404}/>
           <Route path="/events/:id" exact component={EventDetails}/>
           <Route path="/rd" exact component={Projects}/>
           <Route path="/admin" exact component={AdminLogin}/>
