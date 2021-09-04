@@ -7,9 +7,12 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: "rgba(0, 0, 0, 0.5)",
 
     },
+    MuiGridSpacingXs3: {
+        margin: 'auto',
+    },
     [theme.breakpoints.down("sm")]: {
         card: {
-            marginRight: "3em",
+            margin: "auto",
 
         },
         project_desc: {

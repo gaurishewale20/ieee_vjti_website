@@ -7,6 +7,9 @@ export default makeStyles((theme) => ({
         padding: "16px",
         backgroundColor: "#f2fefe",
     },
+    MuiGridSpacingXs3: {
+        margin: 'auto',
+    },
     [theme.breakpoints.down("xs")]: {
         mainContainer: {
             flexDirection: "column",
