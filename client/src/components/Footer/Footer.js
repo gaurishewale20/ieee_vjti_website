@@ -54,7 +54,8 @@ const Footer = () => {
             </div>
             <div className="info">
               <h3>
-                <a href="/membership"> Become a Member </a>
+                <a href="https://www.ieee.org/membership/index.html"  target="_blank"
+            rel="noreferrer" > Become a Member </a>
               </h3>
               <p>
                 Get notified with the latest updates in the technical world,

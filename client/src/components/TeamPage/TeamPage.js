@@ -3,8 +3,8 @@ import './TeamPage.css';
 class TeamPage extends Component {
   render() {
     return (
-      <div className="row TeampageBody">
-        <div>
+      <div className="row TeampageBody pb-2">
+        <div className="main-team pb-4">
           <section id="team" className="contain team section-bg ">
             <div data-aos="fade-up" data-aos-duration="1300">
               <div className="section-title text-center">
@@ -263,6 +263,19 @@ class TeamPage extends Component {
               </div>
             </div>
           </section>
+        </div>
+        <div
+                   
+                    data-aos="fade-up"
+                    data-aos-duration="1300"
+                    className="text-center pt-4 pb-3 webdev-team"
+                  >
+        <h6>This site has been designed & developed by :</h6>
+        <h6><a href="https://www.linkedin.com/in/meera-wadher-2908b61b6/" target="_blank" rel="noreferrer"> Meera Wadher</a></h6>
+   <h6><a href="https://www.linkedin.com/in/gauri-shewale-bb8040200/" target="_blank" rel="noreferrer">Gauri Shewale</a></h6>
+   <h6><a href="https://www.linkedin.com/in/prerna-jagesia/" target="_blank" rel="noreferrer">Prerna Jagesia</a></h6>
+   <h6><a href="https://www.linkedin.com/in/samina-a-863172190/" target="_blank" rel="noreferrer">Samina Attari</a></h6>
+   <h6><a href="https://www.linkedin.com/in/deep-fumtiya-510958212/" target="_blank" rel="noreferrer"> Deep Fumtiya</a></h6>
         </div>
       </div>
     );

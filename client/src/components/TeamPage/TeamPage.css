@@ -7,6 +7,20 @@
      margin-top: -15px;
  }
  
+ .main-team {
+     border-bottom: 3px solid #e74c3c;
+ }
+ 
+ .webdev-team a {
+     color: #f7c7c9;
+ }
+ 
+ .webdev-team a:hover {
+     color: #e79fa2;
+     border-bottom: 1px solid #e74c3c;
+     padding-bottom: 0.15em;
+ }
+ 
  .contain {
      padding: 0 1em;
      margin: 0 3.5em;
@@ -25,6 +39,7 @@
      overflow: hidden;
      border-radius: 5px;
      background: #fff;
+     border-bottom: 3px solid #e74c3c;
  }
  
  .team .member .member-img {

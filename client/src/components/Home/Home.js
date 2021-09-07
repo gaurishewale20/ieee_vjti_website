@@ -32,22 +32,22 @@
           <h1>About Us</h1>
           <h5 className="text-center">Here's some information about what we do!</h5>
           <p>
-            IEEE VJTI is a committee of enthusiastic electrical and electronics
+            IEEE VJTI is a committee of enthusiastic
             engineering students under the world's largest technical
-            professional organization for advancement of technology, Institute
+            professional organization for the advancement of technology, the Institute
             of Electrical and Electronics Engineers (IEEE). Founded in 1884 as
             the AIEE, the IEEE was formed in 1963 when AIEE merged with IRE.
             IEEE is an organization composed of engineers, scientists, and
-            students. The IEEE is best known for developing standards for the
+            students. It is best known for developing standards for the
             computer and electronics industry. The Veermata Jijabai
             Technological Institute (VJTI) was given its present title on
             January 26, 1997. Founded in 1887, it was then known as Victoria
-            Jubilee Technical Institute. The institute is reputed for excellent
-            training in courses in engineering and technology at diploma and,
-            degree and post graduate levels over three thousand students. Over
-            twenty seven courses are offered at the undergraduate, postgraduate,
+            Jubilee Technical Institute. The institute is reputed for providing excellent
+            training of courses in engineering and technology at diploma,
+            degree and post graduate levels to over three thousand students. Over
+            twenty seven courses are offered altogether at the undergraduate, postgraduate,
             diploma, postgraduate diploma and post diploma levels. IEEE VJTI is
-            the confluence of two time tested organisations focused at giving
+            the confluence of two, time tested organisations - focused at giving
             back to the society with the help of technological research.
           </p>
         </div>
@@ -74,7 +74,7 @@
             </h5>
             <p className="text-justify">
               IEEE is a mix of all sorts of creative students that have a curiosity to keep on exploring new things! It's a place where innovation thrives.
-              After all, there's no limit to learning! :) IEEE is known for its research and development projects and spectacular events. Here at VJTI, we organize various events + mentorship programs so that you can turn your ideas into reality under the best teacher.
+              After all, there's no limit to learning! :) IEEE is known for its research and development projects and spectacular events. Here at VJTI, we organize various events + mentorship programs so that you can turn your ideas into reality under the best teachers.
               Check out some of IEEE's cool events, and register for the upcoming ones!
             </p>
             <div>
@@ -112,7 +112,7 @@
               <i className="fab fa-searchengin fa-3x"></i>
               <h3>Mentorship & Research</h3>
               <p>
-                You come to us with an idea for research and projects and we
+                Come to us with an idea for research and projects and we
                 will get you started in the right direction with proper guidance
                 and support.
               </p>
@@ -121,10 +121,10 @@
               <i className="fas fa-bullhorn fa-3x"></i>
               <h3>Seminars</h3>
               <p>
-                Seminars comprising of brief talk with on the spot
-                demonstrations on new and exciting subjects which will give you,
-                the future of research, a glimpse into upcoming technological
-                advancement will be conducted throughout the year exclusively
+                Our seminars comprise of brief talks with on the spot
+                demonstrations on new and exciting subjects which will give you
+                the future of research and a glimpse into the upcoming technological
+                advancements. These will be conducted throughout the year exclusively
                 for IEEE VJTI members.
               </p>
             </div>
@@ -132,8 +132,7 @@
               <i className="fab fa-medapps fa-3x"></i>
               <h3>Workshops</h3>
               <p>
-                Workshops regarding short but amazing electronics or coding
-                projects with full guidance.
+                Workshops are the best way to get started with hands-on-learning! We encourage amazing projects in a variety of domains and provide full guidance as well.
               </p>
             </div>
           </div>
@@ -175,7 +174,7 @@
             data-aos-duration="1600"
           >
             <h2>Machine Learning</h2>
-            <p>Make machines learn and improve by experience, just like humans!. Teach a device how to analyse patterns in data.</p>
+            <p>Make machines learn and improve by experience, just like humans! Teach a device how to analyse patterns in data.</p>
             <img src={ML} alt="Ml" loading="lazy" />
           </div>
 
@@ -215,7 +214,7 @@
             data-aos-duration="1700"
           >
             <h2>Mechatronics</h2>
-            <p>Delve deeper into this domain, and integrate the mechanical, electronics and electrical fields to solve complex problems.</p>
+            <p>Delve deeper into this domain and integrate the mechanical, electronics and electrical fields to solve complex problems.</p>
             <img src={Mechatronics} alt="mechatronics" loading="lazy" />
           </div>
 

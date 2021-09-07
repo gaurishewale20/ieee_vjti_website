@@ -20,13 +20,16 @@ const Membership = () => {
   return (
     <>
       <div className="contain">
-        <h1
+        <div
           className="text-center title py-5"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          MEMBERSHIP BENEFITS
-        </h1>
+          <h1>MEMBERSHIP BENEFITS</h1>
+          <h5 className="text-secondary"><a href="https://www.ieee.org/membership/index.html" target="_blank"
+            rel="noreferrer">Click here to become a member now!</a></h5>
+        </div>
+      
         {/* ROW 1 */}
         <div className="row" data-aos="fade-up" data-aos-duration="1000">
           <div className="col-md-6 col-xl-4">
