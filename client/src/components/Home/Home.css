@@ -372,21 +372,24 @@ hr.style1 {
 
 @keyframes bganimation {
     0% {
-        background-image: url("https://github.com/Meera-W/IEEE-VJTI-SITE/blob/master/images/ieee_400.png?raw=true");
+        background-image: url("https://i.ibb.co/hV4fWr5/1.png");
     }
     25% {
-        background-image: url("https://github.com/Meera-W/IEEE-VJTI-SITE/blob/master/images/events/1.png?raw=true");
+        background-image: url("https://i.ibb.co/yh43xnz/2.png");
     }
     50% {
-        background-image: url("https://github.com/Meera-W/IEEE-VJTI-SITE/blob/master/images/events/2.png?raw=true");
+        background-image: url("https://i.ibb.co/m8gDhRx/3.png");
     }
     75% {
-        background-image: url("https://github.com/Meera-W/IEEE-VJTI-SITE/blob/master/images/events/3.png?raw=true");
+        background-image: url("https://i.ibb.co/MssN6sh/4.png");
     }
     100% {
-        background-image: url("https://github.com/Meera-W/IEEE-VJTI-SITE/blob/master/images/events/5.png?raw=true");
+        background-image: url("https://i.ibb.co/YQk3Csq/5.png");
     }
 }
+
+
+/* images are in imagebb account. <a href="https://ibb.co/NKJSjfh"><img src="https://i.ibb.co/hV4fWr5/1.png" alt="1" border="0"></a><a href="https://ibb.co/1szS4fC"><img src="https://i.ibb.co/yh43xnz/2.png" alt="2" border="0"></a><a href="https://ibb.co/yS7fgN3"><img src="https://i.ibb.co/m8gDhRx/3.png" alt="3" border="0"></a><a href="https://ibb.co/nbbkCb0"><img src="https://i.ibb.co/MssN6sh/4.png" alt="4" border="0"></a><a href="https://ibb.co/wgWRkmx"><img src="https://i.ibb.co/YQk3Csq/5.png" alt="5" border="0"></a> */
 
 
 /* Media Queries */
