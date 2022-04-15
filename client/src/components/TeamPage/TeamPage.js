@@ -246,7 +246,7 @@ class TeamPage extends Component {
                       />
                       <div className="social">
                        
-                        <a href="https://www.linkedin.com/in/deep-fumtiya-510958212/" target="_blank" rel="noreferrer">
+                        <a href="https://www.linkedin.com/in/deep-fumatiya-510958212/" target="_blank" rel="noreferrer">
                           <i className="icofont-linkedin"></i>
                         </a>
                         <a href="mailto:deepfumtiya210@gmail.com">
@@ -255,7 +255,7 @@ class TeamPage extends Component {
                       </div>
                     </div>
                     <div className="member-info">
-                      <h4>Deep Fumtiya</h4>
+                      <h4>Deep Fumatiya</h4>
                       <span>Event Manager</span>
                     </div>
                   </div>
