@@ -18,14 +18,14 @@
     "react-file-base64": "^1.0.3",
     "react-redux": "^7.2.6",
     "react-router-dom": "^5.3.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^4.0.3",
     "redux": "^4.1.2",
     "redux-thunk": "^2.4.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts start ",
+    "build": "react-scripts build ",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

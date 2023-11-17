@@ -29,23 +29,23 @@ class TeamPage extends Component {
                   >
                     <div className="member-img">
                       <img
-                        src="assets/img/team/sharal.jpeg"
+                        src="assets/img/team/TanmayDikey.jpg"
                         className="img-fluid"
                         alt="IEEE Chairman" 
                         loading="lazy"
                       />
                       <div className="social">
                       
-                        <a href="https://www.linkedin.com/in/sharal-deegoju-8ab44320a" target="_blank" rel="noreferrer">
+                        <a href="https://www.linkedin.com/in/tanmay-dikey-8729a5252/" target="_blank" rel="noreferrer">
                           <i className="icofont-linkedin"></i>
                         </a>
-                        <a href="mailto:sharaldeegoju@gmail.com">
+                        <a href="mailto:Tanmaydikey@gmail.com">
                           <i className="icofont-email"></i>
                         </a>
                       </div>
                     </div>
                     <div className="member-info">
-                      <h4>Sharal Deegoju</h4>
+                      <h4>Tanmay Dikey</h4>
                       <span>IEEE Chairman</span>
                     </div>
                   </div>
@@ -59,53 +59,23 @@ class TeamPage extends Component {
                   >
                     <div className="member-img">
                       <img
-                        src="assets/img/team/shreyash.jpeg"
-                        className="img-fluid"
-                        alt="IEEE Vice Chairman" 
-                        loading="lazy"
-                      />
-                      <div className="social">
-                        
-                        <a href="https://www.linkedin.com/in/shreyash-wasnik-44145818b/"  target="_blank" rel="noreferrer" >
-                          <i className="icofont-linkedin"></i>
-                        </a>
-                        <a href="mailto:shreyashwasnik24@gmail.com">
-                          <i className="icofont-email"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <div className="member-info">
-                      <h4>Shreyash Wasnik</h4>
-                      <span>IEEE Vice Chairman</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center">
-                  <div
-                    className="member"
-                    data-aos="fade-up"
-                    data-aos-duration="1300"
-                  >
-                    <div className="member-img">
-                      <img
-                        src="assets/img/team/u1.jpeg"
+                        src="assets/img/team/YashSingavi.jpeg"
                         className="img-fluid"
                         alt="IEEE Secretary" 
                         loading="lazy"
                       />
                       <div className="social">
-                      
-                        <a href="https://www.linkedin.com/in/samina-a-863172190/" target="_blank" rel="noreferrer">
+                        
+                        <a href="https://www.linkedin.com/in/yash-singavi-298307229/"  target="_blank" rel="noreferrer" >
                           <i className="icofont-linkedin"></i>
                         </a>
-                        <a href="mailto:attarisameena@gmail.com">
+                        <a href="mailto:ysingavi@gmail.com">
                           <i className="icofont-email"></i>
                         </a>
                       </div>
                     </div>
                     <div className="member-info">
-                      <h4>Samina Attari</h4>
+                      <h4>Yash Singavi</h4>
                       <span>IEEE Secretary</span>
                     </div>
                   </div>
@@ -119,23 +89,23 @@ class TeamPage extends Component {
                   >
                     <div className="member-img">
                       <img
-                        src="assets/img/team/jay.jpeg"
+                        src="assets/img/team/SaniyaChimte.jpg"
                         className="img-fluid"
                         alt="Treasurer" 
                         loading="lazy"
                       />
                       <div className="social">
-                        
-                        <a href="https://www.linkedin.com/in/jay-rampariya-0733841b3/"  target="_blank" rel="noreferrer">
+                      
+                        <a href="https://www.linkedin.com/in/saniya-chimte-604863228/?trk=contact-info" target="_blank" rel="noreferrer">
                           <i className="icofont-linkedin"></i>
                         </a>
-                        <a href="mailto:jayrampariya06@gmail.com">
+                        <a href="mailto:saniyachimte@gmail.com">
                           <i className="icofont-email"></i>
                         </a>
                       </div>
                     </div>
                     <div className="member-info">
-                      <h4>Jay Rampariya</h4>
+                      <h4>Saniya Chimte</h4>
                       <span>Treasurer</span>
                     </div>
                   </div>
@@ -149,25 +119,55 @@ class TeamPage extends Component {
                   >
                     <div className="member-img">
                       <img
-                        src="assets/img/team/Aniket2.jpeg"
+                        src="assets/img/team/MuktaPathak.jpeg"
                         className="img-fluid"
-                        alt="Research and Development Head" 
+                        alt="Treasurer" 
+                        loading="lazy"
+                      />
+                      <div className="social">
+                        
+                        <a href="https://www.linkedin.com/company/ieee-vjti/about/"  target="_blank" rel="noreferrer">
+                          <i className="icofont-linkedin"></i>
+                        </a>
+                        <a href="mailto:mukta.mpathak1@gmail.com">
+                          <i className="icofont-email"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="member-info">
+                      <h4>Mukta Pathak</h4>
+                      <span>Web Master</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center">
+                  <div
+                    className="member"
+                    data-aos="fade-up"
+                    data-aos-duration="1300"
+                  >
+                    <div className="member-img">
+                      <img
+                        src="assets/img/team/VishweshChauhan.JPG"
+                        className="img-fluid"
+                        alt="Operations Head" 
                         loading="lazy"
                       />
                       <div className="social">
                         {/* <ul class = "social-media"> */}
                         
-                        <a href="https://www.linkedin.com/company/ieee-vjti/about/" target="_blank" rel="noreferrer">
+                        <a href="https://www.linkedin.com/in/vishwesh-chauhan-a49539225/" target="_blank" rel="noreferrer">
                           <i className="icofont-linkedin"></i>
                         </a>
-                        <a href="mailto:anmahajan_b19@ee.vjti.ac.in">
+                        <a href="mailto:vishweshchauhan37@gmail.com">
                           <i className="icofont-email"></i>
                         </a>
                       </div>
                     </div>
                     <div className="member-info">
-                      <h4>Aniket Mahajan</h4>
-                      <span>Research and Development Head </span>
+                      <h4>Vishwesh Chauhan</h4>
+                      <span>Operations Head</span>
                     </div>
                   </div>
                 </div>
@@ -180,24 +180,24 @@ class TeamPage extends Component {
                   >
                     <div className="member-img">
                       <img
-                        src="assets/img/team/Omkar.jpeg"
+                        src="assets/img/team/SarthBora.jpg"
                         className="img-fluid"
-                        alt="Project Manager" 
+                        alt="Sponsorship Head" 
                         loading="lazy"
                       />
                       <div className="social">
                       
-                        <a href="https://www.linkedin.com/in/omkar-dhatingan-60705b212" target="_blank" rel="noreferrer">
+                        <a href="https://www.linkedin.com/in/sarthbora/" target="_blank" rel="noreferrer">
                           <i className="icofont-linkedin"></i>
                         </a>
-                        <a href="mailto:dhatingan2002@gmail.com">
+                        <a href="mailto:sarthbora139@gmail.com">
                           <i className="icofont-email"></i>
                         </a>
                       </div>
                     </div>
                     <div className="member-info">
-                      <h4>Omkar Dhatingan</h4>
-                      <span>Project Manager</span>
+                      <h4>Sarth Bora</h4>
+                      <span>Sponsorship Head</span>
                     </div>
                   </div>
                 </div>
@@ -210,23 +210,23 @@ class TeamPage extends Component {
                   >
                     <div className="member-img">
                       <img
-                        src="assets/img/team/Shreya.jpeg"
+                        src="assets/img/team/AnushreeSanap.jpg"
                         className="img-fluid"
                         alt="Marketing Head" 
                         loading="lazy"
                       />
                       <div className="social">
                      
-                        <a href="https://www.linkedin.com/company/ieee-vjti/about/" target="_blank" rel="noreferrer">
+                        <a href="https://www.linkedin.com/in/anushreesanap24/" target="_blank" rel="noreferrer">
                           <i className="icofont-linkedin"></i>
                         </a>
-                        <a href="mailto:shriyamudras@gmail.com">
+                        <a href="mailto:sanapanushree07@gmail.com">
                           <i className="icofont-email"></i>
                         </a>
                       </div>
                     </div>
                     <div className="member-info">
-                      <h4>Shriya Mudras</h4>
+                      <h4>Anushree Sanap</h4>
                       <span>Marketing Head</span>
                     </div>
                   </div>
@@ -239,24 +239,24 @@ class TeamPage extends Component {
                   >
                     <div className="member-img">
                       <img
-                        src="assets/img/team/Deep.jpg"
+                        src="assets/img/team/FlaviaSaldanha.jpg"
                         className="img-fluid"
-                        alt="Event Manager" 
+                        alt="Social Media Head" 
                         loading="lazy"
                       />
                       <div className="social">
                        
-                        <a href="https://www.linkedin.com/in/deep-fumtiya-510958212/" target="_blank" rel="noreferrer">
+                        <a href="https://www.linkedin.com/in/flavia-saldanha-54630022b/" target="_blank" rel="noreferrer">
                           <i className="icofont-linkedin"></i>
                         </a>
-                        <a href="mailto:deepfumtiya210@gmail.com">
+                        <a href="mailto:flaviasaldanha258@gmail.com">
                           <i className="icofont-email"></i>
                         </a>
                       </div>
                     </div>
                     <div className="member-info">
-                      <h4>Deep Fumtiya</h4>
-                      <span>Event Manager</span>
+                      <h4>Flavia Saldanha</h4>
+                      <span>Social Media Head</span>
                     </div>
                   </div>
                 </div>
@@ -265,7 +265,7 @@ class TeamPage extends Component {
           </section>
         </div>
         <div
-                   
+          
                     data-aos="fade-up"
                     data-aos-duration="1300"
                     className="text-center pt-4 pb-3 webdev-team"
